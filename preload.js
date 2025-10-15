@@ -27,6 +27,13 @@ contextBridge.exposeInMainWorld('electronAPI', {
     pdfToBase64: (filePath, includeMime) => ipcRenderer.invoke('pdf-to-base64', filePath, includeMime),
     base64ToPDF: (base64String, outputPath) => ipcRenderer.invoke('base64-to-pdf', base64String, outputPath),
     
+    // Image operations
+    imageToBase64: (filePath, includeMime, resize, quality) => ipcRenderer.invoke('image-to-base64', filePath, includeMime, resize, quality),
+    base64ToImage: (base64String, outputPath, quality, optimize) => ipcRenderer.invoke('base64-to-image', base64String, outputPath, quality, optimize),
+    batchImagesToJson: (imagePaths, outputPath, includeMime) => ipcRenderer.invoke('batch-images-to-json', imagePaths, outputPath, includeMime),
+    batchJsonToImages: (jsonData, outputDir) => ipcRenderer.invoke('batch-json-to-images', jsonData, outputDir),
+    exportImagesTo: (imagePaths, outputPath, format, includeMime) => ipcRenderer.invoke('export-images-to', imagePaths, outputPath, format, includeMime),
+    
     // Dialogs
     showMessage: (type, title, message) => ipcRenderer.invoke('show-message', type, title, message)
 });

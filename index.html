@@ -16,94 +16,100 @@
 
         <!-- Tab Navigation -->
         <div class="tabs">
-            <button class="tab-btn active" data-tab="encode">📤 Encode (Image → Base64)</button>
-            <button class="tab-btn" data-tab="decode">📥 Decode (Base64 → Image)</button>
+            <button class="tab-btn active" data-tab="image">📄 Image Converter</button>
             <button class="tab-btn" data-tab="pdf">📄 PDF Converter</button>
             <button class="tab-btn" data-tab="pdf-batch">📦 PDF Batch</button>
-            <button class="tab-btn" data-tab="batch">📦 Image Batch</button>
+            <button class="tab-btn" data-tab="image-batch">📦 Image Batch</button>
         </div>
 
-        <!-- Encode Tab -->
-        <div class="tab-content active" id="encode-tab">
+        <!-- Image Tab (Unified Encode/Decode) -->
+        <div class="tab-content active" id="image-tab">
             <div class="section">
-                <h2>Image to Base64</h2>
+                <h2>Image ⇄ Base64 Converter</h2>
                 
-                <div class="input-group">
-                    <button id="select-image-btn" class="btn btn-primary">
-                        📂 Select Image
-                    </button>
-                    <span id="selected-image-name" class="file-name">No file selected</span>
-                </div>
-
-                <div class="preview-container" id="encode-preview">
-                    <p class="placeholder-text">Image preview will appear here</p>
-                </div>
-
-                <div class="options">
-                    <label>
-                        <input type="checkbox" id="include-mime-encode">
-                        Include MIME type (data URL)
-                    </label>
-                </div>
-
-                <button id="encode-btn" class="btn btn-success" disabled>
-                    ✨ Convert to Base64
-                </button>
-
-                <div class="result-container" id="encode-result">
-                    <div class="result-header">
-                        <h3>Base64 Result</h3>
-                        <div class="result-actions">
-                            <button id="copy-base64-btn" class="btn btn-small">📋 Copy</button>
-                            <button id="save-base64-btn" class="btn btn-small">💾 Save</button>
-                        </div>
+                <!-- Image to Base64 -->
+                <div class="subsection">
+                    <h3>📤 Image to Base64</h3>
+                    
+                    <div class="input-group">
+                        <button id="select-image-encode-btn" class="btn btn-primary">
+                            📂 Select Image File
+                        </button>
+                        <span id="selected-image-name" class="file-name">No file selected</span>
                     </div>
-                    <textarea id="base64-output" readonly placeholder="Base64 result will appear here..."></textarea>
-                    <div class="info-text" id="encode-info"></div>
-                </div>
-            </div>
-        </div>
 
-        <!-- Decode Tab -->
-        <div class="tab-content" id="decode-tab">
-            <div class="section">
-                <h2>Base64 to Image</h2>
-                
-                <div class="input-group">
-                    <textarea id="base64-input" placeholder="Paste Base64 string here..."></textarea>
-                </div>
+                    <div class="preview-container" id="image-encode-preview">
+                        <p class="placeholder-text">Image preview will appear here</p>
+                    </div>
 
-                <div class="options">
-                    <label>
-                        Output Format:
-                        <select id="output-format">
-                            <option value=".png">PNG</option>
-                            <option value=".jpg">JPEG</option>
-                            <option value=".webp">WebP</option>
-                            <option value=".gif">GIF</option>
-                            <option value=".bmp">BMP</option>
-                        </select>
-                    </label>
-                    <label class="quality-label">
-                        Quality: <span id="quality-value">95</span>%
-                        <input type="range" id="quality-slider" min="1" max="100" value="95" step="1">
-                    </label>
-                </div>
+                    <div class="options">
+                        <label>
+                            <input type="checkbox" id="include-mime-image-encode" checked>
+                            Include MIME type (data URL)
+                        </label>
+                    </div>
 
-                <div class="button-group">
-                    <button id="preview-btn" class="btn btn-secondary">
-                        👁️ Preview
+                    <button id="image-encode-btn" class="btn btn-success" disabled>
+                        ✨ Convert Image to Base64
                     </button>
-                    <button id="decode-btn" class="btn btn-success">
-                        🖼️ Convert & Save
-                    </button>
+
+                    <div class="result-container" id="image-encode-result">
+                        <div class="result-header">
+                            <h3>Base64 Result</h3>
+                            <div class="result-actions">
+                                <button id="copy-image-base64-btn" class="btn btn-small">📋 Copy</button>
+                                <button id="save-image-base64-btn" class="btn btn-small">💾 Save</button>
+                            </div>
+                        </div>
+                        <textarea id="image-base64-output" readonly placeholder="Base64 result will appear here..."></textarea>
+                        <div class="info-text" id="image-encode-info"></div>
+                    </div>
                 </div>
 
-                <div class="preview-container" id="decode-preview">
-                    <p class="placeholder-text">Image preview will appear here</p>
-                </div>
+                <hr class="section-divider">
 
-                <div class="info-text" id="decode-info"></div>
+                <!-- Base64 to Image -->
+                <div class="subsection">
+                    <h3>📥 Base64 to Image</h3>
+                    
+                    <div class="input-group">
+                        <textarea id="image-base64-input" placeholder="Paste Base64 string here..."></textarea>
+                    </div>
+
+                    <div class="options">
+                        <label>
+                            Output Format:
+                            <select id="image-output-format">
+                                <option value=".png">PNG</option>
+                                <option value=".jpg">JPEG</option>
+                                <option value=".webp">WebP</option>
+                                <option value=".gif">GIF</option>
+                                <option value=".bmp">BMP</option>
+                                <option value=".tiff">TIFF</option>
+                            </select>
+                        </label>
+                        <label class="quality-label">
+                            Quality: <span id="image-quality-value">95</span>%
+                            <input type="range" id="image-quality-slider" min="1" max="100" value="95" step="1">
+                        </label>
+                    </div>
+
+                    <div class="button-group">
+                        <button id="image-preview-btn" class="btn btn-secondary">
+                            👁️ Preview Image
+                        </button>
+                        <button id="image-decode-btn" class="btn btn-success">
+                            🖼️ Convert & Save Image
+                        </button>
+                    </div>
+
+                    <div class="preview-container" id="image-decode-preview" style="display: none;">
+                        <h4>Image Preview</h4>
+                        <img id="image-preview-img" alt="Preview" style="max-width: 100%; max-height: 400px;">
+                    </div>
+
+                    <div class="info-text" id="image-decode-info"></div>
+                </div>
             </div>
         </div>
 
@@ -276,57 +282,103 @@
             </div>
         </div>
 
-        <!-- Batch Tab -->
-        <div class="tab-content" id="batch-tab">
+        <!-- Image Batch Tab -->
+        <div class="tab-content" id="image-batch-tab">
             <div class="section">
-                <h2>Batch Conversion</h2>
+                <h2>Image Batch Conversion</h2>
                 
-                <div class="input-group">
-                    <button id="select-multiple-images-btn" class="btn btn-primary">
-                        📂 Select Multiple Images
-                    </button>
-                    <span id="selected-count">0 files selected</span>
-                </div>
-
-                <div class="batch-list" id="batch-list">
-                    <p class="placeholder-text">Selected files will appear here</p>
-                </div>
-
-                <div class="options">
-                    <label>
-                        Export Format:
-                        <select id="batch-format">
-                            <option value="txt">TXT (Separate files)</option>
-                            <option value="json">JSON</option>
-                            <option value="csv">CSV</option>
-                            <option value="xml">XML</option>
-                        </select>
-                    </label>
-                    <label>
-                        <input type="checkbox" id="include-mime-batch">
-                        Include MIME type
-                    </label>
-                </div>
-
-                <div class="input-group">
-                    <button id="select-output-dir-btn" class="btn btn-secondary">
-                        📁 Select Output Directory
-                    </button>
-                    <span id="output-dir-name">No directory selected</span>
-                </div>
-
-                <button id="batch-convert-btn" class="btn btn-success" disabled>
-                    ⚡ Start Batch Conversion
-                </button>
-
-                <div class="progress-container" id="batch-progress" style="display: none;">
-                    <div class="progress-bar">
-                        <div class="progress-fill" id="progress-fill"></div>
+                <!-- Images to Base64 Batch -->
+                <div class="subsection">
+                    <h3>📤 Images to Base64 (Batch)</h3>
+                    
+                    <div class="input-group">
+                        <button id="select-multiple-images-btn" class="btn btn-primary">
+                            📂 Select Multiple Images
+                        </button>
+                        <span id="selected-image-count">0 files selected</span>
                     </div>
-                    <div class="progress-text" id="progress-text">Processing...</div>
+
+                    <div class="batch-list" id="image-batch-list">
+                        <p class="placeholder-text">Selected image files will appear here</p>
+                    </div>
+
+                    <div class="options">
+                        <label>
+                            Export Format:
+                            <select id="image-batch-format">
+                                <option value="txt">TXT (Separate files)</option>
+                                <option value="json">JSON (Recommended for reverse conversion)</option>
+                                <option value="csv">CSV</option>
+                                <option value="xml">XML</option>
+                            </select>
+                        </label>
+                        <label>
+                            <input type="checkbox" id="include-mime-image-batch" checked>
+                            Include MIME type
+                        </label>
+                    </div>
+
+                    <div class="input-group">
+                        <button id="select-image-output-dir-btn" class="btn btn-secondary">
+                            📁 Select Output Directory
+                        </button>
+                        <span id="image-output-dir-name">No directory selected</span>
+                    </div>
+
+                    <button id="image-batch-convert-btn" class="btn btn-success" disabled>
+                        ⚡ Start Image Batch Conversion
+                    </button>
+
+                    <div class="progress-container" id="image-batch-progress" style="display: none;">
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="image-progress-fill"></div>
+                        </div>
+                        <div class="progress-text" id="image-progress-text">Processing...</div>
+                    </div>
+
+                    <div class="info-text" id="image-batch-info"></div>
                 </div>
 
-                <div class="info-text" id="batch-info"></div>
+                <hr class="section-divider">
+
+                <!-- Base64 to Images Batch (Reverse) -->
+                <div class="subsection">
+                    <h3>📥 Base64 to Images (Batch Reverse)</h3>
+                    <p class="help-text">⚠️ Use JSON format only. Load a JSON file generated from the batch conversion above.</p>
+                    
+                    <div class="input-group">
+                        <button id="select-image-json-file-btn" class="btn btn-primary">
+                            📂 Select JSON File
+                        </button>
+                        <span id="selected-image-json-name" class="file-name">No file selected</span>
+                    </div>
+
+                    <div id="image-json-preview" class="json-preview" style="display: none;">
+                        <h4>JSON Preview</h4>
+                        <div id="image-json-items-count" class="info-badge">0 images found</div>
+                        <div id="image-json-items-list" class="batch-list"></div>
+                    </div>
+
+                    <div class="input-group">
+                        <button id="select-image-reverse-output-dir-btn" class="btn btn-secondary">
+                            📁 Select Output Directory
+                        </button>
+                        <span id="image-reverse-output-dir-name">No directory selected</span>
+                    </div>
+
+                    <button id="image-batch-reverse-btn" class="btn btn-success" disabled>
+                        🔄 Convert Base64 to Images
+                    </button>
+
+                    <div class="progress-container" id="image-reverse-progress" style="display: none;">
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="image-reverse-progress-fill"></div>
+                        </div>
+                        <div class="progress-text" id="image-reverse-progress-text">Processing...</div>
+                    </div>
+
+                    <div class="info-text" id="image-batch-reverse-info"></div>
+                </div>
             </div>
         </div>
 

@@ -7,6 +7,7 @@ const { app, BrowserWindow, ipcMain, dialog } = require('electron');
 const path = require('path');
 const fs = require('fs').promises;
 const PDFConverter = require('./core/pdfConverter');
+const { ImageConverter } = require('./core/imageConverter');
 
 let mainWindow;
 
@@ -241,6 +242,71 @@ ipcMain.handle('pdf-to-base64', async (event, filePath, includeMime) => {
 ipcMain.handle('base64-to-pdf', async (event, base64String, outputPath) => {
     try {
         const result = await PDFConverter.base64ToPDF(base64String, outputPath);
+        return result;
+    } catch (error) {
+        return { success: false, error: error.message };
+    }
+});
+
+// ============ IMAGE CONVERTER IPC HANDLERS ============
+
+// Image to Base64
+ipcMain.handle('image-to-base64', async (event, filePath, includeMime, resize, quality) => {
+    try {
+        const result = await ImageConverter.imageToBase64(filePath, includeMime, resize, quality);
+        return result;
+    } catch (error) {
+        return { success: false, error: error.message };
+    }
+});
+
+// Base64 to Image
+ipcMain.handle('base64-to-image', async (event, base64String, outputPath, quality, optimize) => {
+    try {
+        const result = await ImageConverter.base64ToImage(base64String, outputPath, quality, optimize);
+        return result;
+    } catch (error) {
+        return { success: false, error: error.message };
+    }
+});
+
+// Batch Images to JSON
+ipcMain.handle('batch-images-to-json', async (event, imagePaths, outputPath, includeMime) => {
+    try {
+        const result = await ImageConverter.batchImagesToJson(imagePaths, outputPath, includeMime);
+        return result;
+    } catch (error) {
+        return { success: false, error: error.message };
+    }
+});
+
+// Batch JSON to Images (Reverse)
+ipcMain.handle('batch-json-to-images', async (event, jsonData, outputDir) => {
+    try {
+        // Create temporary JSON file
+        const tempJsonPath = path.join(__dirname, 'temp_batch.json');
+        await fs.writeFile(tempJsonPath, JSON.stringify(jsonData, null, 2), 'utf-8');
+        
+        // Process the batch conversion
+        const result = await ImageConverter.batchJsonToImages(tempJsonPath, outputDir);
+        
+        // Clean up temporary file
+        try {
+            await fs.unlink(tempJsonPath);
+        } catch (cleanupError) {
+            console.warn('Failed to clean up temporary file:', cleanupError.message);
+        }
+        
+        return result;
+    } catch (error) {
+        return { success: false, error: error.message };
+    }
+});
+
+// Export Images to Various Formats
+ipcMain.handle('export-images-to', async (event, imagePaths, outputPath, format, includeMime) => {
+    try {
+        const result = await ImageConverter.exportImagesTo(imagePaths, outputPath, format, includeMime);
         return result;
     } catch (error) {
         return { success: false, error: error.message };

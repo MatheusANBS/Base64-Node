@@ -1,5 +1,107 @@
 # Changelog
 
+## [1.3.0] - 2025-10-15
+
+### 🎨 Unificação da Interface de Conversão de Imagens
+
+#### Image Converter Unificado 🖼️
+- ✅ **Interface unificada**: Encode e Decode na mesma aba (igual ao PDF Converter)
+- ✅ Substituição das abas separadas por uma única aba "Image Converter"
+- ✅ Seção "📤 Image to Base64" (encode)
+- ✅ Seção "📥 Base64 to Image" (decode)
+- ✅ Preview de imagens em ambas as seções
+- ✅ Informações detalhadas: formato, dimensões, tamanho, canais
+- ✅ Suporte a todos os formatos: PNG, JPEG, GIF, BMP, WebP, TIFF, ICO, AVIF
+
+#### Novo Backend ImageConverter
+- ✅ Criado `core/imageConverter.js` seguindo padrão do `pdfConverter.js`
+- ✅ Método `imageToBase64()`: Conversão completa com metadados
+- ✅ Método `base64ToImage()`: Decodificação com validação
+- ✅ Método `batchImagesToJson()`: Batch para JSON estruturado
+- ✅ Método `batchJsonToImages()`: Conversão reversa de JSON
+- ✅ Método `exportImagesTo()`: Exportação para TXT, CSV, XML
+- ✅ Validação de formatos de imagem com Sharp
+- ✅ Detecção automática de formato
+- ✅ Tratamento robusto de erros
+
+#### Image Batch Converter 📦
+- ✅ **Barra de progresso arquivo por arquivo** (igual ao PDF Batch)
+- ✅ Progresso em tempo real: "Processing X/Y (Z%)"
+- ✅ Exportação para JSON estruturado (tipo: `image-base64-batch`)
+- ✅ Exportação para TXT, CSV, XML
+- ✅ Metadados completos por imagem: formato, dimensões, canais, tamanho
+- ✅ Contador de arquivos selecionados
+- ✅ Lista visual de arquivos com ícones
+- ✅ Relatório de sucessos e falhas
+
+#### Image Batch Reverse Converter 🔄
+- ✅ **Conversão reversa em lote**: JSON → Imagens
+- ✅ Carregamento e validação de arquivos JSON
+- ✅ Validação de estrutura JSON (tipo: `image-base64-batch`)
+- ✅ Preview dos arquivos que serão gerados
+- ✅ Contador de imagens encontradas no JSON
+- ✅ **Barra de progresso arquivo por arquivo** (igual ao PDF Batch Reverse)
+- ✅ Progresso em tempo real: "Converting X/Y (Z%) - Y successful"
+- ✅ Conversão automática de todas as imagens
+- ✅ Detecção automática de formato da imagem
+- ✅ Extensão automática baseada no formato
+- ✅ Relatório detalhado de sucessos e erros
+- ✅ Tratamento de erros individualizado por arquivo
+- ✅ Lista visual com dimensões e tamanhos
+
+#### Novos IPC Handlers
+- ✅ `image-to-base64`: Conversão de imagem para Base64
+- ✅ `base64-to-image`: Conversão de Base64 para imagem
+- ✅ `batch-images-to-json`: Batch para JSON
+- ✅ `batch-json-to-images`: Conversão reversa de JSON
+- ✅ `export-images-to`: Exportação para múltiplos formatos
+
+#### Interface Consistente
+- ✅ **Mesma estrutura** para imagens e PDFs
+- ✅ Conversão unificada na mesma página
+- ✅ Batch com conversão reversa via JSON em ambos
+- ✅ Barras de progresso idênticas
+- ✅ Mensagens de feedback padronizadas
+- ✅ Validações e tratamento de erros consistentes
+
+### 🛠️ Melhorias Técnicas
+- ✅ Código modular e reutilizável
+- ✅ Validação de Base64 aprimorada
+- ✅ Detecção de formato de imagem com Sharp
+- ✅ Processamento assíncrono otimizado
+- ✅ Gerenciamento de estado aprimorado no renderer
+- ✅ Feedback visual em tempo real
+
+### 📝 Estrutura JSON
+```json
+{
+  "type": "image-base64-batch",
+  "created": "2025-10-15T...",
+  "totalFiles": 10,
+  "successful": 10,
+  "failed": 0,
+  "includeMimeType": true,
+  "images": [
+    {
+      "filename": "image.png",
+      "originalPath": "C:\\path\\to\\image.png",
+      "base64": "data:image/png;base64,...",
+      "format": "PNG",
+      "width": 1920,
+      "height": 1080,
+      "channels": 4,
+      "size": 524288,
+      "sizeKB": "512.00",
+      "sizeMB": "0.50",
+      "index": 0
+    }
+  ],
+  "errors": []
+}
+```
+
+---
+
 ## [1.2.0] - 2025-10-15
 
 ### ✨ Nova Funcionalidade - Conversão Reversa em Lote

@@ -22,79 +22,79 @@ document.querySelectorAll('.tab-btn').forEach(btn => {
     });
 });
 
-// ============ ENCODE TAB ============
+// ============ IMAGE TAB (Unified Encode/Decode) ============
 
-// Select image button
-document.getElementById('select-image-btn').addEventListener('click', async () => {
+// Select image for encoding
+document.getElementById('select-image-encode-btn').addEventListener('click', async () => {
     const filePath = await window.electronAPI.selectImageFile();
     if (filePath) {
         currentImagePath = filePath;
         const fileInfo = await window.electronAPI.getFileInfo(filePath);
         
         document.getElementById('selected-image-name').textContent = fileInfo.name;
-        document.getElementById('encode-btn').disabled = false;
+        document.getElementById('image-encode-btn').disabled = false;
         
         // Show preview
         const result = await window.electronAPI.readFile(filePath);
         if (result.success) {
-            const preview = document.getElementById('encode-preview');
-            preview.innerHTML = `<img src="data:image/png;base64,${result.data}" alt="Preview">`;
+            const preview = document.getElementById('image-encode-preview');
+            preview.innerHTML = `<img src="data:image/png;base64,${result.data}" alt="Preview" style="max-width: 100%; max-height: 300px; object-fit: contain;">`;
         }
     }
 });
 
-// Encode button
-document.getElementById('encode-btn').addEventListener('click', async () => {
+// Image to Base64 conversion
+document.getElementById('image-encode-btn').addEventListener('click', async () => {
     if (!currentImagePath) return;
     
-    const includeMime = document.getElementById('include-mime-encode').checked;
+    const includeMime = document.getElementById('include-mime-image-encode').checked;
     
     try {
-        const result = await window.electronAPI.readFile(currentImagePath);
+        showInfo('image-encode-info', '⏳ Converting image to Base64...', 'info');
+        
+        const result = await window.electronAPI.imageToBase64(currentImagePath, includeMime);
+        
         if (!result.success) {
-            showInfo('encode-info', 'Error reading file: ' + result.error, 'error');
+            showInfo('image-encode-info', 'Error: ' + result.error, 'error');
             return;
         }
         
-        let base64String = result.data;
+        document.getElementById('image-base64-output').value = result.data;
         
-        if (includeMime) {
-            const fileInfo = await window.electronAPI.getFileInfo(currentImagePath);
-            const ext = fileInfo.extension.toLowerCase();
-            let mimeType = 'image/png';
-            
-            if (ext === '.jpg' || ext === '.jpeg') mimeType = 'image/jpeg';
-            else if (ext === '.gif') mimeType = 'image/gif';
-            else if (ext === '.webp') mimeType = 'image/webp';
-            else if (ext === '.bmp') mimeType = 'image/bmp';
-            
-            base64String = `data:${mimeType};base64,${base64String}`;
-        }
+        const sizeInfo = result.sizeMB > 1 
+            ? `${result.sizeMB} MB` 
+            : `${result.sizeKB} KB`;
         
-        document.getElementById('base64-output').value = base64String;
-        
-        const sizeKB = (base64String.length / 1024).toFixed(2);
-        showInfo('encode-info', `✅ Conversion successful! Size: ${sizeKB} KB`, 'success');
+        showInfo('image-encode-info', 
+            `✅ Conversion successful! File: ${result.fileName}, Format: ${result.format}, Size: ${sizeInfo}, Dimensions: ${result.width}x${result.height}`, 
+            'success');
         
     } catch (error) {
-        showInfo('encode-info', 'Error: ' + error.message, 'error');
+        showInfo('image-encode-info', 'Error: ' + error.message, 'error');
     }
 });
 
 // Copy Base64 button
-document.getElementById('copy-base64-btn').addEventListener('click', () => {
-    const textarea = document.getElementById('base64-output');
+document.getElementById('copy-image-base64-btn').addEventListener('click', () => {
+    const textarea = document.getElementById('image-base64-output');
+    if (!textarea.value) {
+        showInfo('image-encode-info', '⚠️ No Base64 data to copy', 'error');
+        return;
+    }
     textarea.select();
     document.execCommand('copy');
-    showInfo('encode-info', '📋 Copied to clipboard!', 'success');
+    showInfo('image-encode-info', '📋 Copied to clipboard!', 'success');
 });
 
 // Save Base64 button
-document.getElementById('save-base64-btn').addEventListener('click', async () => {
-    const base64Text = document.getElementById('base64-output').value;
-    if (!base64Text) return;
+document.getElementById('save-image-base64-btn').addEventListener('click', async () => {
+    const base64Text = document.getElementById('image-base64-output').value;
+    if (!base64Text) {
+        showInfo('image-encode-info', '⚠️ No Base64 data to save', 'error');
+        return;
+    }
     
-    const filePath = await window.electronAPI.selectSaveLocation('base64.txt', [
+    const filePath = await window.electronAPI.selectSaveLocation('image-base64.txt', [
         { name: 'Text Files', extensions: ['txt'] },
         { name: 'All Files', extensions: ['*'] }
     ]);
@@ -102,173 +102,190 @@ document.getElementById('save-base64-btn').addEventListener('click', async () =>
     if (filePath) {
         const result = await window.electronAPI.writeTextFile(filePath, base64Text);
         if (result.success) {
-            showInfo('encode-info', '💾 File saved successfully!', 'success');
+            showInfo('image-encode-info', '💾 Base64 saved successfully!', 'success');
         } else {
-            showInfo('encode-info', 'Error saving file: ' + result.error, 'error');
+            showInfo('image-encode-info', 'Error saving file: ' + result.error, 'error');
         }
     }
 });
 
-// ============ DECODE TAB ============
-
-// Quality slider
-document.getElementById('quality-slider').addEventListener('input', (e) => {
-    document.getElementById('quality-value').textContent = e.target.value;
+// Quality slider for image decode
+document.getElementById('image-quality-slider').addEventListener('input', (e) => {
+    document.getElementById('image-quality-value').textContent = e.target.value;
 });
 
-// Preview button
-document.getElementById('preview-btn').addEventListener('click', async () => {
-    const base64Input = document.getElementById('base64-input').value.trim();
+// Image Preview button
+document.getElementById('image-preview-btn').addEventListener('click', async () => {
+    const base64Input = document.getElementById('image-base64-input').value.trim();
+    
     if (!base64Input) {
-        showInfo('decode-info', 'Please enter a Base64 string', 'error');
+        showInfo('image-decode-info', '⚠️ Please paste Base64 string first', 'error');
         return;
     }
     
     try {
+        // Clean base64 string
+        let cleanBase64 = base64Input;
+        
         // Remove data URL prefix if present
-        let base64Data = base64Input;
-        if (base64Data.includes(',') && base64Data.toLowerCase().startsWith('data:')) {
-            base64Data = base64Data.split(',')[1];
+        if (cleanBase64.includes(',') && cleanBase64.toLowerCase().startsWith('data:')) {
+            cleanBase64 = cleanBase64.split(',')[1];
         }
         
-        // Create preview
-        const preview = document.getElementById('decode-preview');
-        preview.innerHTML = `<img src="data:image/png;base64,${base64Data}" alt="Preview" style="max-width: 100%; max-height: 400px; object-fit: contain;">`;
+        // Create data URL for preview
+        const dataUrl = `data:image/png;base64,${cleanBase64}`;
         
-        showInfo('decode-info', '👁️ Preview loaded successfully!', 'success');
+        // Show preview container
+        const previewContainer = document.getElementById('image-decode-preview');
+        const previewImg = document.getElementById('image-preview-img');
+        
+        previewImg.src = dataUrl;
+        previewContainer.style.display = 'block';
+        
+        showInfo('image-decode-info', '👁️ Image preview loaded successfully!', 'success');
+        
     } catch (error) {
-        showInfo('decode-info', `Error creating preview: ${error.message}`, 'error');
+        showInfo('image-decode-info', 'Error loading preview: ' + error.message, 'error');
     }
 });
 
-// Decode button
-document.getElementById('decode-btn').addEventListener('click', async () => {
-    const base64Input = document.getElementById('base64-input').value.trim();
+// Base64 to Image conversion
+document.getElementById('image-decode-btn').addEventListener('click', async () => {
+    const base64Input = document.getElementById('image-base64-input').value.trim();
+    
     if (!base64Input) {
-        showInfo('decode-info', 'Please enter a Base64 string', 'error');
+        showInfo('image-decode-info', '⚠️ Please paste Base64 string', 'error');
         return;
     }
     
     try {
-        // Remove data URL prefix if present
-        let base64Data = base64Input;
-        if (base64Data.includes(',') && base64Data.toLowerCase().startsWith('data:')) {
-            base64Data = base64Data.split(',')[1];
-        }
+        showInfo('image-decode-info', '⏳ Converting Base64 to image...', 'info');
         
-        // Select save location
-        const format = document.getElementById('output-format').value;
-        const filePath = await window.electronAPI.selectSaveLocation('image' + format, [
+        // Get settings
+        const format = document.getElementById('image-output-format').value;
+        const quality = parseInt(document.getElementById('image-quality-slider').value);
+        
+        // Ask for save location
+        const filePath = await window.electronAPI.selectSaveLocation('converted' + format, [
             { name: 'Image Files', extensions: [format.replace('.', '')] },
             { name: 'All Files', extensions: ['*'] }
         ]);
         
-        if (!filePath) return;
-        
-        // Save file
-        const result = await window.electronAPI.writeFile(filePath, base64Data);
-        
-        if (result.success) {
-            showInfo('decode-info', '✅ Image saved successfully!', 'success');
-            
-            // Show preview
-            const preview = document.getElementById('decode-preview');
-            preview.innerHTML = `<img src="data:image/png;base64,${base64Data}" alt="Decoded Image">`;
-        } else {
-            showInfo('decode-info', 'Error saving image: ' + result.error, 'error');
+        if (!filePath) {
+            showInfo('image-decode-info', '❌ Conversion cancelled', 'error');
+            return;
         }
         
+        const result = await window.electronAPI.base64ToImage(base64Input, filePath, quality);
+        
+        if (!result.success) {
+            showInfo('image-decode-info', 'Error: ' + result.error, 'error');
+            return;
+        }
+        
+        const sizeInfo = result.sizeMB > 1 
+            ? `${result.sizeMB} MB` 
+            : `${result.sizeKB} KB`;
+        
+        showInfo('image-decode-info', 
+            `✅ Image saved successfully! File: ${result.fileName}, Format: ${result.format}, Size: ${sizeInfo}, Dimensions: ${result.width}x${result.height}`, 
+            'success');
+        
+        // Clear input and preview
+        document.getElementById('image-base64-input').value = '';
+        document.getElementById('image-decode-preview').style.display = 'none';
+        
     } catch (error) {
-        showInfo('decode-info', 'Error: ' + error.message, 'error');
+        showInfo('image-decode-info', 'Error: ' + error.message, 'error');
     }
 });
 
-// ============ BATCH TAB ============
+// ============ IMAGE BATCH TAB ============
 
-// Select multiple images
+let selectedImageFiles = [];
+let imageOutputDirectory = null;
+
+// Select multiple images for batch conversion
 document.getElementById('select-multiple-images-btn').addEventListener('click', async () => {
     const filePaths = await window.electronAPI.selectImageFiles();
     if (filePaths && filePaths.length > 0) {
-        selectedFiles = filePaths;
-        document.getElementById('selected-count').textContent = `${filePaths.length} file(s) selected`;
+        selectedImageFiles = filePaths;
+        document.getElementById('selected-image-count').textContent = `${filePaths.length} file(s) selected`;
         
         // Display file list
-        const listContainer = document.getElementById('batch-list');
+        const listContainer = document.getElementById('image-batch-list');
         listContainer.innerHTML = '';
         
-        filePaths.forEach(filePath => {
-            const item = document.createElement('div');
-            item.className = 'batch-item';
-            const fileName = filePath.split('\\').pop().split('/').pop();
-            item.innerHTML = `
-                <span>${fileName}</span>
-                <span style="color: #666; font-size: 0.9rem;">${filePath}</span>
+        for (const filePath of filePaths) {
+            const fileInfo = await window.electronAPI.getFileInfo(filePath);
+            const fileItem = document.createElement('div');
+            fileItem.className = 'batch-item';
+            fileItem.innerHTML = `
+                <span class="file-icon">🖼️</span>
+                <span class="file-name">${fileInfo.name}</span>
+                <span class="file-size">${(fileInfo.size / 1024).toFixed(2)} KB</span>
             `;
-            listContainer.appendChild(item);
-        });
+            listContainer.appendChild(fileItem);
+        }
         
-        updateBatchButton();
+        // Enable convert button if output directory is selected
+        if (imageOutputDirectory) {
+            document.getElementById('image-batch-convert-btn').disabled = false;
+        }
     }
 });
 
-// Select output directory
-document.getElementById('select-output-dir-btn').addEventListener('click', async () => {
+// Select output directory for image batch
+document.getElementById('select-image-output-dir-btn').addEventListener('click', async () => {
     const dirPath = await window.electronAPI.selectDirectory();
     if (dirPath) {
-        outputDirectory = dirPath;
-        const dirName = dirPath.split('\\').pop().split('/').pop();
-        document.getElementById('output-dir-name').textContent = dirName;
-        updateBatchButton();
+        imageOutputDirectory = dirPath;
+        document.getElementById('image-output-dir-name').textContent = dirPath;
+        
+        // Enable convert button if files are selected
+        if (selectedImageFiles.length > 0) {
+            document.getElementById('image-batch-convert-btn').disabled = false;
+        }
     }
 });
 
-function updateBatchButton() {
-    const canConvert = selectedFiles.length > 0 && outputDirectory;
-    document.getElementById('batch-convert-btn').disabled = !canConvert;
-}
-
-// Batch convert button
-document.getElementById('batch-convert-btn').addEventListener('click', async () => {
-    if (selectedFiles.length === 0 || !outputDirectory) return;
+// Image Batch convert button
+document.getElementById('image-batch-convert-btn').addEventListener('click', async () => {
+    if (selectedImageFiles.length === 0 || !imageOutputDirectory) return;
     
-    const format = document.getElementById('batch-format').value;
-    const includeMime = document.getElementById('include-mime-batch').checked;
+    const format = document.getElementById('image-batch-format').value;
+    const includeMime = document.getElementById('include-mime-image-batch').checked;
     
-    // Show progress
-    const progressContainer = document.getElementById('batch-progress');
-    const progressFill = document.getElementById('progress-fill');
-    const progressText = document.getElementById('progress-text');
-    
-    progressContainer.style.display = 'block';
-    progressFill.style.width = '0%';
-    progressText.textContent = 'Starting...';
+    const progressContainer = document.getElementById('image-batch-progress');
+    const progressFill = document.getElementById('image-progress-fill');
+    const progressText = document.getElementById('image-progress-text');
     
     try {
-        const total = selectedFiles.length;
-        let completed = 0;
-        const results = [];
+        progressContainer.style.display = 'block';
+        progressFill.style.width = '0%';
+        progressText.textContent = 'Starting conversion...';
         
-        for (const filePath of selectedFiles) {
+        const results = [];
+        const total = selectedImageFiles.length;
+        let completed = 0;
+        
+        for (const filePath of selectedImageFiles) {
             const fileInfo = await window.electronAPI.getFileInfo(filePath);
-            const result = await window.electronAPI.readFile(filePath);
+            const result = await window.electronAPI.imageToBase64(filePath, includeMime);
             
             if (result.success) {
-                let base64String = result.data;
-                
-                if (includeMime) {
-                    const ext = fileInfo.extension.toLowerCase();
-                    let mimeType = 'image/png';
-                    if (ext === '.jpg' || ext === '.jpeg') mimeType = 'image/jpeg';
-                    else if (ext === '.gif') mimeType = 'image/gif';
-                    else if (ext === '.webp') mimeType = 'image/webp';
-                    
-                    base64String = `data:${mimeType};base64,${base64String}`;
-                }
-                
                 results.push({
                     filename: fileInfo.name,
-                    base64: base64String,
-                    extension: fileInfo.extension
+                    originalPath: filePath,
+                    base64: result.data,
+                    format: result.format,
+                    width: result.width,
+                    height: result.height,
+                    channels: result.channels,
+                    size: result.size,
+                    sizeKB: result.sizeKB,
+                    sizeMB: result.sizeMB,
+                    index: completed
                 });
             }
             
@@ -285,38 +302,218 @@ document.getElementById('batch-convert-btn').addEventListener('click', async () 
             // Save separate files
             for (const item of results) {
                 const baseName = item.filename.replace(/\.[^/.]+$/, '');
-                const outputPath = `${outputDirectory}\\${baseName}.txt`;
+                const outputPath = `${imageOutputDirectory}\\${baseName}.txt`;
                 await window.electronAPI.writeTextFile(outputPath, item.base64);
             }
         } else if (format === 'json') {
-            const outputPath = `${outputDirectory}\\batch_${timestamp}.json`;
-            await window.electronAPI.writeTextFile(outputPath, JSON.stringify(results, null, 2));
+            // Create JSON structure like the unified method
+            const jsonData = {
+                type: 'image-base64-batch',
+                created: new Date().toISOString(),
+                totalFiles: selectedImageFiles.length,
+                successful: results.length,
+                failed: selectedImageFiles.length - results.length,
+                includeMimeType: includeMime,
+                images: results,
+                errors: []
+            };
+            
+            const outputPath = `${imageOutputDirectory}\\image_batch_${timestamp}.json`;
+            await window.electronAPI.writeTextFile(outputPath, JSON.stringify(jsonData, null, 2));
         } else if (format === 'csv') {
-            let csv = 'filename,extension,base64\n';
+            let csv = 'filename,base64,format,width,height,channels,size,sizeKB,sizeMB\n';
             results.forEach(item => {
-                csv += `"${item.filename}","${item.extension}","${item.base64}"\n`;
+                csv += `"${item.filename}","${item.base64}","${item.format}","${item.width}","${item.height}","${item.channels}","${item.size}","${item.sizeKB}","${item.sizeMB}"\n`;
             });
-            const outputPath = `${outputDirectory}\\batch_${timestamp}.csv`;
+            const outputPath = `${imageOutputDirectory}\\image_batch_${timestamp}.csv`;
             await window.electronAPI.writeTextFile(outputPath, csv);
         } else if (format === 'xml') {
             let xml = '<?xml version="1.0" encoding="UTF-8"?>\n<images>\n';
             results.forEach(item => {
                 xml += '  <image>\n';
                 xml += `    <filename>${item.filename}</filename>\n`;
-                xml += `    <extension>${item.extension}</extension>\n`;
+                xml += `    <format>${item.format}</format>\n`;
+                xml += `    <width>${item.width}</width>\n`;
+                xml += `    <height>${item.height}</height>\n`;
+                xml += `    <channels>${item.channels}</channels>\n`;
+                xml += `    <size>${item.size}</size>\n`;
+                xml += `    <sizeKB>${item.sizeKB}</sizeKB>\n`;
+                xml += `    <sizeMB>${item.sizeMB}</sizeMB>\n`;
                 xml += `    <base64>${item.base64}</base64>\n`;
                 xml += '  </image>\n';
             });
             xml += '</images>\n';
-            const outputPath = `${outputDirectory}\\batch_${timestamp}.xml`;
+            const outputPath = `${imageOutputDirectory}\\image_batch_${timestamp}.xml`;
             await window.electronAPI.writeTextFile(outputPath, xml);
         }
         
-        progressText.textContent = `✅ Completed! ${completed} file(s) converted`;
-        showInfo('batch-info', `✅ Successfully converted ${completed} file(s) to ${format.toUpperCase()}!`, 'success');
+        progressText.textContent = `✅ Completed! ${completed} image(s) converted`;
+        showInfo('image-batch-info', `✅ Successfully converted ${completed} image(s) to ${format.toUpperCase()}!`, 'success');
         
     } catch (error) {
-        showInfo('batch-info', 'Error: ' + error.message, 'error');
+        showInfo('image-batch-info', 'Error: ' + error.message, 'error');
+        progressContainer.style.display = 'none';
+    }
+});
+
+// ============ IMAGE BATCH REVERSE (JSON to Images) ============
+
+let imageJsonData = null;
+let imageReverseOutputDirectory = null;
+
+// Select JSON file for image reverse conversion
+document.getElementById('select-image-json-file-btn').addEventListener('click', async () => {
+    const filePath = await window.electronAPI.selectJSONFile();
+    if (!filePath) return;
+    
+    try {
+        const result = await window.electronAPI.readJSONFile(filePath);
+        
+        if (!result.success) {
+            showInfo('image-batch-reverse-info', 'Error reading JSON: ' + result.error, 'error');
+            return;
+        }
+        
+        const data = result.data;
+        
+        // Validate JSON structure for image batch
+        if (!data.type || data.type !== 'image-base64-batch' || !Array.isArray(data.images)) {
+            showInfo('image-batch-reverse-info', '⚠️ Invalid JSON format. Expected image-base64-batch type with images array.', 'error');
+            imageJsonData = null;
+            return;
+        }
+        
+        // Check if items have required fields
+        const validItems = data.images.filter(item => item.filename && item.base64);
+        
+        if (validItems.length === 0) {
+            showInfo('image-batch-reverse-info', '⚠️ No valid image data found in JSON. Each item needs "filename" and "base64" fields.', 'error');
+            imageJsonData = null;
+            return;
+        }
+        
+        imageJsonData = data;
+        
+        const fileInfo = await window.electronAPI.getFileInfo(filePath);
+        document.getElementById('selected-image-json-name').textContent = fileInfo.name;
+        
+        // Show preview
+        const previewContainer = document.getElementById('image-json-preview');
+        const itemsCount = document.getElementById('image-json-items-count');
+        const itemsList = document.getElementById('image-json-items-list');
+        
+        itemsCount.textContent = `${validItems.length} image(s) found in JSON`;
+        
+        itemsList.innerHTML = '';
+        validItems.forEach((item, index) => {
+            const fileItem = document.createElement('div');
+            fileItem.className = 'batch-item';
+            const sizeInfo = item.sizeKB ? `${item.sizeKB} KB` : 'Size unknown';
+            const dimensionInfo = item.width && item.height ? `${item.width}x${item.height}` : 'Unknown dimensions';
+            fileItem.innerHTML = `
+                <span class="file-icon">🖼️</span>
+                <span class="file-name">${item.filename}</span>
+                <span class="file-info">${item.format || 'Unknown'} - ${sizeInfo} - ${dimensionInfo}</span>
+            `;
+            itemsList.appendChild(fileItem);
+        });
+        
+        previewContainer.style.display = 'block';
+        
+        // Enable convert button if output directory is selected
+        if (imageReverseOutputDirectory) {
+            document.getElementById('image-batch-reverse-btn').disabled = false;
+        }
+        
+        showInfo('image-batch-reverse-info', `✅ JSON loaded successfully! ${validItems.length} image(s) ready to convert.`, 'success');
+        
+    } catch (error) {
+        showInfo('image-batch-reverse-info', 'Error: ' + error.message, 'error');
+        imageJsonData = null;
+    }
+});
+
+// Select output directory for image reverse conversion
+document.getElementById('select-image-reverse-output-dir-btn').addEventListener('click', async () => {
+    const dirPath = await window.electronAPI.selectDirectory();
+    if (dirPath) {
+        imageReverseOutputDirectory = dirPath;
+        document.getElementById('image-reverse-output-dir-name').textContent = dirPath;
+        
+        // Enable convert button if JSON is loaded
+        if (imageJsonData && imageJsonData.images && imageJsonData.images.length > 0) {
+            document.getElementById('image-batch-reverse-btn').disabled = false;
+        }
+    }
+});
+
+// Image Batch Reverse (JSON to Images)
+document.getElementById('image-batch-reverse-btn').addEventListener('click', async () => {
+    if (!imageJsonData || !imageJsonData.images || imageJsonData.images.length === 0 || !imageReverseOutputDirectory) return;
+    
+    const progressContainer = document.getElementById('image-reverse-progress');
+    const progressFill = document.getElementById('image-reverse-progress-fill');
+    const progressText = document.getElementById('image-reverse-progress-text');
+    
+    try {
+        progressContainer.style.display = 'block';
+        progressFill.style.width = '0%';
+        progressText.textContent = 'Starting reverse conversion...';
+        
+        const total = imageJsonData.images.length;
+        let completed = 0;
+        let successful = 0;
+        const errors = [];
+        
+        for (const item of imageJsonData.images) {
+            try {
+                // Determine output filename and format
+                let outputFilename = item.filename;
+                const lastDotIndex = outputFilename.lastIndexOf('.');
+                const originalExt = lastDotIndex >= 0 ? outputFilename.substring(lastDotIndex).toLowerCase() : '';
+                
+                // If no extension or unknown, use format from metadata
+                if (!originalExt || !originalExt.match(/\.(png|jpg|jpeg|gif|bmp|webp|tiff|tif|ico|avif)$/)) {
+                    const baseName = lastDotIndex >= 0 ? outputFilename.substring(0, lastDotIndex) : outputFilename;
+                    outputFilename = `${baseName}.${item.format.toLowerCase()}`;
+                }
+                
+                const outputPath = `${imageReverseOutputDirectory}\\${outputFilename}`;
+                
+                // Convert Base64 to Image
+                const result = await window.electronAPI.base64ToImage(item.base64, outputPath);
+                
+                if (result.success) {
+                    successful++;
+                } else {
+                    errors.push(`${outputFilename}: ${result.error}`);
+                }
+                
+            } catch (error) {
+                errors.push(`${item.filename}: ${error.message}`);
+            }
+            
+            completed++;
+            const percent = Math.round((completed / total) * 100);
+            progressFill.style.width = percent + '%';
+            progressText.textContent = `Converting ${completed}/${total} (${percent}%) - ${successful} successful`;
+        }
+        
+        // Show final result
+        progressText.textContent = `✅ Completed! ${successful}/${total} image(s) converted successfully`;
+        
+        let message = `✅ Successfully converted ${successful} out of ${total} image(s)!`;
+        if (errors.length > 0) {
+            message += `\n\n⚠️ ${errors.length} error(s) occurred:\n${errors.slice(0, 3).join('\n')}`;
+            if (errors.length > 3) {
+                message += `\n... and ${errors.length - 3} more.`;
+            }
+        }
+        
+        showInfo('image-batch-reverse-info', message, successful === total ? 'success' : 'error');
+        
+    } catch (error) {
+        showInfo('image-batch-reverse-info', 'Error: ' + error.message, 'error');
         progressContainer.style.display = 'none';
     }
 });
