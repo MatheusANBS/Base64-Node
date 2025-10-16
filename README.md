@@ -1,314 +1,629 @@
-# Base64 Converter - Node.js Version
+# Base64 Converter
 
-Versão de alta performance do Base64 Converter em Node.js, com todas as funcionalidades da versão Python e otimizações para máxima velocidade.
+A high-performance desktop application for Base64 encoding and decoding, built with Electron and Node.js. This application provides comprehensive conversion capabilities for images, PDFs, and Excel/CSV files with both single-file and batch processing features.
 
-## 🚀 Performance
+## Table of Contents
 
-Esta versão em Node.js oferece performance superior ao Python:
-- **Python**: ~7 segundos para 100M iterações
-- **Node.js**: ~0.2 segundos para 100M iterações
-- **Speedup**: ~35x mais rápido
+- [Overview](#overview)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+  - [Image Converter](#image-converter)
+  - [PDF Converter](#pdf-converter)
+  - [Excel/CSV Converter](#excelcsv-converter)
+  - [Batch Processing](#batch-processing)
+- [API Reference](#api-reference)
+- [Supported Formats](#supported-formats)
+- [Architecture](#architecture)
+- [Performance](#performance)
+- [Building](#building)
+- [License](#license)
 
-## 📦 Instalação
+## Overview
+
+Base64 Converter is a cross-platform desktop application that enables efficient conversion between various file formats and their Base64 representations. The application features a unified interface for single-file conversions, batch processing capabilities, and reverse conversion from structured JSON files.
+
+### Key Highlights
+
+- **Multi-format support**: Images (PNG, JPEG, GIF, BMP, WebP, TIFF, ICO, AVIF), PDFs, Excel (.xlsx, .xls, .csv, .xlsb, .ods)
+- **Bidirectional conversion**: Encode to Base64 and decode back to original format
+- **Batch processing**: Convert multiple files simultaneously with real-time progress tracking
+- **Reverse conversion**: Restore files from JSON-structured data
+- **High performance**: Optimized Node.js implementation (~35x faster than Python equivalent)
+- **Professional UI**: Clean, intuitive Electron-based interface with unified conversion tabs
+- **Modular architecture**: Separate converters for each file type with comprehensive error handling
+
+## Features
+
+### Core Capabilities
+
+#### Image Converter
+- Convert images to Base64 with optional MIME type prefix
+- Decode Base64 strings to image files
+- Support for 9 image formats: PNG, JPEG, GIF, BMP, WebP, TIFF, ICO, AVIF
+- Image metadata extraction (dimensions, channels, format, size)
+- Resize and quality options for conversion
+- Real-time preview of source images
+- Batch conversion with JSON export
+- Batch reverse conversion (JSON to images)
+- Export to multiple formats (TXT, CSV, XML, JSON)
+
+#### PDF Converter
+- Convert PDF files to Base64 encoding
+- Decode Base64 strings to PDF files
+- PDF validation with magic number verification
+- File size reporting (bytes, KB, MB)
+- Preview functionality for decoded PDFs
+- Batch processing with progress tracking
+- Batch reverse conversion (JSON to PDFs)
+
+#### Excel/CSV Converter
+- Convert Excel/CSV files to JSON format
+- Decode JSON data to Excel/CSV files
+- Multi-sheet support with sheet selection
+- Automatic format detection (.xlsx, .xls, .csv, .xlsb, .ods)
+- Row and column count reporting
+- Workbook information extraction
+- Batch conversion to structured JSON
+- Batch reverse conversion with format selection
+
+### Batch Processing Features
+
+- **Real-time progress tracking**: File-by-file progress bars with percentage and count
+- **Structured JSON output**: Timestamped exports with metadata and error reporting
+- **Batch reverse conversion**: Restore all files from a single JSON file
+- **Error handling**: Individual file error tracking without stopping the entire batch
+- **Format flexibility**: Export to JSON, TXT, CSV, or XML (where applicable)
+- **Visual feedback**: File counters, success/failure reporting, and detailed logs
+
+## Installation
+
+### Prerequisites
+
+- Node.js (v14 or higher)
+- npm or yarn
+
+### Steps
 
 ```bash
+# Clone the repository
+git clone https://github.com/MatheusANBS/Base64-Node.git
+
+# Navigate to the project directory
+cd Base64-Node
+
+# Install dependencies
 npm install
+
+# Run the application
+npm start
 ```
 
-## 🎯 Funcionalidades
+### Development Mode
 
-### Core Converter
-- ✅ Decode Base64 para Buffer
-- ✅ Encode Buffer para Base64
-- ✅ Detecção automática de formato de imagem
-- ✅ Informações detalhadas de imagem
-- ✅ Conversão Base64 → Imagem
-- ✅ Conversão Imagem → Base64
-- ✅ Conversão em lote (batch)
-- ✅ Exportação para JSON, CSV, XML
-
-### PDF Converter (NOVO! 🎉)
-- ✅ Conversão PDF → Base64
-- ✅ Conversão Base64 → PDF
-- ✅ **Preview de PDF antes de salvar**
-- ✅ **Conversão em lote (batch) de PDFs**
-- ✅ **Conversão reversa em lote (JSON → PDFs)** 🔄
-- ✅ Validação de arquivos PDF
-- ✅ Suporte a Data URLs
-- ✅ Informações de tamanho e metadata
-- ✅ Exportação batch em JSON, CSV, XML ou TXT
-- ✅ Interface gráfica intuitiva
-
-### Image Processor
-- ✅ Criação de thumbnails
-- ✅ Otimização de imagens
-- ✅ Aplicação de filtros (blur, sharpen, grayscale, etc.)
-- ✅ Ajuste de brilho e contraste
-- ✅ Detecção de cor dominante
-- ✅ Rotação e espelhamento
-
-### File Handler
-- ✅ Validação de tipos de arquivo
-- ✅ Busca de imagens em diretórios
-- ✅ Gerenciamento de caminhos de saída
-- ✅ Histórico de conversões
-
-## 📖 Uso
-
-### Exemplo 1: PDF para Base64
-
-```javascript
-const PDFConverter = require('./core/pdfConverter');
-
-// Converter PDF para Base64
-const result = await PDFConverter.pdfToBase64('./document.pdf', true);
-console.log('Base64:', result.data);
-console.log('Size:', result.sizeMB, 'MB');
+```bash
+# Run with DevTools open
+npm run dev
 ```
 
-### Exemplo 2: Base64 para PDF
+## Usage
 
-```javascript
-const PDFConverter = require('./core/pdfConverter');
+### Image Converter
 
-// Converter Base64 para PDF
-const base64String = 'JVBERi0xLjQKJeLjz9MK...'; // Seu Base64 aqui
-const result = await PDFConverter.base64ToPDF(base64String, './output.pdf');
-console.log('PDF salvo:', result.path);
-```
+The Image Converter tab provides unified encode and decode functionality in a single interface.
 
-### Exemplo 2.1: Conversão em Lote de PDFs (Interface Gráfica)
+#### Encoding (Image to Base64)
 
-A aplicação Electron oferece uma interface gráfica completa para:
+1. Click "Select Image" to choose an image file
+2. Preview the selected image
+3. Optionally enable "Include MIME type" for data URL format
+4. Click "Convert to Base64"
+5. Copy the output or save to a text file
 
-**PDFs → Base64:**
-- Selecionar múltiplos arquivos PDF
-- Converter todos para Base64
-- Exportar em formatos: JSON, CSV, XML ou TXT (arquivos separados)
-- Visualizar preview de PDFs antes de salvar
-- Acompanhar progresso da conversão em tempo real
+#### Decoding (Base64 to Image)
 
-**Base64 → PDFs (Conversão Reversa):**
-- Carregar arquivo JSON gerado anteriormente
-- Preview dos PDFs que serão gerados
-- Conversão automática de todos os PDFs do JSON
-- Relatório de erros e sucessos
-- ⚠️ **Importante**: Use apenas formato JSON para conversão reversa
+1. Click "Select JSON File" to load a Base64-encoded image
+2. Or manually paste Base64 string into the text area
+3. Optionally adjust quality (1-100) and enable optimization
+4. Click "Convert & Save Image"
+5. Choose the output location and format
 
-### Exemplo 2.2: Workflow Completo
+### PDF Converter
 
-```javascript
-// 1. Converter múltiplos PDFs para JSON
-// Interface: Selecione PDFs → Escolha "JSON" → Converta
-// Resultado: pdf_batch_2025-10-15.json
+The PDF Converter tab enables bidirectional PDF and Base64 conversion.
 
-// 2. JSON gerado contém:
-[
+#### Encoding (PDF to Base64)
+
+1. Click "Select PDF File"
+2. Optionally enable "Include MIME type"
+3. Click "Convert to Base64"
+4. View file information (size, name)
+5. Copy or save the Base64 output
+
+#### Decoding (Base64 to PDF)
+
+1. Paste Base64 string into the text area
+2. Click "Preview PDF" to verify the content (optional)
+3. Click "Convert & Save PDF"
+4. Select the output location
+
+### Excel/CSV Converter
+
+The Excel/CSV Converter tab supports multi-sheet Excel files and CSV conversion.
+
+#### Encoding (Excel/CSV to JSON)
+
+1. Click "Select Excel/CSV File"
+2. Select the desired sheet from the dropdown (if multiple sheets exist)
+3. View sheet information (row count, column count)
+4. Click "Convert to JSON"
+5. View the JSON output in the text area
+6. Copy or save the JSON data
+
+#### Decoding (JSON to Excel/CSV)
+
+1. Click "Select JSON File" to load structured JSON data
+2. Specify the sheet name (default: "Sheet1")
+3. Click "Convert to Excel/CSV"
+4. Choose the output location and format (.xlsx, .csv, etc.)
+
+### Batch Processing
+
+All three converters support batch processing with advanced features.
+
+#### Batch Conversion to JSON
+
+1. Navigate to the corresponding "Batch" tab
+2. Click "Select Multiple Files" (Images/PDFs/Excel files)
+3. View the list of selected files
+4. Configure options:
+   - Include MIME type prefix (Images/PDFs)
+   - Select sheet or "All Sheets" (Excel)
+   - Choose export format: JSON (recommended for reverse conversion)
+5. Select the output directory
+6. Click "Start Batch Conversion"
+7. Monitor real-time progress
+8. View the completion summary
+
+#### Batch Reverse Conversion (JSON to Files)
+
+1. In the "Batch" tab, scroll to the "Reverse Conversion" section
+2. Click "Select JSON File" (must be a JSON file generated by batch conversion)
+3. Preview the files that will be generated
+4. Select the output directory
+5. For Excel: Choose the output format (.xlsx, .csv, etc.)
+6. Click "Convert to Files"
+7. Monitor progress and view results
+
+## API Reference
+
+### ImageConverter
+
+Core module for image Base64 operations.
+
+#### Methods
+
+**`imageToBase64(filePath, includeMime, resize, quality)`**
+
+Converts an image file to Base64.
+
+- **Parameters:**
+  - `filePath` (string): Path to the image file
+  - `includeMime` (boolean): Include MIME type prefix (default: `true`)
+  - `resize` (Array|null): Optional `[width, height]` for resizing
+  - `quality` (number): Compression quality 1-100 (default: `95`)
+
+- **Returns:** `Promise<Object>`
+  ```javascript
   {
-    "filename": "documento1.pdf",
-    "base64": "JVBERi0x...",
-    "size": 102400,
-    "sizeKB": "100.00",
-    "sizeMB": "0.10"
-  },
-  {
-    "filename": "documento2.pdf",
-    "base64": "JVBERi0x...",
-    "size": 204800,
-    "sizeKB": "200.00",
-    "sizeMB": "0.20"
+    success: true,
+    data: "data:image/png;base64,iVBORw0KG...",
+    size: 524288,
+    sizeKB: "512.00",
+    sizeMB: "0.50",
+    fileName: "image.png",
+    format: "PNG",
+    width: 1920,
+    height: 1080,
+    channels: 4
   }
-]
+  ```
 
-// 3. Converter de volta para PDFs
-// Interface: Carregue o JSON → Selecione pasta de saída → Converta
-// Resultado: documento1.pdf, documento2.pdf restaurados
-```
+**`base64ToImage(base64String, outputPath, quality, optimize)`**
 
-### Exemplo 3: Imagem para Base64
+Converts Base64 string to an image file.
 
-```javascript
-import { Base64Converter } from './core/converter.js';
+- **Parameters:**
+  - `base64String` (string): Base64 encoded image data or data URL
+  - `outputPath` (string): Output file path
+  - `quality` (number): Quality for compression (default: `95`)
+  - `optimize` (boolean): Enable optimization (default: `false`)
 
-const b64 = await Base64Converter.imageToBase64('./image.png', true);
-console.log(b64);
-```
+- **Returns:** `Promise<Object>`
 
-### Exemplo 4: Base64 para Imagem
+**`batchImagesToJson(imagePaths, outputPath, includeMime)`**
 
-```javascript
-import { Base64Converter } from './core/converter.js';
+Batch converts multiple images to a structured JSON file.
 
-await Base64Converter.base64ToImage(base64String, './output.png');
-```
+- **Returns:** JSON file with structure:
+  ```json
+  {
+    "type": "image-base64-batch",
+    "created": "2025-10-16T...",
+    "totalFiles": 10,
+    "successful": 10,
+    "failed": 0,
+    "includeMimeType": true,
+    "images": [...],
+    "errors": []
+  }
+  ```
 
-### Exemplo 5: Conversão em Lote
+**`batchJsonToImages(jsonPath, outputDir)`**
 
-```javascript
-import { Base64Converter } from './core/converter.js';
-import { FileHandler } from './utils/fileHandler.js';
+Restores images from batch JSON file.
 
-const images = await FileHandler.getImageFiles('./images');
-await Base64Converter.batchImagesToBase64(images, './output', false, false);
-```
+**`exportImagesTo(imagePaths, outputPath, format, includeMime)`**
 
-### Exemplo 6: Exportar para JSON
+Exports images to TXT, CSV, or XML format.
 
-```javascript
-import { Base64Converter } from './core/converter.js';
-
-const images = ['./image1.png', './image2.jpg'];
-await Base64Converter.exportToJson(images, './output.json', true);
-```
-
-### Exemplo 7: Processar Imagem
-
-```javascript
-import { ImageProcessor } from './utils/imageProcessor.js';
-import fs from 'fs/promises';
-
-const buffer = await fs.readFile('./image.png');
-const thumbnail = await ImageProcessor.createThumbnailFromBytes(buffer, [150, 150]);
-const dominantColor = await ImageProcessor.getDominantColor(buffer);
-console.log('Dominant color:', dominantColor);
-```
-
-## 🔧 API
+- **Formats:** `'txt'`, `'csv'`, `'xml'`
 
 ### PDFConverter
 
-#### Métodos Estáticos
+Core module for PDF Base64 operations.
 
-- `pdfToBase64(filePath, includeMime)` - Converte PDF para Base64
-  - **Parâmetros**:
-    - `filePath` (string): Caminho do arquivo PDF
-    - `includeMime` (boolean): Incluir prefixo data URL (default: true)
-  - **Retorna**: Promise<Object> com { success, data, size, sizeKB, sizeMB, fileName }
+#### Methods
 
-- `base64ToPDF(base64String, outputPath)` - Converte Base64 para PDF
-  - **Parâmetros**:
-    - `base64String` (string): String Base64 ou Data URL
-    - `outputPath` (string): Caminho de saída do PDF
-  - **Retorna**: Promise<Object> com { success, path, size, sizeKB, sizeMB, fileName }
+**`pdfToBase64(filePath, includeMime)`**
 
-- `isPDF(buffer)` - Verifica se buffer é um PDF válido
-- `isValidBase64(str)` - Valida string Base64
-- `getPDFInfo(buffer)` - Obtém informações básicas do PDF
+Converts a PDF file to Base64.
 
-### Base64Converter
+- **Parameters:**
+  - `filePath` (string): Path to PDF file
+  - `includeMime` (boolean): Include MIME type prefix (default: `true`)
 
-#### Métodos Estáticos
+- **Returns:** `Promise<Object>`
+  ```javascript
+  {
+    success: true,
+    data: "data:application/pdf;base64,JVBERi0x...",
+    size: 1048576,
+    sizeKB: "1024.00",
+    sizeMB: "1.00",
+    fileName: "document.pdf"
+  }
+  ```
 
-- `decodeBase64(b64Text)` - Decodifica string Base64 para Buffer
-- `encodeToBase64(data, includeMime, mimeType)` - Codifica Buffer para Base64
-- `detectImageFormat(data)` - Detecta formato de imagem
-- `getImageInfo(data)` - Obtém informações da imagem
-- `base64ToImage(b64Text, outputPath, quality, optimize)` - Converte Base64 para imagem
-- `imageToBase64(imagePath, includeMime, resize, quality)` - Converte imagem para Base64
-- `batchImagesToBase64(imagePaths, outputDir, includeMime, singleFile)` - Conversão em lote
-- `batchBase64ToImages(base64Texts, outputDir, prefix, formatExt)` - Conversão em lote reversa
-- `exportToJson(imagePaths, outputPath, includeMime)` - Exporta para JSON
-- `exportToCsv(imagePaths, outputPath, includeMime)` - Exporta para CSV
-- `exportToXml(imagePaths, outputPath, includeMime)` - Exporta para XML
-- `exportImages(imagePaths, outputPath, formatType, includeMime, singleFile)` - Exporta para formato especificado
+**`base64ToPDF(base64String, outputPath)`**
+
+Converts Base64 string to a PDF file.
+
+**`isPDF(buffer)`**
+
+Validates if a buffer is a valid PDF (checks magic number `%PDF-`).
+
+- **Returns:** `boolean`
+
+**`isValidBase64(str)`**
+
+Validates Base64 string format.
+
+- **Returns:** `boolean`
+
+**`getPDFInfo(buffer)`**
+
+Extracts PDF metadata (version, size).
+
+### ExcelConverter
+
+Core module for Excel/CSV to JSON conversion.
+
+#### Methods
+
+**`excelToJson(filePath, sheetName)`**
+
+Converts Excel/CSV file to JSON.
+
+- **Parameters:**
+  - `filePath` (string): Path to Excel/CSV file
+  - `sheetName` (string|null): Sheet name or `null` for first sheet
+
+- **Returns:** `Promise<Object>`
+  ```javascript
+  {
+    success: true,
+    data: [{...}, {...}],
+    fileName: "data.xlsx",
+    sheetName: "Sheet1",
+    availableSheets: ["Sheet1", "Sheet2"],
+    rowCount: 150,
+    columnCount: 8,
+    totalCells: 1200,
+    size: 51200,
+    sizeKB: "50.00",
+    sizeMB: "0.05"
+  }
+  ```
+
+**`jsonToExcel(jsonData, outputPath, sheetName)`**
+
+Converts JSON array to Excel/CSV file.
+
+- **Parameters:**
+  - `jsonData` (Array): Array of objects
+  - `outputPath` (string): Output file path (.xlsx, .csv, etc.)
+  - `sheetName` (string): Name for the sheet (default: `'Sheet1'`)
+
+**`getWorkbookInfo(filePath)`**
+
+Retrieves workbook information (sheets, row counts, column counts).
+
+**`batchExcelToJson(filePaths, outputPath)`**
+
+Batch converts Excel/CSV files to structured JSON.
+
+- **Returns:** JSON file with structure:
+  ```json
+  {
+    "type": "excel-json-batch",
+    "created": "2025-10-16T...",
+    "totalFiles": 5,
+    "successful": 5,
+    "failed": 0,
+    "files": [...],
+    "errors": []
+  }
+  ```
+
+**`batchJsonToExcel(jsonPath, outputDir, format)`**
+
+Restores Excel/CSV files from batch JSON.
+
+- **Parameters:**
+  - `format` (string): Output format (`'xlsx'`, `'csv'`, `'xls'`, etc.)
+
+**`isValidExcel(buffer)`**
+
+Validates if a buffer is a valid Excel/CSV file.
+
+**`getSupportedFormats()`**
+
+Returns array of supported formats.
+
+- **Returns:** `['xlsx', 'xls', 'csv', 'xlsb', 'ods']`
 
 ### ImageProcessor
 
-#### Métodos Estáticos
+Utility module for advanced image manipulation.
 
-- `createThumbnail(imagePath, size)` - Cria thumbnail de arquivo
-- `createThumbnailFromBytes(data, size)` - Cria thumbnail de buffer
-- `optimizeImage(imagePath, maxSize, quality)` - Otimiza imagem
-- `applyFilter(imageBuffer, filterName)` - Aplica filtro
-- `adjustBrightness(imageBuffer, factor)` - Ajusta brilho
-- `adjustContrast(imageBuffer, factor)` - Ajusta contraste
-- `getDominantColor(imageBuffer)` - Obtém cor dominante
-- `rotateImage(imageBuffer, angle)` - Rotaciona imagem
-- `flipImage(imageBuffer, horizontal, vertical)` - Espelha imagem
+#### Methods
+
+- `createThumbnail(imagePath, size)` - Creates thumbnail from file
+- `createThumbnailFromBytes(data, size)` - Creates thumbnail from buffer
+- `optimizeImage(imagePath, maxSize, quality)` - Optimizes image
+- `applyFilter(imageBuffer, filterName)` - Applies filters (blur, sharpen, grayscale, negate)
+- `adjustBrightness(imageBuffer, factor)` - Adjusts brightness
+- `adjustContrast(imageBuffer, factor)` - Adjusts contrast
+- `getDominantColor(imageBuffer)` - Extracts dominant color
+- `rotateImage(imageBuffer, angle)` - Rotates image
+- `flipImage(imageBuffer, horizontal, vertical)` - Flips image
 
 ### FileHandler
 
-#### Métodos Estáticos
+Utility module for file system operations.
 
-- `isImageFile(filePath)` - Verifica se é imagem
-- `isTextFile(filePath)` - Verifica se é texto
-- `getImageFiles(directory)` - Obtém imagens de diretório
-- `validateOutputPath(filePath)` - Valida caminho de saída
-- `saveHistory(historyFile, entries)` - Salva histórico
-- `loadHistory(historyFile)` - Carrega histórico
+#### Methods
 
-## 🎨 Formatos Suportados
+- `isImageFile(filePath)` - Checks if file is a supported image
+- `isTextFile(filePath)` - Checks if file is a text file
+- `getImageFiles(directory)` - Retrieves all images from directory
+- `validateOutputPath(filePath)` - Validates and prepares output path
+- `saveHistory(historyFile, entries)` - Saves conversion history
+- `loadHistory(historyFile)` - Loads conversion history
 
-### Documentos
-- PDF (Leitura e Escrita)
+## Supported Formats
 
-### Imagens
-- PNG
-- JPEG/JPG
-- GIF
-- BMP
-- WEBP
-- TIFF
-- ICO
-- AVIF
+### Images
+- **PNG** - Portable Network Graphics
+- **JPEG/JPG** - Joint Photographic Experts Group
+- **GIF** - Graphics Interchange Format
+- **BMP** - Bitmap Image File
+- **WebP** - Web Picture Format
+- **TIFF** - Tagged Image File Format
+- **ICO** - Icon Format
+- **AVIF** - AV1 Image File Format
 
-### Exportação
-- TXT
-- JSON
-- CSV
-- XML
+### Documents
+- **PDF** - Portable Document Format
 
-## 🖥️ Interface Gráfica - Guia Rápido
+### Spreadsheets
+- **XLSX** - Excel Workbook (2007+)
+- **XLS** - Excel Workbook (97-2003)
+- **CSV** - Comma-Separated Values
+- **XLSB** - Excel Binary Workbook
+- **ODS** - OpenDocument Spreadsheet
 
-### Aba "PDF Converter"
-1. **PDF → Base64**: Selecione um PDF e converta para Base64
-2. **Base64 → PDF**: 
-   - Cole a string Base64
-   - Clique em "Preview PDF" para visualizar antes de salvar
-   - Clique em "Convert & Save PDF" para salvar o arquivo
+### Export Formats
+- **JSON** - JavaScript Object Notation (structured, supports reverse conversion)
+- **TXT** - Plain text
+- **CSV** - Comma-Separated Values
+- **XML** - Extensible Markup Language
 
-### Aba "PDF Batch"
+## Architecture
 
-#### PDFs → Base64 (Conversão Normal)
-1. Clique em "Select Multiple PDFs"
-2. Escolha o formato de exportação (recomendado: **JSON** para conversão reversa)
-3. Marque/desmarque "Include MIME type"
-4. Selecione o diretório de saída
-5. Clique em "Start PDF Batch Conversion"
-6. Acompanhe o progresso em tempo real
+### Project Structure
 
-#### Base64 → PDFs (Conversão Reversa) 🔄
-1. Clique em "Select JSON File" (use o JSON gerado na conversão normal)
-2. Visualize o preview dos PDFs que serão gerados
-3. Selecione o diretório de saída
-4. Clique em "Convert Base64 to PDFs"
-5. Todos os PDFs serão restaurados automaticamente!
+```
+Base64-Node/
+├── main.js                 # Electron main process
+├── preload.js              # Preload script (context bridge)
+├── renderer.js             # Renderer process (UI logic)
+├── index.html              # Application UI
+├── styles.css              # Application styles
+├── core/
+│   ├── converter.js        # Legacy Base64 converter (ES modules)
+│   ├── imageConverter.js   # Image converter module
+│   ├── pdfConverter.js     # PDF converter module
+│   └── excelConverter.js   # Excel/CSV converter module
+├── utils/
+│   ├── imageProcessor.js   # Image manipulation utilities
+│   └── fileHandler.js      # File system utilities
+└── assets/
+    └── icon.ico            # Application icon
+```
 
-**⚠️ Importante:** 
-- Apenas arquivos JSON são aceitos para conversão reversa
-- O JSON deve ter a estrutura: `[{ "filename": "...", "base64": "..." }]`
-- PDFs inválidos ou corrompidos serão reportados no final
+### Technology Stack
 
-### Aba "Image Batch"
-- Conversão em lote de imagens para Base64
-- Suporte para diversos formatos de imagem
-- Exportação em múltiplos formatos
+- **Electron**: Cross-platform desktop framework
+- **Node.js**: JavaScript runtime
+- **Sharp**: High-performance image processing library
+- **XLSX (SheetJS)**: Excel/CSV parsing and generation library
+- **IPC (Inter-Process Communication)**: Electron main/renderer communication
 
-## ⚡ Performance Tips
+### Design Patterns
 
-1. Use Sharp para processamento de imagem (já incluído)
-2. Processe em lote quando possível
-3. Use async/await para operações I/O
-4. Otimize imagens antes de converter para Base64
+- **Modular architecture**: Separate converters for each file type
+- **Error handling**: Custom error classes with descriptive messages
+- **Context isolation**: Secure renderer process with context bridge
+- **Promise-based APIs**: Async/await for all I/O operations
+- **Validation layers**: Input validation at multiple levels
+- **Batch processing**: Incremental processing with progress tracking
 
-## 📝 Licença
+## Performance
 
-MIT
+### Benchmark Comparison
 
-## 👨‍💻 Autor
+The Node.js implementation provides significant performance improvements over equivalent Python implementations:
 
-MatheusANBS
+- **Python**: ~7 seconds for 100M iterations
+- **Node.js**: ~0.2 seconds for 100M iterations
+- **Speedup**: ~35x faster
 
----
+### Optimization Features
 
-**Nota**: Esta é uma versão de alta performance do conversor Base64 original em Python, reescrita em Node.js para máxima velocidade de processamento.
+- **Sharp library**: Hardware-accelerated image processing
+- **Asynchronous I/O**: Non-blocking file operations
+- **Streaming**: Memory-efficient processing for large files
+- **Buffer management**: Optimized Base64 encoding/decoding
+- **Incremental batch processing**: Real-time progress without blocking
+
+## Building
+
+### Build for Distribution
+
+```bash
+# Build for Windows
+npm run build:win
+
+# Build for Windows (full installer)
+npm run build:win-full
+
+# Build for macOS
+npm run build:mac
+
+# Build for Linux
+npm run build:linux
+
+# Create portable version
+npm run package
+```
+
+### Build Configuration
+
+The application uses `electron-builder` for packaging. Configuration is defined in `package.json`:
+
+```json
+{
+  "build": {
+    "appId": "com.matheusanbs.base64converter",
+    "productName": "Base64 Converter",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "main.js",
+      "preload.js",
+      "renderer.js",
+      "styles.css",
+      "index.html",
+      "assets/**/*",
+      "core/**/*",
+      "utils/**/*",
+      "node_modules/**/*"
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "assets/icon.ico"
+    }
+  }
+}
+```
+
+## Error Handling
+
+All converters implement custom error classes:
+
+- **`ImageConversionError`**: Image-specific errors
+- **`PDFConversionError`**: PDF-specific errors
+- **`ExcelConversionError`**: Excel/CSV-specific errors
+- **`ConversionError`**: General conversion errors (legacy converter)
+
+Each error includes:
+- Descriptive error messages
+- Error propagation from underlying libraries
+- Success/failure indicators in return objects
+
+## Security
+
+- **Context isolation**: Renderer process is isolated from Node.js
+- **Context bridge**: Only exposed APIs are accessible
+- **Input validation**: All inputs are validated before processing
+- **Path sanitization**: File paths are validated and sanitized
+- **Magic number verification**: File type verification beyond extensions
+
+## Contributing
+
+Contributions are welcome. Please ensure:
+
+1. Code follows existing patterns
+2. Error handling is comprehensive
+3. Documentation is updated
+4. Testing is performed on all platforms
+
+## License
+
+MIT License
+
+Copyright (c) 2025 MatheusANBS
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+## Author
+
+**MatheusANBS**
+
+- GitHub: [@MatheusANBS](https://github.com/MatheusANBS)
+- Repository: [Base64-Node](https://github.com/MatheusANBS/Base64-Node)
+
+## Acknowledgments
+
+- **Sharp**: High-performance Node.js image processing library
+- **SheetJS (XLSX)**: Excel and spreadsheet parsing library
+- **Electron**: Framework for building cross-platform desktop applications
