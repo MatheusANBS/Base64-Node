@@ -1449,3 +1449,243 @@ document.getElementById('excel-batch-reverse-btn').addEventListener('click', asy
         progressContainer.style.display = 'none';
     }
 });
+
+// ============================================
+// AI PDF SEARCH MODULE
+// ============================================
+
+let aiSearchPDFPath = null;
+let aiSearchPDFText = null;
+let searchHistory = [];
+
+// Initialize OpenAI
+document.getElementById('init-openai-btn').addEventListener('click', async () => {
+    const apiKey = document.getElementById('openai-api-key').value.trim();
+    const statusIndicator = document.getElementById('openai-status');
+    
+    if (!apiKey) {
+        await electronAPI.showMessage('error', 'API Key Required', 'Please enter your OpenAI API key.');
+        return;
+    }
+    
+    try {
+        const result = await electronAPI.initOpenAI(apiKey);
+        
+        if (result.success) {
+            statusIndicator.textContent = '✓ Connected';
+            statusIndicator.className = 'status-indicator connected';
+            await electronAPI.showMessage('info', 'Success', 'OpenAI initialized successfully!');
+            
+            // Enable search functionality
+            updateSearchButtonState();
+        } else {
+            statusIndicator.textContent = '✗ Failed';
+            statusIndicator.className = 'status-indicator disconnected';
+            await electronAPI.showMessage('error', 'Initialization Failed', result.error);
+        }
+    } catch (error) {
+        statusIndicator.textContent = '✗ Error';
+        statusIndicator.className = 'status-indicator disconnected';
+        await electronAPI.showMessage('error', 'Error', 'Failed to initialize OpenAI: ' + error.message);
+    }
+});
+
+// Select PDF for search
+document.getElementById('select-pdf-search-btn').addEventListener('click', async () => {
+    const filePath = await electronAPI.selectPDFFile();
+    
+    if (filePath) {
+        aiSearchPDFPath = filePath;
+        const fileName = filePath.split(/[\\/]/).pop();
+        document.getElementById('selected-pdf-search-name').textContent = fileName;
+        
+        // Extract text from PDF
+        try {
+            const result = await electronAPI.extractPDFText(filePath);
+            
+            if (result.success) {
+                aiSearchPDFText = result.text;
+                
+                // Display PDF info
+                const infoContainer = document.getElementById('pdf-search-info');
+                const detailsDiv = document.getElementById('pdf-search-details');
+                
+                detailsDiv.innerHTML = `
+                    <div><strong>File:</strong> ${result.fileName}</div>
+                    <div><strong>Pages:</strong> ${result.numPages}</div>
+                    <div><strong>Words:</strong> ${result.wordCount.toLocaleString()}</div>
+                    <div><strong>Characters:</strong> ${result.textLength.toLocaleString()}</div>
+                `;
+                
+                infoContainer.style.display = 'block';
+                
+                // Enable search button if OpenAI is initialized
+                updateSearchButtonState();
+            } else {
+                await electronAPI.showMessage('error', 'Extraction Failed', result.error);
+            }
+        } catch (error) {
+            await electronAPI.showMessage('error', 'Error', 'Failed to extract text from PDF: ' + error.message);
+        }
+    }
+});
+
+// Update search button state
+function updateSearchButtonState() {
+    const searchBtn = document.getElementById('search-pdf-btn');
+    const question = document.getElementById('ai-question-input').value.trim();
+    
+    electronAPI.isOpenAIInitialized().then(result => {
+        searchBtn.disabled = !(result.initialized && aiSearchPDFPath && question);
+    });
+}
+
+// Listen to question input
+document.getElementById('ai-question-input').addEventListener('input', updateSearchButtonState);
+
+// Search PDF with AI
+document.getElementById('search-pdf-btn').addEventListener('click', async () => {
+    const question = document.getElementById('ai-question-input').value.trim();
+    const model = document.getElementById('ai-model-select').value;
+    const maxTokens = parseInt(document.getElementById('ai-max-tokens').value);
+    
+    if (!question) {
+        await electronAPI.showMessage('error', 'Question Required', 'Please enter a question.');
+        return;
+    }
+    
+    if (!aiSearchPDFPath || !aiSearchPDFText) {
+        await electronAPI.showMessage('error', 'PDF Required', 'Please select a PDF file first.');
+        return;
+    }
+    
+    const loadingIndicator = document.getElementById('ai-search-loading');
+    const resultContainer = document.getElementById('ai-search-result');
+    
+    try {
+        // Show loading
+        loadingIndicator.style.display = 'block';
+        resultContainer.style.display = 'none';
+        
+        const options = {
+            model: model,
+            maxTokens: maxTokens,
+            temperature: 0.7
+        };
+        
+        const result = await electronAPI.extractAndSearchPDF(aiSearchPDFPath, question, options);
+        
+        // Hide loading
+        loadingIndicator.style.display = 'none';
+        
+        if (result.success) {
+            // Display answer
+            const answerContent = document.getElementById('ai-answer-content');
+            const metaInfo = document.getElementById('ai-meta-info');
+            
+            answerContent.textContent = result.answer;
+            
+            metaInfo.innerHTML = `
+                <span><strong>Model:</strong> ${result.model}</span>
+                <span><strong>Tokens Used:</strong> ${result.usage.totalTokens}</span>
+                <span><strong>PDF:</strong> ${result.pdfInfo.fileName}</span>
+                <span><strong>Pages:</strong> ${result.pdfInfo.numPages}</span>
+                ${result.textTruncated ? '<span style="color: orange;"><strong>⚠️ Text was truncated</strong></span>' : ''}
+            `;
+            
+            resultContainer.style.display = 'block';
+            
+            // Add to history
+            addToSearchHistory({
+                question: question,
+                answer: result.answer,
+                fileName: result.pdfInfo.fileName,
+                model: result.model,
+                timestamp: new Date().toLocaleString(),
+                tokens: result.usage.totalTokens
+            });
+        } else {
+            await electronAPI.showMessage('error', 'Search Failed', result.error);
+        }
+    } catch (error) {
+        loadingIndicator.style.display = 'none';
+        await electronAPI.showMessage('error', 'Error', 'Failed to search PDF: ' + error.message);
+    }
+});
+
+// Copy AI answer
+document.getElementById('copy-ai-answer-btn').addEventListener('click', async () => {
+    const answer = document.getElementById('ai-answer-content').textContent;
+    
+    try {
+        await navigator.clipboard.writeText(answer);
+        const btn = document.getElementById('copy-ai-answer-btn');
+        const originalText = btn.textContent;
+        btn.textContent = '✓ Copied!';
+        setTimeout(() => {
+            btn.textContent = originalText;
+        }, 2000);
+    } catch (error) {
+        await electronAPI.showMessage('error', 'Copy Failed', 'Failed to copy answer to clipboard.');
+    }
+});
+
+// Add to search history
+function addToSearchHistory(item) {
+    searchHistory.unshift(item); // Add to beginning
+    
+    // Limit history to 20 items
+    if (searchHistory.length > 20) {
+        searchHistory = searchHistory.slice(0, 20);
+    }
+    
+    renderSearchHistory();
+}
+
+// Render search history
+function renderSearchHistory() {
+    const historyContainer = document.getElementById('search-history-container');
+    
+    if (searchHistory.length === 0) {
+        historyContainer.innerHTML = '<p class="placeholder-text">No search history yet</p>';
+        return;
+    }
+    
+    historyContainer.innerHTML = searchHistory.map((item, index) => `
+        <div class="history-item">
+            <div class="history-item-header">
+                <span><strong>#${searchHistory.length - index}</strong></span>
+                <span>${item.timestamp}</span>
+            </div>
+            <div class="history-item-question">
+                <strong>Q:</strong> ${escapeHtml(item.question)}
+            </div>
+            <div class="history-item-answer">
+                <strong>A:</strong> ${escapeHtml(item.answer.substring(0, 200))}${item.answer.length > 200 ? '...' : ''}
+            </div>
+            <div class="history-item-meta">
+                <span>📄 ${escapeHtml(item.fileName)}</span>
+                <span>🤖 ${item.model}</span>
+                <span>🎫 ${item.tokens} tokens</span>
+            </div>
+        </div>
+    `).join('');
+}
+
+// Clear search history
+document.getElementById('clear-search-history-btn').addEventListener('click', async () => {
+    if (searchHistory.length === 0) {
+        return;
+    }
+    
+    searchHistory = [];
+    renderSearchHistory();
+    await electronAPI.showMessage('info', 'History Cleared', 'Search history has been cleared.');
+});
+
+// Helper function to escape HTML
+function escapeHtml(text) {
+    const div = document.createElement('div');
+    div.textContent = text;
+    return div.innerHTML;
+}

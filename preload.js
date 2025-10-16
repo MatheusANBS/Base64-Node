@@ -43,6 +43,14 @@ contextBridge.exposeInMainWorld('electronAPI', {
     batchExcelToJson: (filePaths, outputPath) => ipcRenderer.invoke('batch-excel-to-json', filePaths, outputPath),
     batchJsonToExcel: (jsonData, outputDir, format) => ipcRenderer.invoke('batch-json-to-excel', jsonData, outputDir, format),
     
+    // PDF AI Search operations
+    initOpenAI: (apiKey) => ipcRenderer.invoke('init-openai', apiKey),
+    isOpenAIInitialized: () => ipcRenderer.invoke('is-openai-initialized'),
+    extractPDFText: (filePath) => ipcRenderer.invoke('extract-pdf-text', filePath),
+    searchPDFWithAI: (pdfText, question, options) => ipcRenderer.invoke('search-pdf-ai', pdfText, question, options),
+    extractAndSearchPDF: (filePath, question, options) => ipcRenderer.invoke('extract-and-search-pdf', filePath, question, options),
+    clearPDFCache: () => ipcRenderer.invoke('clear-pdf-cache'),
+    
     // Dialogs
     showMessage: (type, title, message) => ipcRenderer.invoke('show-message', type, title, message)
 });

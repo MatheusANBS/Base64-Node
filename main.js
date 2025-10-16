@@ -9,6 +9,7 @@ const fs = require('fs').promises;
 const PDFConverter = require('./core/pdfConverter');
 const { ImageConverter } = require('./core/imageConverter');
 const { ExcelConverter } = require('./core/excelConverter');
+const PDFSearcher = require('./core/pdfSearcher');
 
 let mainWindow;
 
@@ -406,6 +407,63 @@ ipcMain.handle('batch-json-to-excel', async (event, jsonData, outputDir, format)
         }
         
         return result;
+    } catch (error) {
+        return { success: false, error: error.message };
+    }
+});
+
+// ============ PDF AI SEARCH IPC HANDLERS ============
+
+// Initialize OpenAI with API key
+ipcMain.handle('init-openai', async (event, apiKey) => {
+    try {
+        PDFSearcher.initializeOpenAI(apiKey);
+        return { success: true, message: 'OpenAI initialized successfully' };
+    } catch (error) {
+        return { success: false, error: error.message };
+    }
+});
+
+// Check if OpenAI is initialized
+ipcMain.handle('is-openai-initialized', async () => {
+    return { initialized: PDFSearcher.isOpenAIInitialized() };
+});
+
+// Extract text from PDF
+ipcMain.handle('extract-pdf-text', async (event, filePath) => {
+    try {
+        const result = await PDFSearcher.extractTextFromPDF(filePath);
+        return result;
+    } catch (error) {
+        return { success: false, error: error.message };
+    }
+});
+
+// Search PDF with AI
+ipcMain.handle('search-pdf-ai', async (event, pdfText, question, options) => {
+    try {
+        const result = await PDFSearcher.searchWithAI(pdfText, question, options);
+        return result;
+    } catch (error) {
+        return { success: false, error: error.message };
+    }
+});
+
+// Extract and search in one call
+ipcMain.handle('extract-and-search-pdf', async (event, filePath, question, options) => {
+    try {
+        const result = await PDFSearcher.extractAndSearch(filePath, question, options);
+        return result;
+    } catch (error) {
+        return { success: false, error: error.message };
+    }
+});
+
+// Clear PDF cache
+ipcMain.handle('clear-pdf-cache', async () => {
+    try {
+        PDFSearcher.clearCache();
+        return { success: true, message: 'Cache cleared' };
     } catch (error) {
         return { success: false, error: error.message };
     }

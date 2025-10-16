@@ -19,6 +19,7 @@
             <button class="tab-btn active" data-tab="image">🖼️ Image Converter</button>
             <button class="tab-btn" data-tab="pdf">📄 PDF Converter</button>
             <button class="tab-btn" data-tab="excel">📊 Excel Converter</button>
+            <button class="tab-btn" data-tab="pdf-ai-search">🤖 AI PDF Search</button>
             <button class="tab-btn" data-tab="pdf-batch">📄 PDF Batch</button>
             <button class="tab-btn" data-tab="image-batch">🖼️ Image Batch</button>
             <button class="tab-btn" data-tab="excel-batch">📊 Excel Batch</button>
@@ -554,6 +555,107 @@
                     </div>
 
                     <div class="info-text" id="excel-batch-reverse-info"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- AI PDF Search Tab -->
+        <div class="tab-content" id="pdf-ai-search-tab">
+            <div class="section">
+                <h2>🤖 AI-Powered PDF Search</h2>
+                <p class="description">Upload a PDF and ask questions about its content. The AI will answer based on the document.</p>
+                
+                <!-- OpenAI Configuration -->
+                <div class="subsection">
+                    <h3>⚙️ OpenAI Configuration</h3>
+                    
+                    <div class="input-group">
+                        <label for="openai-api-key">OpenAI API Key:</label>
+                        <input type="password" id="openai-api-key" placeholder="sk-..." class="api-key-input">
+                        <button id="init-openai-btn" class="btn btn-primary">🔑 Initialize</button>
+                        <span id="openai-status" class="status-indicator">Not initialized</span>
+                    </div>
+                    
+                    <div class="info-text">
+                        <small>ℹ️ Your API key is stored locally in this session only. Get one at <a href="#" onclick="require('electron').shell.openExternal('https://platform.openai.com/api-keys'); return false;">OpenAI Platform</a></small>
+                    </div>
+                </div>
+
+                <hr class="section-divider">
+
+                <!-- PDF Upload and Search -->
+                <div class="subsection">
+                    <h3>📄 Upload PDF & Ask Questions</h3>
+                    
+                    <div class="input-group">
+                        <button id="select-pdf-search-btn" class="btn btn-primary">
+                            📂 Select PDF File
+                        </button>
+                        <span id="selected-pdf-search-name" class="file-name">No file selected</span>
+                    </div>
+
+                    <div class="pdf-info-container" id="pdf-search-info" style="display: none;">
+                        <h4>📊 PDF Information:</h4>
+                        <div id="pdf-search-details"></div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="ai-question-input">Your Question:</label>
+                        <textarea id="ai-question-input" rows="3" placeholder="Ask something about the PDF content... (e.g., 'What is the main topic of this document?', 'Summarize the key points')"></textarea>
+                    </div>
+
+                    <div class="options">
+                        <label>
+                            Model:
+                            <select id="ai-model-select">
+                                <option value="gpt-3.5-turbo" selected>GPT-3.5 Turbo (Fast)</option>
+                                <option value="gpt-4">GPT-4 (Better quality)</option>
+                                <option value="gpt-4-turbo">GPT-4 Turbo</option>
+                            </select>
+                        </label>
+                        <label>
+                            Max Response Length:
+                            <select id="ai-max-tokens">
+                                <option value="300">Short (300 tokens)</option>
+                                <option value="500" selected>Medium (500 tokens)</option>
+                                <option value="1000">Long (1000 tokens)</option>
+                                <option value="2000">Very Long (2000 tokens)</option>
+                            </select>
+                        </label>
+                    </div>
+
+                    <button id="search-pdf-btn" class="btn btn-success" disabled>
+                        🔍 Search with AI
+                    </button>
+
+                    <div class="loading-indicator" id="ai-search-loading" style="display: none;">
+                        <div class="spinner"></div>
+                        <p>Analyzing PDF and generating answer...</p>
+                    </div>
+
+                    <div class="result-container" id="ai-search-result" style="display: none;">
+                        <div class="result-header">
+                            <h3>💡 AI Answer</h3>
+                            <div class="result-actions">
+                                <button id="copy-ai-answer-btn" class="btn btn-small">📋 Copy</button>
+                            </div>
+                        </div>
+                        <div class="ai-answer-box" id="ai-answer-content"></div>
+                        <div class="ai-meta-info" id="ai-meta-info"></div>
+                    </div>
+                </div>
+
+                <hr class="section-divider">
+
+                <!-- Search History -->
+                <div class="subsection">
+                    <h3>📜 Search History</h3>
+                    <div class="button-group">
+                        <button id="clear-search-history-btn" class="btn btn-secondary">🗑️ Clear History</button>
+                    </div>
+                    <div id="search-history-container" class="history-container">
+                        <p class="placeholder-text">No search history yet</p>
+                    </div>
                 </div>
             </div>
         </div>
