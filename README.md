@@ -1,23 +1,76 @@
+[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-blue)]()
+[![Languages](https://img.shields.io/badge/languages-JavaScript%2C%20HTML%2C%20CSS-brightgreen)]()
+
+> ⚠️ Este README está em inglês. Para português, veja [README.pt-BR.md](README.pt-BR.md)
+
 # Base64 Converter
 
 A high-performance desktop application for Base64 encoding and decoding, built with Electron and Node.js. This application provides comprehensive conversion capabilities for images, PDFs, and Excel/CSV files with both single-file and batch processing features.
+
+## Demo
+
+![Base64 Converter Screenshot](assets/screenshot.png)
+*Add an actual screenshot to `assets/screenshot.png` to show your app UI here!*
 
 ## Table of Contents
 
 - [Overview](#overview)
 - [Features](#features)
+  - [Core Capabilities](#core-capabilities)
+  - [Batch Processing Features](#batch-processing-features)
 - [Installation](#installation)
+  - [Prerequisites](#prerequisites)
+  - [Steps](#steps)
+  - [Development Mode](#development-mode)
 - [Usage](#usage)
   - [Image Converter](#image-converter)
+    - [Encoding (Image to Base64)](#encoding-image-to-base64)
+    - [Decoding (Base64 to Image)](#decoding-base64-to-image)
   - [PDF Converter](#pdf-converter)
+    - [Encoding (PDF to Base64)](#encoding-pdf-to-base64)
+    - [Decoding (Base64 to PDF)](#decoding-base64-to-pdf)
   - [Excel/CSV Converter](#excelcsv-converter)
+    - [Encoding (Excel/CSV to JSON)](#encoding-excelcsv-to-json)
+    - [Decoding (JSON to Excel/CSV)](#decoding-json-to-excelcsv)
   - [Batch Processing](#batch-processing)
+    - [Batch Conversion to JSON](#batch-conversion-to-json)
+    - [Batch Reverse Conversion (JSON to Files)](#batch-reverse-conversion-json-to-files)
 - [API Reference](#api-reference)
+  - [ImageConverter](#imageconverter)
+    - [Methods](#methods-imageconverter)
+  - [PDFConverter](#pdfconverter)
+    - [Methods](#methods-pdfconverter)
+  - [ExcelConverter](#excelconverter)
+    - [Methods](#methods-excelconverter)
+  - [ImageProcessor](#imageprocessor)
+    - [Methods](#methods-imageprocessor)
+  - [FileHandler](#filehandler)
+    - [Methods](#methods-filehandler)
 - [Supported Formats](#supported-formats)
+  - [Images](#images)
+  - [Documents](#documents)
+  - [Spreadsheets](#spreadsheets)
+  - [Export Formats](#export-formats)
 - [Architecture](#architecture)
+  - [Project Structure](#project-structure)
+  - [Technology Stack](#technology-stack)
+  - [Design Patterns](#design-patterns)
 - [Performance](#performance)
+  - [Benchmark Comparison](#benchmark-comparison)
+  - [Optimization Features](#optimization-features)
 - [Building](#building)
+  - [Build for Distribution](#build-for-distribution)
+  - [Build Configuration](#build-configuration)
+- [Error Handling](#error-handling)
+- [Security](#security)
+- [FAQ / Troubleshooting](#faq--troubleshooting)
+- [Downloads](#downloads)
+- [Testing](#testing)
+- [Contributing](#contributing)
 - [License](#license)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
@@ -554,7 +607,9 @@ The application uses `electron-builder` for packaging. Configuration is defined 
     ],
     "win": {
       "target": "nsis",
-      "icon": "assets/icon.ico"
+      "icon": "assets/icon.ico",
+      "sign": null,
+      "verifyUpdateCodeSignature": false
     }
   }
 }
@@ -581,6 +636,38 @@ Each error includes:
 - **Input validation**: All inputs are validated before processing
 - **Path sanitization**: File paths are validated and sanitized
 - **Magic number verification**: File type verification beyond extensions
+
+## FAQ / Troubleshooting
+
+**P:** O aplicativo não inicia no Linux.  
+**R:** Certifique-se de que as dependências do Electron estão instaladas. Tente executar `npm install` novamente e use o Node.js v14 ou superior.
+
+**P:** Erro ao instalar as dependências.  
+**R:** Use o Node.js v14 ou mais recente. Exclua a pasta `node_modules` e execute `npm install` na raiz do projeto.
+
+**P:** Não consigo abrir arquivos PDF/imagem/excel.  
+**R:** Certifique-se de que os arquivos não estão corrompidos e são formatos suportados (veja [Formatos Suportados](#formatos-suportados)).
+
+**P:** Arrastar e soltar não funciona.  
+**R:** Atualmente, a seleção de arquivos é feita por meio de botões. O suporte a arrastar e soltar está planejado para atualizações futuras.
+
+**P:** Onde posso encontrar os arquivos gerados?  
+**R:** No diretório ou caminho de arquivo escolhido durante a caixa de diálogo de conversão.
+
+**P:** A interface está em inglês, posso usar em português?  
+**R:** Um README e uma UI traduzidos estão planejados. Contribuições são bem-vindas!
+
+## Downloads
+
+You can download the latest releases (Windows, macOS, Linux) from the [Releases](https://github.com/MatheusANBS/Base64-Node/releases) page.
+
+## Testing
+
+*Automated tests are recommended for the core modules. If you add tests with Jest, Mocha, or another framework, document how to run them here.*
+
+```bash
+npm test
+```
 
 ## Contributing
 
