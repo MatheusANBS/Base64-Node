@@ -16,10 +16,12 @@
 
         <!-- Tab Navigation -->
         <div class="tabs">
-            <button class="tab-btn active" data-tab="image">📄 Image Converter</button>
+            <button class="tab-btn active" data-tab="image">🖼️ Image Converter</button>
             <button class="tab-btn" data-tab="pdf">📄 PDF Converter</button>
-            <button class="tab-btn" data-tab="pdf-batch">📦 PDF Batch</button>
-            <button class="tab-btn" data-tab="image-batch">📦 Image Batch</button>
+            <button class="tab-btn" data-tab="excel">📊 Excel Converter</button>
+            <button class="tab-btn" data-tab="pdf-batch">📄 PDF Batch</button>
+            <button class="tab-btn" data-tab="image-batch">🖼️ Image Batch</button>
+            <button class="tab-btn" data-tab="excel-batch">📊 Excel Batch</button>
         </div>
 
         <!-- Image Tab (Unified Encode/Decode) -->
@@ -178,6 +180,85 @@
                     </div>
 
                     <div class="info-text" id="pdf-decode-info"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Excel Tab -->
+        <div class="tab-content" id="excel-tab">
+            <div class="section">
+                <h2>Excel/CSV ⇄ JSON Converter</h2>
+                
+                <!-- Excel/CSV to JSON -->
+                <div class="subsection">
+                    <h3>📊 Excel/CSV to JSON</h3>
+                    
+                    <div class="input-group">
+                        <button id="select-excel-encode-btn" class="btn btn-primary">
+                            📂 Select Excel/CSV File
+                        </button>
+                        <span id="selected-excel-name" class="file-name">No file selected</span>
+                    </div>
+
+                    <div id="excel-sheets-container" style="display: none;">
+                        <label>
+                            Select Sheet:
+                            <select id="excel-sheet-select">
+                                <option value="">Loading...</option>
+                            </select>
+                        </label>
+                    </div>
+
+                    <button id="excel-encode-btn" class="btn btn-success" disabled>
+                        ✨ Convert to JSON
+                    </button>
+
+                    <div class="result-container" id="excel-encode-result">
+                        <div class="result-header">
+                            <h3>JSON Result</h3>
+                            <div class="result-actions">
+                                <button id="copy-excel-json-btn" class="btn btn-small">📋 Copy</button>
+                                <button id="save-excel-json-btn" class="btn btn-small">💾 Save</button>
+                            </div>
+                        </div>
+                        <textarea id="excel-json-output" readonly placeholder="JSON result will appear here..."></textarea>
+                        <div class="info-text" id="excel-encode-info"></div>
+                    </div>
+                </div>
+
+                <hr class="section-divider">
+
+                <!-- JSON to Excel/CSV -->
+                <div class="subsection">
+                    <h3>📥 JSON to Excel/CSV</h3>
+                    
+                    <div class="input-group">
+                        <button id="select-json-decode-btn" class="btn btn-primary">
+                            📂 Select JSON File
+                        </button>
+                        <span id="selected-json-decode-name" class="file-name">No file selected</span>
+                    </div>
+
+                    <div class="options">
+                        <label>
+                            Output Format:
+                            <select id="excel-output-format">
+                                <option value="xlsx">Excel (.xlsx)</option>
+                                <option value="csv">CSV (.csv)</option>
+                                <option value="xls">Excel 97-2003 (.xls)</option>
+                            </select>
+                        </label>
+                        <label>
+                            Sheet Name:
+                            <input type="text" id="excel-sheet-name" placeholder="Sheet1" value="Sheet1">
+                        </label>
+                    </div>
+
+                    <button id="excel-decode-btn" class="btn btn-success" disabled>
+                        📊 Convert & Save
+                    </button>
+
+                    <div class="info-text" id="excel-decode-info"></div>
                 </div>
             </div>
         </div>
@@ -378,6 +459,101 @@
                     </div>
 
                     <div class="info-text" id="image-batch-reverse-info"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Excel Batch Tab -->
+        <div class="tab-content" id="excel-batch-tab">
+            <div class="section">
+                <h2>Excel/CSV Batch Conversion</h2>
+                
+                <!-- Excel/CSV to JSON Batch -->
+                <div class="subsection">
+                    <h3>📤 Excel/CSV to JSON (Batch)</h3>
+                    
+                    <div class="input-group">
+                        <button id="select-multiple-excel-btn" class="btn btn-primary">
+                            📂 Select Multiple Files
+                        </button>
+                        <span id="selected-excel-count">0 files selected</span>
+                    </div>
+
+                    <div class="batch-list" id="excel-batch-list">
+                        <p class="placeholder-text">Selected Excel/CSV files will appear here</p>
+                    </div>
+
+                    <div class="input-group">
+                        <button id="select-excel-output-dir-btn" class="btn btn-secondary">
+                            📁 Select Output Directory
+                        </button>
+                        <span id="excel-output-dir-name">No directory selected</span>
+                    </div>
+
+                    <button id="excel-batch-convert-btn" class="btn btn-success" disabled>
+                        ⚡ Start Batch Conversion to JSON
+                    </button>
+
+                    <div class="progress-container" id="excel-batch-progress" style="display: none;">
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="excel-progress-fill"></div>
+                        </div>
+                        <div class="progress-text" id="excel-progress-text">Processing...</div>
+                    </div>
+
+                    <div class="info-text" id="excel-batch-info"></div>
+                </div>
+
+                <hr class="section-divider">
+
+                <!-- JSON to Excel/CSV Batch (Reverse) -->
+                <div class="subsection">
+                    <h3>📥 JSON to Excel/CSV (Batch Reverse)</h3>
+                    <p class="help-text">⚠️ Use JSON format only. Load a JSON file generated from the batch conversion above.</p>
+                    
+                    <div class="input-group">
+                        <button id="select-excel-json-file-btn" class="btn btn-primary">
+                            📂 Select JSON File
+                        </button>
+                        <span id="selected-excel-json-name" class="file-name">No file selected</span>
+                    </div>
+
+                    <div id="excel-json-preview" class="json-preview" style="display: none;">
+                        <h4>JSON Preview</h4>
+                        <div id="excel-json-items-count" class="info-badge">0 files found</div>
+                        <div id="excel-json-items-list" class="batch-list"></div>
+                    </div>
+
+                    <div class="options">
+                        <label>
+                            Output Format:
+                            <select id="excel-reverse-format">
+                                <option value="xlsx">Excel (.xlsx)</option>
+                                <option value="csv">CSV (.csv)</option>
+                                <option value="xls">Excel 97-2003 (.xls)</option>
+                            </select>
+                        </label>
+                    </div>
+
+                    <div class="input-group">
+                        <button id="select-excel-reverse-output-dir-btn" class="btn btn-secondary">
+                            📁 Select Output Directory
+                        </button>
+                        <span id="excel-reverse-output-dir-name">No directory selected</span>
+                    </div>
+
+                    <button id="excel-batch-reverse-btn" class="btn btn-success" disabled>
+                        🔄 Convert JSON to Excel/CSV
+                    </button>
+
+                    <div class="progress-container" id="excel-reverse-progress" style="display: none;">
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="excel-reverse-progress-fill"></div>
+                        </div>
+                        <div class="progress-text" id="excel-reverse-progress-text">Processing...</div>
+                    </div>
+
+                    <div class="info-text" id="excel-batch-reverse-info"></div>
                 </div>
             </div>
         </div>

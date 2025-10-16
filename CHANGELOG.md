@@ -1,5 +1,113 @@
 # Changelog
 
+## [1.4.0] - 2025-10-16
+
+### 📊 Conversor de Excel e CSV
+
+#### Excel Converter Unificado 📑
+- ✅ **Interface unificada**: Encode e Decode na mesma aba
+- ✅ Seção "📤 Excel/CSV to JSON" (encode)
+  - Seleção de arquivos Excel/CSV
+  - Seletor de planilhas (sheets) com informações de linhas
+  - Preview das informações da planilha
+  - Conversão com validação automática
+- ✅ Seção "📥 JSON to Excel/CSV" (decode)
+  - Seleção de arquivo JSON via file picker
+  - Conversão de JSON estruturado para Excel
+  - Validação de estrutura JSON
+  - Geração automática de arquivo Excel
+- ✅ Suporte a múltiplos formatos: .xlsx, .xls, .csv, .xlsb, .ods
+- ✅ Informações detalhadas: nome da planilha, total de linhas
+- ✅ Feedback visual em tempo real
+
+#### Novo Backend ExcelConverter
+- ✅ Criado `core/excelConverter.js` usando biblioteca xlsx (SheetJS)
+- ✅ Método `excelToJson()`: Conversão completa de Excel/CSV para JSON
+- ✅ Método `jsonToExcel()`: Decodificação de JSON para Excel
+- ✅ Método `getWorkbookInfo()`: Extração de informações das planilhas
+- ✅ Método `batchExcelToJson()`: Batch para JSON estruturado
+- ✅ Método `batchJsonToExcel()`: Conversão reversa de JSON
+- ✅ Validação automática de formatos Excel
+- ✅ Suporte a múltiplas planilhas (sheets)
+- ✅ Tratamento robusto de erros
+
+#### Excel Batch Converter 📦
+- ✅ **Barra de progresso arquivo por arquivo**
+- ✅ Progresso em tempo real: "Processing X/Y (Z%)"
+- ✅ Exportação para JSON estruturado (tipo: `excel-base64-batch`)
+- ✅ Seleção de planilha específica ou todas
+- ✅ Metadados completos por arquivo: nome da planilha, linhas, caminho original
+- ✅ Contador de arquivos selecionados
+- ✅ Lista visual de arquivos com ícones
+- ✅ Relatório de sucessos e falhas
+
+#### Excel Batch Reverse Converter 🔄
+- ✅ **Conversão reversa em lote**: JSON → Excel
+- ✅ Carregamento e validação de arquivos JSON
+- ✅ Validação de estrutura JSON (tipo: `excel-base64-batch`)
+- ✅ Preview dos arquivos que serão gerados
+- ✅ Contador de planilhas encontradas no JSON
+- ✅ **Barra de progresso arquivo por arquivo**
+- ✅ Progresso em tempo real: "Converting X/Y (Z%) - Y successful"
+- ✅ Conversão automática de todos os arquivos Excel
+- ✅ Geração de arquivos .xlsx
+- ✅ Relatório detalhado de sucessos e erros
+- ✅ Tratamento de erros individualizado por arquivo
+- ✅ Lista visual com informações de linhas
+
+#### Novos IPC Handlers
+- ✅ `select-excel-file`: Seleção de arquivo Excel/CSV único
+- ✅ `select-excel-files`: Seleção múltipla de arquivos Excel/CSV
+- ✅ `excel-to-json`: Conversão de Excel para JSON
+- ✅ `json-to-excel`: Conversão de JSON para Excel
+- ✅ `get-workbook-info`: Extração de informações das planilhas
+- ✅ `batch-excel-to-json`: Batch para JSON
+- ✅ `batch-json-to-excel`: Conversão reversa de JSON
+
+#### Interface Consistente
+- ✅ **Mesma estrutura** dos conversores de PDF e Imagens
+- ✅ Conversão unificada na mesma página
+- ✅ Batch com conversão reversa via JSON
+- ✅ Barras de progresso idênticas
+- ✅ Mensagens de feedback padronizadas
+- ✅ Validações e tratamento de erros consistentes
+
+### 🛠️ Melhorias Técnicas
+- ✅ Biblioteca xlsx (SheetJS) v0.18.x integrada
+- ✅ Código modular e reutilizável
+- ✅ Validação de JSON estruturado aprimorada
+- ✅ Processamento assíncrono otimizado
+- ✅ Gerenciamento de estado aprimorado no renderer
+- ✅ Feedback visual em tempo real
+- ✅ Suporte a múltiplas planilhas por arquivo
+
+### 📝 Estrutura JSON Excel
+```json
+{
+  "type": "excel-base64-batch",
+  "created": "2025-10-16T...",
+  "totalFiles": 5,
+  "successful": 5,
+  "failed": 0,
+  "files": [
+    {
+      "filename": "data.xlsx",
+      "originalPath": "C:\\path\\to\\data.xlsx",
+      "sheetName": "Sheet1",
+      "data": [
+        {"column1": "value1", "column2": "value2"},
+        {"column1": "value3", "column2": "value4"}
+      ],
+      "rowCount": 2,
+      "index": 0
+    }
+  ],
+  "errors": []
+}
+```
+
+---
+
 ## [1.3.0] - 2025-10-15
 
 ### 🎨 Unificação da Interface de Conversão de Imagens

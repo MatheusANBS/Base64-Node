@@ -15,6 +15,8 @@ contextBridge.exposeInMainWorld('electronAPI', {
     selectPDFFile: () => ipcRenderer.invoke('select-pdf-file'),
     selectPDFFiles: () => ipcRenderer.invoke('select-pdf-files'),
     selectJSONFile: () => ipcRenderer.invoke('select-json-file'),
+    selectExcelFile: () => ipcRenderer.invoke('select-excel-file'),
+    selectExcelFiles: () => ipcRenderer.invoke('select-excel-files'),
     
     // File operations
     readFile: (filePath) => ipcRenderer.invoke('read-file', filePath),
@@ -33,6 +35,13 @@ contextBridge.exposeInMainWorld('electronAPI', {
     batchImagesToJson: (imagePaths, outputPath, includeMime) => ipcRenderer.invoke('batch-images-to-json', imagePaths, outputPath, includeMime),
     batchJsonToImages: (jsonData, outputDir) => ipcRenderer.invoke('batch-json-to-images', jsonData, outputDir),
     exportImagesTo: (imagePaths, outputPath, format, includeMime) => ipcRenderer.invoke('export-images-to', imagePaths, outputPath, format, includeMime),
+    
+    // Excel operations
+    excelToJson: (filePath, sheetName) => ipcRenderer.invoke('excel-to-json', filePath, sheetName),
+    jsonToExcel: (jsonData, outputPath, sheetName) => ipcRenderer.invoke('json-to-excel', jsonData, outputPath, sheetName),
+    getWorkbookInfo: (filePath) => ipcRenderer.invoke('get-workbook-info', filePath),
+    batchExcelToJson: (filePaths, outputPath) => ipcRenderer.invoke('batch-excel-to-json', filePaths, outputPath),
+    batchJsonToExcel: (jsonData, outputDir, format) => ipcRenderer.invoke('batch-json-to-excel', jsonData, outputDir, format),
     
     // Dialogs
     showMessage: (type, title, message) => ipcRenderer.invoke('show-message', type, title, message)

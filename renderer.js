@@ -983,3 +983,469 @@ document.getElementById('pdf-batch-reverse-btn').addEventListener('click', async
         progressContainer.style.display = 'none';
     }
 });
+
+// ============ EXCEL TAB ============
+
+let currentExcelPath = null;
+let currentWorkbookInfo = null;
+
+// Select Excel file for encoding
+document.getElementById('select-excel-encode-btn').addEventListener('click', async () => {
+    const filePath = await window.electronAPI.selectExcelFile();
+    if (filePath) {
+        currentExcelPath = filePath;
+        const fileInfo = await window.electronAPI.getFileInfo(filePath);
+        
+        document.getElementById('selected-excel-name').textContent = fileInfo.name;
+        
+        // Get workbook info to show available sheets
+        try {
+            const workbookInfo = await window.electronAPI.getWorkbookInfo(filePath);
+            
+            if (workbookInfo.success) {
+                currentWorkbookInfo = workbookInfo;
+                
+                // Populate sheet select
+                const sheetSelect = document.getElementById('excel-sheet-select');
+                sheetSelect.innerHTML = '';
+                
+                workbookInfo.sheets.forEach((sheet, index) => {
+                    const option = document.createElement('option');
+                    option.value = sheet.name;
+                    option.textContent = `${sheet.name} (${sheet.rowCount} rows, ${sheet.columnCount} cols)`;
+                    if (index === 0) option.selected = true;
+                    sheetSelect.appendChild(option);
+                });
+                
+                document.getElementById('excel-sheets-container').style.display = 'block';
+                document.getElementById('excel-encode-btn').disabled = false;
+            }
+        } catch (error) {
+            showInfo('excel-encode-info', 'Error reading file info: ' + error.message, 'error');
+        }
+    }
+});
+
+// Excel to JSON conversion
+document.getElementById('excel-encode-btn').addEventListener('click', async () => {
+    if (!currentExcelPath) return;
+    
+    const sheetName = document.getElementById('excel-sheet-select').value;
+    
+    try {
+        showInfo('excel-encode-info', '⏳ Converting Excel/CSV to JSON...', 'info');
+        
+        const result = await window.electronAPI.excelToJson(currentExcelPath, sheetName);
+        
+        if (!result.success) {
+            showInfo('excel-encode-info', 'Error: ' + result.error, 'error');
+            return;
+        }
+        
+        const jsonString = JSON.stringify(result.data, null, 2);
+        document.getElementById('excel-json-output').value = jsonString;
+        
+        const sizeInfo = result.sizeMB > 1 ? `${result.sizeMB} MB` : `${result.sizeKB} KB`;
+        
+        showInfo('excel-encode-info', 
+            `✅ Conversion successful! File: ${result.fileName}, Sheet: ${result.sheetName}, Rows: ${result.rowCount}, Size: ${sizeInfo}`, 
+            'success');
+        
+    } catch (error) {
+        showInfo('excel-encode-info', 'Error: ' + error.message, 'error');
+    }
+});
+
+// Copy Excel JSON button
+document.getElementById('copy-excel-json-btn').addEventListener('click', () => {
+    const textarea = document.getElementById('excel-json-output');
+    if (!textarea.value) {
+        showInfo('excel-encode-info', '⚠️ No JSON data to copy', 'error');
+        return;
+    }
+    textarea.select();
+    document.execCommand('copy');
+    showInfo('excel-encode-info', '📋 Copied to clipboard!', 'success');
+});
+
+// Save Excel JSON button
+document.getElementById('save-excel-json-btn').addEventListener('click', async () => {
+    const jsonText = document.getElementById('excel-json-output').value;
+    if (!jsonText) {
+        showInfo('excel-encode-info', '⚠️ No JSON data to save', 'error');
+        return;
+    }
+    
+    const filePath = await window.electronAPI.selectSaveLocation('data.json', [
+        { name: 'JSON Files', extensions: ['json'] },
+        { name: 'All Files', extensions: ['*'] }
+    ]);
+    
+    if (filePath) {
+        const result = await window.electronAPI.writeTextFile(filePath, jsonText);
+        if (result.success) {
+            showInfo('excel-encode-info', '💾 JSON saved successfully!', 'success');
+        } else {
+            showInfo('excel-encode-info', 'Error saving file: ' + result.error, 'error');
+        }
+    }
+});
+
+// Select JSON file for decode
+let currentJsonDecodeData = null;
+
+document.getElementById('select-json-decode-btn').addEventListener('click', async () => {
+    const filePath = await window.electronAPI.selectJSONFile();
+    if (!filePath) return;
+    
+    try {
+        const result = await window.electronAPI.readJSONFile(filePath);
+        
+        if (!result.success) {
+            showInfo('excel-decode-info', 'Error reading JSON: ' + result.error, 'error');
+            return;
+        }
+        
+        const jsonData = result.data;
+        
+        if (!Array.isArray(jsonData) || jsonData.length === 0) {
+            showInfo('excel-decode-info', '⚠️ JSON must be a non-empty array', 'error');
+            currentJsonDecodeData = null;
+            return;
+        }
+        
+        currentJsonDecodeData = jsonData;
+        const fileInfo = await window.electronAPI.getFileInfo(filePath);
+        document.getElementById('selected-json-decode-name').textContent = fileInfo.name;
+        document.getElementById('excel-decode-btn').disabled = false;
+        
+        showInfo('excel-decode-info', `✅ JSON loaded successfully! ${jsonData.length} row(s) found`, 'success');
+        
+    } catch (error) {
+        showInfo('excel-decode-info', 'Error: ' + error.message, 'error');
+        currentJsonDecodeData = null;
+    }
+});
+
+// JSON to Excel conversion
+document.getElementById('excel-decode-btn').addEventListener('click', async () => {
+    if (!currentJsonDecodeData) {
+        showInfo('excel-decode-info', '⚠️ Please select a JSON file first', 'error');
+        return;
+    }
+    
+    try {
+        showInfo('excel-decode-info', '⏳ Converting JSON to Excel/CSV...', 'info');
+        
+        const format = document.getElementById('excel-output-format').value;
+        const sheetName = document.getElementById('excel-sheet-name').value || 'Sheet1';
+        
+        // Ask for save location
+        const filePath = await window.electronAPI.selectSaveLocation(`data.${format}`, [
+            { name: `${format.toUpperCase()} Files`, extensions: [format] },
+            { name: 'All Files', extensions: ['*'] }
+        ]);
+        
+        if (!filePath) {
+            showInfo('excel-decode-info', '❌ Conversion cancelled', 'error');
+            return;
+        }
+        
+        const result = await window.electronAPI.jsonToExcel(currentJsonDecodeData, filePath, sheetName);
+        
+        if (!result.success) {
+            showInfo('excel-decode-info', 'Error: ' + result.error, 'error');
+            return;
+        }
+        
+        const sizeInfo = result.sizeMB > 1 ? `${result.sizeMB} MB` : `${result.sizeKB} KB`;
+        
+        showInfo('excel-decode-info', 
+            `✅ File saved successfully! Format: ${result.format}, Rows: ${result.rowCount}, Columns: ${result.columnCount}, Size: ${sizeInfo}`, 
+            'success');
+        
+        // Clear selection
+        currentJsonDecodeData = null;
+        document.getElementById('selected-json-decode-name').textContent = 'No file selected';
+        document.getElementById('excel-decode-btn').disabled = true;
+        
+    } catch (error) {
+        showInfo('excel-decode-info', 'Error: ' + error.message, 'error');
+    }
+});
+
+// ============ EXCEL BATCH TAB ============
+
+let selectedExcelFiles = [];
+let excelOutputDirectory = null;
+
+// Select multiple Excel files
+document.getElementById('select-multiple-excel-btn').addEventListener('click', async () => {
+    const filePaths = await window.electronAPI.selectExcelFiles();
+    if (filePaths && filePaths.length > 0) {
+        selectedExcelFiles = filePaths;
+        document.getElementById('selected-excel-count').textContent = `${filePaths.length} file(s) selected`;
+        
+        // Display file list
+        const listContainer = document.getElementById('excel-batch-list');
+        listContainer.innerHTML = '';
+        
+        for (const filePath of filePaths) {
+            const fileInfo = await window.electronAPI.getFileInfo(filePath);
+            const fileItem = document.createElement('div');
+            fileItem.className = 'batch-item';
+            fileItem.innerHTML = `
+                <span class="file-icon">📊</span>
+                <span class="file-name">${fileInfo.name}</span>
+                <span class="file-size">${(fileInfo.size / 1024).toFixed(2)} KB</span>
+            `;
+            listContainer.appendChild(fileItem);
+        }
+        
+        // Enable convert button if output directory is selected
+        if (excelOutputDirectory) {
+            document.getElementById('excel-batch-convert-btn').disabled = false;
+        }
+    }
+});
+
+// Select output directory for Excel batch
+document.getElementById('select-excel-output-dir-btn').addEventListener('click', async () => {
+    const dirPath = await window.electronAPI.selectDirectory();
+    if (dirPath) {
+        excelOutputDirectory = dirPath;
+        document.getElementById('excel-output-dir-name').textContent = dirPath;
+        
+        // Enable convert button if files are selected
+        if (selectedExcelFiles.length > 0) {
+            document.getElementById('excel-batch-convert-btn').disabled = false;
+        }
+    }
+});
+
+// Excel Batch convert button
+document.getElementById('excel-batch-convert-btn').addEventListener('click', async () => {
+    if (selectedExcelFiles.length === 0 || !excelOutputDirectory) return;
+    
+    const progressContainer = document.getElementById('excel-batch-progress');
+    const progressFill = document.getElementById('excel-progress-fill');
+    const progressText = document.getElementById('excel-progress-text');
+    
+    try {
+        progressContainer.style.display = 'block';
+        progressFill.style.width = '0%';
+        progressText.textContent = 'Starting conversion...';
+        
+        const results = [];
+        const total = selectedExcelFiles.length;
+        let completed = 0;
+        
+        for (const filePath of selectedExcelFiles) {
+            const fileInfo = await window.electronAPI.getFileInfo(filePath);
+            const result = await window.electronAPI.excelToJson(filePath, null);
+            
+            if (result.success) {
+                results.push({
+                    filename: fileInfo.name,
+                    originalPath: filePath,
+                    sheetName: result.sheetName,
+                    availableSheets: result.availableSheets,
+                    data: result.data,
+                    rowCount: result.rowCount,
+                    columnCount: result.columnCount,
+                    size: result.size,
+                    sizeKB: result.sizeKB,
+                    sizeMB: result.sizeMB,
+                    index: completed
+                });
+            }
+            
+            completed++;
+            const percent = Math.round((completed / total) * 100);
+            progressFill.style.width = percent + '%';
+            progressText.textContent = `Processing ${completed}/${total} (${percent}%)`;
+        }
+        
+        // Save results to JSON
+        const timestamp = new Date().toISOString().replace(/[:.]/g, '-').substring(0, 19);
+        const jsonData = {
+            type: 'excel-json-batch',
+            created: new Date().toISOString(),
+            totalFiles: selectedExcelFiles.length,
+            successful: results.length,
+            failed: selectedExcelFiles.length - results.length,
+            files: results,
+            errors: []
+        };
+        
+        const outputPath = `${excelOutputDirectory}\\excel_batch_${timestamp}.json`;
+        await window.electronAPI.writeTextFile(outputPath, JSON.stringify(jsonData, null, 2));
+        
+        progressText.textContent = `✅ Completed! ${completed} file(s) converted to JSON`;
+        showInfo('excel-batch-info', `✅ Successfully converted ${completed} file(s) to JSON!`, 'success');
+        
+    } catch (error) {
+        showInfo('excel-batch-info', 'Error: ' + error.message, 'error');
+        progressContainer.style.display = 'none';
+    }
+});
+
+// ============ EXCEL BATCH REVERSE (JSON to Excel/CSV) ============
+
+let excelJsonData = null;
+let excelReverseOutputDirectory = null;
+
+// Select JSON file for Excel reverse conversion
+document.getElementById('select-excel-json-file-btn').addEventListener('click', async () => {
+    const filePath = await window.electronAPI.selectJSONFile();
+    if (!filePath) return;
+    
+    try {
+        const result = await window.electronAPI.readJSONFile(filePath);
+        
+        if (!result.success) {
+            showInfo('excel-batch-reverse-info', 'Error reading JSON: ' + result.error, 'error');
+            return;
+        }
+        
+        const data = result.data;
+        
+        // Validate JSON structure for Excel batch
+        if (!data.type || data.type !== 'excel-json-batch' || !Array.isArray(data.files)) {
+            showInfo('excel-batch-reverse-info', '⚠️ Invalid JSON format. Expected excel-json-batch type with files array.', 'error');
+            excelJsonData = null;
+            return;
+        }
+        
+        // Check if items have required fields
+        const validItems = data.files.filter(item => item.filename && item.data && Array.isArray(item.data));
+        
+        if (validItems.length === 0) {
+            showInfo('excel-batch-reverse-info', '⚠️ No valid data found in JSON.', 'error');
+            excelJsonData = null;
+            return;
+        }
+        
+        excelJsonData = data;
+        
+        const fileInfo = await window.electronAPI.getFileInfo(filePath);
+        document.getElementById('selected-excel-json-name').textContent = fileInfo.name;
+        
+        // Show preview
+        const previewContainer = document.getElementById('excel-json-preview');
+        const itemsCount = document.getElementById('excel-json-items-count');
+        const itemsList = document.getElementById('excel-json-items-list');
+        
+        itemsCount.textContent = `${validItems.length} file(s) found in JSON`;
+        
+        itemsList.innerHTML = '';
+        validItems.forEach((item, index) => {
+            const fileItem = document.createElement('div');
+            fileItem.className = 'batch-item';
+            const sizeInfo = item.sizeKB ? `${item.sizeKB} KB` : 'Size unknown';
+            fileItem.innerHTML = `
+                <span class="file-icon">📊</span>
+                <span class="file-name">${item.filename}</span>
+                <span class="file-info">Rows: ${item.rowCount || item.data.length} - ${sizeInfo}</span>
+            `;
+            itemsList.appendChild(fileItem);
+        });
+        
+        previewContainer.style.display = 'block';
+        
+        // Enable convert button if output directory is selected
+        if (excelReverseOutputDirectory) {
+            document.getElementById('excel-batch-reverse-btn').disabled = false;
+        }
+        
+        showInfo('excel-batch-reverse-info', `✅ JSON loaded successfully! ${validItems.length} file(s) ready to convert.`, 'success');
+        
+    } catch (error) {
+        showInfo('excel-batch-reverse-info', 'Error: ' + error.message, 'error');
+        excelJsonData = null;
+    }
+});
+
+// Select output directory for Excel reverse conversion
+document.getElementById('select-excel-reverse-output-dir-btn').addEventListener('click', async () => {
+    const dirPath = await window.electronAPI.selectDirectory();
+    if (dirPath) {
+        excelReverseOutputDirectory = dirPath;
+        document.getElementById('excel-reverse-output-dir-name').textContent = dirPath;
+        
+        // Enable convert button if JSON is loaded
+        if (excelJsonData && excelJsonData.files && excelJsonData.files.length > 0) {
+            document.getElementById('excel-batch-reverse-btn').disabled = false;
+        }
+    }
+});
+
+// Excel Batch Reverse (JSON to Excel/CSV)
+document.getElementById('excel-batch-reverse-btn').addEventListener('click', async () => {
+    if (!excelJsonData || !excelJsonData.files || excelJsonData.files.length === 0 || !excelReverseOutputDirectory) return;
+    
+    const progressContainer = document.getElementById('excel-reverse-progress');
+    const progressFill = document.getElementById('excel-reverse-progress-fill');
+    const progressText = document.getElementById('excel-reverse-progress-text');
+    
+    try {
+        progressContainer.style.display = 'block';
+        progressFill.style.width = '0%';
+        progressText.textContent = 'Starting reverse conversion...';
+        
+        const format = document.getElementById('excel-reverse-format').value;
+        
+        const total = excelJsonData.files.length;
+        let completed = 0;
+        let successful = 0;
+        const errors = [];
+        
+        for (const item of excelJsonData.files) {
+            try {
+                // Determine output filename
+                const lastDotIndex = item.filename.lastIndexOf('.');
+                const baseName = lastDotIndex >= 0 ? item.filename.substring(0, lastDotIndex) : item.filename;
+                const outputFilename = `${baseName}.${format}`;
+                const outputPath = `${excelReverseOutputDirectory}\\${outputFilename}`;
+                
+                // Convert JSON to Excel/CSV
+                const result = await window.electronAPI.jsonToExcel(
+                    item.data,
+                    outputPath,
+                    item.sheetName || 'Sheet1'
+                );
+                
+                if (result.success) {
+                    successful++;
+                } else {
+                    errors.push(`${outputFilename}: ${result.error}`);
+                }
+                
+            } catch (error) {
+                errors.push(`${item.filename}: ${error.message}`);
+            }
+            
+            completed++;
+            const percent = Math.round((completed / total) * 100);
+            progressFill.style.width = percent + '%';
+            progressText.textContent = `Converting ${completed}/${total} (${percent}%) - ${successful} successful`;
+        }
+        
+        // Show final result
+        progressText.textContent = `✅ Completed! ${successful}/${total} file(s) converted successfully`;
+        
+        let message = `✅ Successfully converted ${successful} out of ${total} file(s)!`;
+        if (errors.length > 0) {
+            message += `\n\n⚠️ ${errors.length} error(s) occurred:\n${errors.slice(0, 3).join('\n')}`;
+            if (errors.length > 3) {
+                message += `\n... and ${errors.length - 3} more.`;
+            }
+        }
+        
+        showInfo('excel-batch-reverse-info', message, successful === total ? 'success' : 'error');
+        
+    } catch (error) {
+        showInfo('excel-batch-reverse-info', 'Error: ' + error.message, 'error');
+        progressContainer.style.display = 'none';
+    }
+});

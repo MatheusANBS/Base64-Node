@@ -1,6 +1,6 @@
 {
   "name": "base64-converter-electron",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "description": "Advanced Base64 Converter Desktop App with Electron - Unified Interface + Batch Reverse for Images & PDFs",
   "main": "main.js",
   "scripts": {
@@ -24,7 +24,8 @@
   "author": "MatheusANBS",
   "license": "MIT",
   "dependencies": {
-    "sharp": "^0.33.0"
+    "sharp": "^0.33.0",
+    "xlsx": "^0.18.5"
   },
   "devDependencies": {
     "electron": "^38.2.2",

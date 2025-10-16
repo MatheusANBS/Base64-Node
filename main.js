@@ -8,6 +8,7 @@ const path = require('path');
 const fs = require('fs').promises;
 const PDFConverter = require('./core/pdfConverter');
 const { ImageConverter } = require('./core/imageConverter');
+const { ExcelConverter } = require('./core/excelConverter');
 
 let mainWindow;
 
@@ -228,6 +229,38 @@ ipcMain.handle('select-json-file', async () => {
     return null;
 });
 
+// Select Excel/CSV file
+ipcMain.handle('select-excel-file', async () => {
+    const result = await dialog.showOpenDialog(mainWindow, {
+        properties: ['openFile'],
+        filters: [
+            { name: 'Excel/CSV Files', extensions: ['xlsx', 'xls', 'csv', 'xlsb', 'ods'] },
+            { name: 'All Files', extensions: ['*'] }
+        ]
+    });
+
+    if (!result.canceled && result.filePaths.length > 0) {
+        return result.filePaths[0];
+    }
+    return null;
+});
+
+// Select multiple Excel/CSV files
+ipcMain.handle('select-excel-files', async () => {
+    const result = await dialog.showOpenDialog(mainWindow, {
+        properties: ['openFile', 'multiSelections'],
+        filters: [
+            { name: 'Excel/CSV Files', extensions: ['xlsx', 'xls', 'csv', 'xlsb', 'ods'] },
+            { name: 'All Files', extensions: ['*'] }
+        ]
+    });
+
+    if (!result.canceled && result.filePaths.length > 0) {
+        return result.filePaths;
+    }
+    return [];
+});
+
 // PDF to Base64
 ipcMain.handle('pdf-to-base64', async (event, filePath, includeMime) => {
     try {
@@ -307,6 +340,71 @@ ipcMain.handle('batch-json-to-images', async (event, jsonData, outputDir) => {
 ipcMain.handle('export-images-to', async (event, imagePaths, outputPath, format, includeMime) => {
     try {
         const result = await ImageConverter.exportImagesTo(imagePaths, outputPath, format, includeMime);
+        return result;
+    } catch (error) {
+        return { success: false, error: error.message };
+    }
+});
+
+// ============ EXCEL CONVERTER IPC HANDLERS ============
+
+// Excel/CSV to JSON
+ipcMain.handle('excel-to-json', async (event, filePath, sheetName) => {
+    try {
+        const result = await ExcelConverter.excelToJson(filePath, sheetName);
+        return result;
+    } catch (error) {
+        return { success: false, error: error.message };
+    }
+});
+
+// JSON to Excel/CSV
+ipcMain.handle('json-to-excel', async (event, jsonData, outputPath, sheetName) => {
+    try {
+        const result = await ExcelConverter.jsonToExcel(jsonData, outputPath, sheetName);
+        return result;
+    } catch (error) {
+        return { success: false, error: error.message };
+    }
+});
+
+// Get Workbook Info
+ipcMain.handle('get-workbook-info', async (event, filePath) => {
+    try {
+        const result = await ExcelConverter.getWorkbookInfo(filePath);
+        return result;
+    } catch (error) {
+        return { success: false, error: error.message };
+    }
+});
+
+// Batch Excel/CSV to JSON
+ipcMain.handle('batch-excel-to-json', async (event, filePaths, outputPath) => {
+    try {
+        const result = await ExcelConverter.batchExcelToJson(filePaths, outputPath);
+        return result;
+    } catch (error) {
+        return { success: false, error: error.message };
+    }
+});
+
+// Batch JSON to Excel/CSV (Reverse)
+ipcMain.handle('batch-json-to-excel', async (event, jsonData, outputDir, format) => {
+    try {
+        // Create temporary JSON file
+        const tempJsonPath = path.join(__dirname, 'temp_excel_batch.json');
+        await fs.writeFile(tempJsonPath, JSON.stringify(jsonData, null, 2), 'utf-8');
+        
+        // Process the batch conversion
+        const result = await ExcelConverter.batchJsonToExcel(tempJsonPath, outputDir, format);
+        
+        // Clean up temporary file
+        try {
+            await fs.unlink(tempJsonPath);
+        } catch (cleanupError) {
+            console.warn('Failed to clean up temporary file:', cleanupError.message);
+        }
+        
         return result;
     } catch (error) {
         return { success: false, error: error.message };
