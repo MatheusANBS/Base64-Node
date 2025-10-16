@@ -1,5 +1,81 @@
 # Changelog
 
+## [1.5.0] - 2025-10-16
+
+### 🤖 AI-Powered PDF Search
+
+#### New AI Search Module
+- ✅ **AI PDF Search Tab**: New dedicated interface for intelligent PDF querying
+- ✅ **PDF Text Extraction**: Automatic text extraction using pdf-parse library
+- ✅ **OpenAI Integration**: Support for GPT-3.5-turbo, GPT-4, and GPT-4-turbo models
+- ✅ **Intelligent Q&A**: Ask questions about PDF content and get AI-powered answers
+- ✅ **Context-Aware Responses**: AI answers based only on document content
+- ✅ **Smart Truncation**: Automatic text truncation for long documents
+- ✅ **Configurable Parameters**: 
+  - Model selection (GPT-3.5, GPT-4, GPT-4-turbo)
+  - Response length (300-2000 tokens)
+  - Temperature control
+- ✅ **Search History**: Track all questions and answers with metadata
+- ✅ **PDF Caching**: Intelligent caching for improved performance
+- ✅ **Token Usage Tracking**: Real-time monitoring of API usage
+
+#### New Backend Module
+- ✅ Created `core/pdfSearcher.js` with:
+  - `initializeOpenAI()`: API key initialization
+  - `extractTextFromPDF()`: Text extraction with metadata
+  - `searchWithAI()`: AI-powered search
+  - `extractAndSearch()`: Combined extraction and search
+  - `clearCache()`: Cache management
+  - `getCacheStats()`: Cache statistics
+- ✅ Error handling with custom `PDFSearchError` class
+- ✅ PDF text caching with automatic cleanup
+- ✅ Support for multi-page documents
+
+#### New IPC Handlers
+- ✅ `init-openai`: Initialize OpenAI client
+- ✅ `is-openai-initialized`: Check initialization status
+- ✅ `extract-pdf-text`: Extract text from PDF
+- ✅ `search-pdf-ai`: Perform AI search
+- ✅ `extract-and-search-pdf`: Combined operation
+- ✅ `clear-pdf-cache`: Clear PDF cache
+
+#### User Interface
+- ✅ OpenAI API key configuration section
+- ✅ PDF upload with automatic text extraction
+- ✅ PDF information display (pages, words, characters)
+- ✅ Question input with real-time validation
+- ✅ Model and parameter selection
+- ✅ Loading indicator during AI processing
+- ✅ Answer display with formatting
+- ✅ Metadata display (tokens used, model, PDF info)
+- ✅ Search history with timestamps
+- ✅ Copy answer functionality
+- ✅ Status indicators for connection state
+
+#### Dependencies
+- ✅ `pdf-parse`: ^2.3.12 for PDF text extraction
+- ✅ `openai`: ^6.3.0 for AI integration
+- ✅ `dotenv`: ^17.2.3 for environment configuration
+
+#### Documentation
+- ✅ README.md updated with AI Search feature
+- ✅ Usage guide with examples
+- ✅ API reference for PDFSearcher module
+- ✅ Configuration instructions
+- ✅ Limitations and tips section
+- ✅ `.env.example` file for API key setup
+
+#### Technical Improvements
+- ✅ Modular architecture following existing patterns
+- ✅ Error handling with specific error messages
+- ✅ Memory-efficient caching with size limits
+- ✅ Secure API key handling (session-only storage)
+- ✅ Real-time UI updates and feedback
+- ✅ Token usage optimization
+- ✅ Support for various OpenAI models
+
+---
+
 ## [1.4.0] - 2025-10-16
 
 ### 📊 Conversor de Excel e CSV

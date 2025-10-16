@@ -57,6 +57,17 @@ Base64 Converter is a cross-platform desktop application that enables efficient 
 - Batch processing with progress tracking
 - Batch reverse conversion (JSON to PDFs)
 
+#### AI PDF Search 🤖 (NEW!)
+- AI-powered question answering based on PDF content
+- Automatic text extraction from PDF documents
+- Integration with OpenAI GPT models (3.5-turbo, GPT-4, GPT-4-turbo)
+- Smart context handling with automatic text truncation
+- Configurable response length and model selection
+- Search history tracking with metadata
+- PDF content caching for improved performance
+- Real-time status indicators and error handling
+- Support for multi-page documents with word/character count display
+
 #### Excel/CSV Converter
 - Convert Excel/CSV files to JSON format
 - Decode JSON data to Excel/CSV files
@@ -166,6 +177,53 @@ The Excel/CSV Converter tab supports multi-sheet Excel files and CSV conversion.
 2. Specify the sheet name (default: "Sheet1")
 3. Click "Convert to Excel/CSV"
 4. Choose the output location and format (.xlsx, .csv, etc.)
+
+### AI PDF Search
+
+The AI PDF Search feature enables intelligent question-answering based on uploaded PDF documents using OpenAI's GPT models.
+
+#### Setup
+
+1. Obtain an OpenAI API key from [OpenAI Platform](https://platform.openai.com/api-keys)
+2. Navigate to the "🤖 AI PDF Search" tab
+3. Enter your API key in the configuration section
+4. Click "🔑 Initialize" to connect to OpenAI
+5. Wait for the "✓ Connected" status indicator
+
+#### Using AI PDF Search
+
+1. **Upload PDF**: Click "📂 Select PDF File" to choose your document
+2. **View PDF Info**: Review extracted information (pages, word count, character count)
+3. **Ask Questions**: Type your question in the text area
+   - Examples:
+     - "What is the main topic of this document?"
+     - "Summarize the key points"
+     - "Who are the authors mentioned?"
+     - "What conclusions are drawn?"
+4. **Configure Options** (optional):
+   - Select AI model: GPT-3.5 Turbo (fast), GPT-4 (better quality), or GPT-4 Turbo
+   - Choose response length: Short (300 tokens), Medium (500), Long (1000), or Very Long (2000)
+5. **Search**: Click "🔍 Search with AI"
+6. **View Answer**: The AI will analyze the PDF and provide a contextual answer
+7. **Copy Answer**: Use the "📋 Copy" button to copy the response
+8. **Review History**: All searches are saved in the Search History section
+
+#### Features & Tips
+
+- **Automatic Text Extraction**: PDF content is automatically extracted and cached
+- **Smart Truncation**: Long documents are intelligently truncated to fit context limits
+- **Model Selection**: Choose between speed (GPT-3.5) or quality (GPT-4)
+- **Token Tracking**: Monitor API usage with real-time token counts
+- **Search History**: Review previous questions and answers
+- **Multi-Page Support**: Works with documents of any length
+- **Privacy**: API keys are stored only in memory during the session
+
+#### Limitations
+
+- Maximum context length varies by model (documents may be truncated)
+- Requires active internet connection
+- API usage is subject to OpenAI pricing
+- Best results with text-based PDFs (scanned images may not work well)
 
 ### Batch Processing
 
@@ -314,6 +372,118 @@ Validates Base64 string format.
 **`getPDFInfo(buffer)`**
 
 Extracts PDF metadata (version, size).
+
+### PDFSearcher
+
+Core module for AI-powered PDF text extraction and question answering.
+
+#### Methods
+
+**`initializeOpenAI(apiKey)`**
+
+Initializes the OpenAI client with an API key.
+
+- **Parameters:**
+  - `apiKey` (string): OpenAI API key
+
+- **Throws:** `PDFSearchError` if API key is invalid
+
+**`isOpenAIInitialized()`**
+
+Checks if OpenAI client is initialized.
+
+- **Returns:** `boolean`
+
+**`extractTextFromPDF(filePath)`**
+
+Extracts text content from a PDF file.
+
+- **Parameters:**
+  - `filePath` (string): Path to PDF file
+
+- **Returns:** `Promise<Object>`
+  ```javascript
+  {
+    success: true,
+    text: "Full text content...",
+    numPages: 10,
+    info: {...},
+    metadata: {...},
+    fileName: "document.pdf",
+    textLength: 50000,
+    wordCount: 8500
+  }
+  ```
+
+**`searchWithAI(pdfText, question, options)`**
+
+Performs AI-powered search on PDF text content.
+
+- **Parameters:**
+  - `pdfText` (string): Extracted PDF text
+  - `question` (string): User's question
+  - `options` (Object): Optional configuration
+    - `model` (string): OpenAI model (default: `'gpt-3.5-turbo'`)
+    - `maxTokens` (number): Max response tokens (default: `500`)
+    - `temperature` (number): Response creativity (default: `0.7`)
+
+- **Returns:** `Promise<Object>`
+  ```javascript
+  {
+    success: true,
+    answer: "The AI's response...",
+    model: "gpt-3.5-turbo",
+    usage: {
+      promptTokens: 1200,
+      completionTokens: 150,
+      totalTokens: 1350
+    },
+    textTruncated: false
+  }
+  ```
+
+**`extractAndSearch(filePath, question, options)`**
+
+Combined method that extracts PDF text and searches in one call.
+
+- **Parameters:**
+  - `filePath` (string): Path to PDF file
+  - `question` (string): User's question
+  - `options` (Object): Optional configuration (same as `searchWithAI`)
+
+- **Returns:** `Promise<Object>`
+  ```javascript
+  {
+    success: true,
+    pdfInfo: {
+      fileName: "document.pdf",
+      numPages: 10,
+      wordCount: 8500,
+      textLength: 50000
+    },
+    question: "What is this about?",
+    answer: "This document discusses...",
+    model: "gpt-3.5-turbo",
+    usage: {...},
+    textTruncated: false
+  }
+  ```
+
+**`clearCache()`**
+
+Clears the internal PDF text cache.
+
+**`getCacheStats()`**
+
+Returns cache statistics.
+
+- **Returns:** `Object`
+  ```javascript
+  {
+    size: 5,
+    keys: ["path1-timestamp", "path2-timestamp", ...]
+  }
+  ```
 
 ### ExcelConverter
 
@@ -479,6 +649,8 @@ Base64-Node/
 - **Node.js**: JavaScript runtime
 - **Sharp**: High-performance image processing library
 - **XLSX (SheetJS)**: Excel/CSV parsing and generation library
+- **pdf-parse**: PDF text extraction library
+- **OpenAI**: AI-powered natural language processing
 - **IPC (Inter-Process Communication)**: Electron main/renderer communication
 
 ### Design Patterns
