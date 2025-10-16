@@ -1,8 +1,11 @@
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-blue)]()
 [![Languages](https://img.shields.io/badge/languages-JavaScript%2C%20HTML%2C%20CSS-brightgreen)]()
+[![Version](https://img.shields.io/badge/version-1.4.0-blue)]()
 
-> ⚠️ Este README está em inglês. Para português, veja [README.pt-BR.md](README.pt-BR.md)
+> Read in: [English](README.md) | [Português Brasileiro](README.pt-BR.md)
+
+> ⚠️ This README is in English. For Portuguese, see [README.pt-BR.md](https://github.com/MatheusANBS/Base64-Node/blob/main/README.pt-BR.md)
 
 # Base64 Converter
 
@@ -10,8 +13,7 @@ A high-performance desktop application for Base64 encoding and decoding, built w
 
 ## Demo
 
-![Base64 Converter Screenshot](assets/screenshot.png)
-*Add an actual screenshot to `assets/screenshot.png` to show your app UI here!*
+*Screenshots coming soon! Check out the application by running the installation steps above.*
 
 ## Table of Contents
 
@@ -66,7 +68,6 @@ A high-performance desktop application for Base64 encoding and decoding, built w
 - [Security](#security)
 - [FAQ / Troubleshooting](#faq--troubleshooting)
 - [Downloads](#downloads)
-- [Testing](#testing)
 - [Contributing](#contributing)
 - [License](#license)
 - [Author](#author)
@@ -639,35 +640,27 @@ Each error includes:
 
 ## FAQ / Troubleshooting
 
-**P:** O aplicativo não inicia no Linux.  
-**R:** Certifique-se de que as dependências do Electron estão instaladas. Tente executar `npm install` novamente e use o Node.js v14 ou superior.
+**Q:** The application does not start on Linux.  
+**A:** Make sure Electron dependencies are installed. Try running `npm install` again and use Node.js v14 or higher.
 
-**P:** Erro ao instalar as dependências.  
-**R:** Use o Node.js v14 ou mais recente. Exclua a pasta `node_modules` e execute `npm install` na raiz do projeto.
+**Q:** Error installing dependencies.  
+**A:** Use Node.js v14 or newer. Delete the `node_modules` folder and run `npm install` from the project root.
 
-**P:** Não consigo abrir arquivos PDF/imagem/excel.  
-**R:** Certifique-se de que os arquivos não estão corrompidos e são formatos suportados (veja [Formatos Suportados](#formatos-suportados)).
+**Q:** I cannot open PDF/image/Excel files.  
+**A:** Make sure the files are not corrupted and are in supported formats (see [Supported Formats](#supported-formats)).
 
-**P:** Arrastar e soltar não funciona.  
-**R:** Atualmente, a seleção de arquivos é feita por meio de botões. O suporte a arrastar e soltar está planejado para atualizações futuras.
+**Q:** Drag and drop does not work.  
+**A:** Currently, file selection is done via buttons. Drag and drop support is planned for future updates.
 
-**P:** Onde posso encontrar os arquivos gerados?  
-**R:** No diretório ou caminho de arquivo escolhido durante a caixa de diálogo de conversão.
+**Q:** Where can I find the generated files?  
+**A:** In the directory or file path you selected during the conversion dialog.
 
-**P:** A interface está em inglês, posso usar em português?  
-**R:** Um README e uma UI traduzidos estão planejados. Contribuições são bem-vindas!
+**Q:** Is there a portable version available?  
+**A:** Yes, you can create one using `npm run package` for Windows or download pre-built versions from [Releases](https://github.com/MatheusANBS/Base64-Node/releases).
 
 ## Downloads
 
 You can download the latest releases (Windows, macOS, Linux) from the [Releases](https://github.com/MatheusANBS/Base64-Node/releases) page.
-
-## Testing
-
-*Automated tests are recommended for the core modules. If you add tests with Jest, Mocha, or another framework, document how to run them here.*
-
-```bash
-npm test
-```
 
 ## Contributing
 

@@ -1,8 +1,11 @@
 [![Licença MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Plataforma](https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-blue)]()
 [![Linguagens](https://img.shields.io/badge/languages-JavaScript%2C%20HTML%2C%20CSS-brightgreen)]()
+[![Versão](https://img.shields.io/badge/versão-1.4.0-blue)]()
 
-> ⚠️ Este README está em português. Para inglês, veja [README.md](README.md).
+> Leia em: [English](README.md) | [Português Brasileiro](README.pt-BR.md)
+
+> ⚠️ Este README está em português. Para inglês, veja [README.md](https://github.com/MatheusANBS/Base64-Node/blob/main/README.md).
 
 # Base64 Converter
 
@@ -10,8 +13,7 @@ Aplicativo desktop de alta performance para codificação e decodificação Base
 
 ## Demo
 
-![Screenshot do Base64 Converter](assets/screenshot.png)
-*Adicione aqui uma captura real do app em `assets/screenshot.png` para mostrar a interface!*
+*Screenshots em breve! Execute os passos de instalação acima para testar o aplicativo.*
 
 ## Índice
 
@@ -66,7 +68,6 @@ Aplicativo desktop de alta performance para codificação e decodificação Base
 - [Segurança](#segurança)
 - [FAQ / Solução de Problemas](#faq--solução-de-problemas)
 - [Downloads](#downloads)
-- [Testes](#testes)
 - [Contribuindo](#contribuindo)
 - [Licença](#licença)
 - [Autor](#autor)
@@ -644,7 +645,7 @@ Cada erro inclui:
 **P:** Erro ao instalar as dependências.  
 **R:** Use o Node.js v14 ou mais recente. Exclua a pasta `node_modules` e execute `npm install` na raiz do projeto.
 
-**P:** Não consigo abrir arquivos PDF/imagem/excel.  
+**P:** Não consigo abrir arquivos PDF/imagem/Excel.  
 **R:** Certifique-se de que os arquivos não estão corrompidos e são formatos suportados (veja [Formatos Suportados](#formatos-suportados)).
 
 **P:** Arrastar e soltar não funciona.  
@@ -653,20 +654,12 @@ Cada erro inclui:
 **P:** Onde posso encontrar os arquivos gerados?  
 **R:** No diretório ou caminho de arquivo escolhido durante a caixa de diálogo de conversão.
 
-**P:** A interface está em inglês, posso usar em português?  
-**R:** Um README e uma UI traduzidos estão planejados. Contribuições são bem-vindas!
+**P:** Existe uma versão portátil disponível?  
+**R:** Sim, você pode criar uma usando `npm run package` para Windows ou baixar versões pré-compiladas em [Releases](https://github.com/MatheusANBS/Base64-Node/releases).
 
 ## Downloads
 
 Você pode baixar as versões mais recentes (Windows, macOS, Linux) na página de [Releases](https://github.com/MatheusANBS/Base64-Node/releases).
-
-## Testes
-
-*Testes automatizados são recomendados para os módulos principais. Se você adicionar testes com Jest, Mocha ou outro framework, documente como executá-los aqui.*
-
-```bash
-npm test
-```
 
 ## Contribuindo
 
