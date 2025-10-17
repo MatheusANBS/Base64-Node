@@ -303,34 +303,77 @@ class ExcelConverter {
 
             for (const fileData of jsonData.files) {
                 try {
-                    // Validate data
-                    if (!fileData.data || !Array.isArray(fileData.data) || fileData.data.length === 0) {
-                        throw new Error('Invalid or empty data array');
+                    // Handle both new structure (with sheets array) and old structure (with direct data)
+                    let sheetsToProcess = [];
+                    
+                    if (fileData.sheets && Array.isArray(fileData.sheets)) {
+                        // New structure: multiple sheets
+                        sheetsToProcess = fileData.sheets;
+                    } else if (fileData.data && Array.isArray(fileData.data)) {
+                        // Old structure: single data array (for backward compatibility)
+                        sheetsToProcess = [{
+                            sheetName: fileData.sheetName || 'Sheet1',
+                            data: fileData.data
+                        }];
+                    } else {
+                        throw new Error('Invalid data structure - no sheets or data array found');
                     }
 
-                    // Determine output filename
+                    // Process each sheet
                     const baseName = path.parse(fileData.filename).name;
-                    const outputFileName = `${baseName}.${format}`;
-                    const outputPath = path.join(outputDir, outputFileName);
-
-                    // Convert JSON to Excel/CSV
-                    const result = await this.jsonToExcel(
-                        fileData.data,
-                        outputPath,
-                        fileData.sheetName || 'Sheet1'
-                    );
                     
-                    results.push({
-                        originalFilename: fileData.filename,
-                        outputPath: result.path,
-                        outputFilename: result.fileName,
-                        format: result.format,
-                        rowCount: result.rowCount,
-                        columnCount: result.columnCount,
-                        size: result.size,
-                        sizeKB: result.sizeKB,
-                        sizeMB: result.sizeMB
-                    });
+                    if (sheetsToProcess.length === 1) {
+                        // Single sheet - use original filename
+                        const sheet = sheetsToProcess[0];
+                        const outputFileName = `${baseName}.${format}`;
+                        const outputPath = path.join(outputDir, outputFileName);
+
+                        const result = await this.jsonToExcel(
+                            sheet.data,
+                            outputPath,
+                            sheet.sheetName || 'Sheet1'
+                        );
+                        
+                        results.push({
+                            originalFilename: fileData.filename,
+                            outputPath: result.path,
+                            outputFilename: result.fileName,
+                            format: result.format,
+                            sheetsProcessed: 1,
+                            rowCount: result.rowCount,
+                            columnCount: result.columnCount,
+                            size: result.size,
+                            sizeKB: result.sizeKB,
+                            sizeMB: result.sizeMB
+                        });
+                    } else {
+                        // Multiple sheets - create one file with multiple sheets
+                        const outputFileName = `${baseName}.${format}`;
+                        const outputPath = path.join(outputDir, outputFileName);
+
+                        // Create workbook with all sheets
+                        const workbook = XLSX.utils.book_new();
+                        
+                        for (const sheet of sheetsToProcess) {
+                            const worksheet = XLSX.utils.json_to_sheet(sheet.data);
+                            XLSX.utils.book_append_sheet(workbook, worksheet, sheet.sheetName || 'Sheet1');
+                        }
+
+                        // Write file
+                        XLSX.writeFile(workbook, outputPath, { bookType: format });
+                        const stats = await fs.stat(outputPath);
+
+                        results.push({
+                            originalFilename: fileData.filename,
+                            outputPath: outputPath,
+                            outputFilename: path.basename(outputPath),
+                            format: format.toUpperCase(),
+                            sheetsProcessed: sheetsToProcess.length,
+                            size: stats.size,
+                            sizeKB: (stats.size / 1024).toFixed(2),
+                            sizeMB: (stats.size / (1024 * 1024)).toFixed(2)
+                        });
+                    }
                 } catch (error) {
                     errors.push({
                         filename: fileData.filename,
