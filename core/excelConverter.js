@@ -194,9 +194,10 @@ class ExcelConverter {
      * Batch convert Excel/CSV files to JSON
      * @param {Array<string>} filePaths - Array of file paths
      * @param {string} outputPath - Output JSON file path
+     * @param {boolean} allSheets - Whether to get all sheets or just the first one (default: true)
      * @returns {Promise<Object>} Result object with batch info
      */
-    static async batchExcelToJson(filePaths, outputPath) {
+    static async batchExcelToJson(filePaths, outputPath, allSheets = true) {
         try {
             const results = [];
             const errors = [];
@@ -205,19 +206,39 @@ class ExcelConverter {
                 const filePath = filePaths[i];
                 
                 try {
-                    const result = await this.excelToJson(filePath);
+                    // Get workbook info to extract all sheets
+                    const fileBuffer = await fs.readFile(filePath);
+                    const workbook = XLSX.read(fileBuffer, { type: 'buffer' });
+                    const stats = await fs.stat(filePath);
+                    
+                    const sheetsData = [];
+                    
+                    // Get data from all sheets or just first one
+                    const sheetsToProcess = allSheets ? workbook.SheetNames : [workbook.SheetNames[0]];
+                    
+                    for (const sheetName of sheetsToProcess) {
+                        try {
+                            const result = await this.excelToJson(filePath, sheetName);
+                            sheetsData.push({
+                                sheetName: result.sheetName,
+                                data: result.data,
+                                rowCount: result.rowCount,
+                                columnCount: result.columnCount
+                            });
+                        } catch (sheetError) {
+                            console.warn(`Failed to read sheet "${sheetName}":`, sheetError.message);
+                        }
+                    }
                     
                     results.push({
-                        filename: result.fileName,
+                        filename: path.basename(filePath),
                         originalPath: filePath,
-                        sheetName: result.sheetName,
-                        availableSheets: result.availableSheets,
-                        data: result.data,
-                        rowCount: result.rowCount,
-                        columnCount: result.columnCount,
-                        size: result.size,
-                        sizeKB: result.sizeKB,
-                        sizeMB: result.sizeMB,
+                        availableSheets: workbook.SheetNames,
+                        sheets: sheetsData,
+                        totalSheets: sheetsData.length,
+                        size: stats.size,
+                        sizeKB: (stats.size / 1024).toFixed(2),
+                        sizeMB: (stats.size / (1024 * 1024)).toFixed(2),
                         index: i
                     });
                 } catch (error) {

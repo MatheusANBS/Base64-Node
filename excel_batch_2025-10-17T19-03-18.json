@@ -1,0 +1,5183 @@
+{
+  "type": "excel-json-batch",
+  "created": "2025-10-17T19:03:18.729Z",
+  "totalFiles": 1,
+  "successful": 1,
+  "failed": 0,
+  "files": [
+    {
+      "filename": "MAPEAMENTO_FINAL_2_SHEETS.xlsx",
+      "originalPath": "C:\\Users\\matheuss\\Desktop\\MAPEAMENTO_FINAL_2_SHEETS.xlsx",
+      "sheetName": "USAR COM CERTEZA",
+      "availableSheets": [
+        "USAR COM CERTEZA",
+        "ANÁLISE MANUAL"
+      ],
+      "data": [
+        {
+          "Código UMLI": "101001076",
+          "Descrição UMLI": "LUVA DE BORRACHA PARA ELETRICISTA 1000 V",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101001076",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101001088",
+          "Descrição UMLI": "CINTO DE SEGURANCA C/ 3 PONTAS.",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101001088",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101001096",
+          "Descrição UMLI": "PERNEIRA DE RASPA",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101001096",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101001108",
+          "Descrição UMLI": "AVENTAL DE RASPA P/SOLDADOR",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101001108",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101001110",
+          "Descrição UMLI": "MANGA DE RASPA P/ SOLDADOR",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101001110",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101001118",
+          "Descrição UMLI": "BLUSAO DE RASPA P/ SOLDADOR",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101001118",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101001191",
+          "Descrição UMLI": "LENTE RETANGULAR PARA MASCARA DE SOLDA N-12",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101001191",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101001193",
+          "Descrição UMLI": "LENTE RETANGULAR P/ MASCARA DE SOLDA VERDE TON-10",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101001193",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101001194",
+          "Descrição UMLI": "LENTE REDONDA PARA OCULOS DE SEGURANCA N-08",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101001194",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101001195",
+          "Descrição UMLI": "LENTE RETANGULAR INCOLOR P/ MASCARA DE SOLDA",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101001195",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101001196",
+          "Descrição UMLI": "LENTE REDONDA INCOLOR PARA OCULOS DE SEGURANCA 50 MM",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101001196",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101001197",
+          "Descrição UMLI": "LENTE REDONDA PARA OCULOS DE SEGURANCA N-06",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101001197",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101001218",
+          "Descrição UMLI": "PROTETOR AURICULAR TIPO PLUG",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101001218",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101001241",
+          "Descrição UMLI": "MASCARA RESP PFF2",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101001241",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101001257",
+          "Descrição UMLI": "MOSQUETAO EM ACO GALVANIZADO",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101001257",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101001286",
+          "Descrição UMLI": "CAPA DE CHUVA XGG",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101001286",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101001288",
+          "Descrição UMLI": "PROTETOR FACIAL ACRILICO",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101001288",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101001312",
+          "Descrição UMLI": "CARNEIRA C/ JUGULAR PARA CAPACETE MSA",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101001312",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101001351",
+          "Descrição UMLI": "CAPACETE DE SEGURANCA VERDE COM JUGULAR",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101001352",
+          "Descrição DATASUL": "JUGULAR P/CAPACETE M.S.A JUGULAR P/CAPACETE M.S.A",
+          "Score/Similaridade": 0.5,
+          "Confiança": "CODIGO_SIMILAR",
+          "Observação": "Código com 1 digitos - possível erro de digitação"
+        },
+        {
+          "Código UMLI": "101001364",
+          "Descrição UMLI": "LUVA RASPA DE COURO CANO LONGO BALASKA",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101001364",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101001365",
+          "Descrição UMLI": "LUVA RASPA DE COURO CANO CURTO BALASKA",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101001365",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101001441",
+          "Descrição UMLI": "EXTINTOR PQS 06KG",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101001441",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101001468",
+          "Descrição UMLI": "LUVA NITRILICA TAM G",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101001468",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101001494",
+          "Descrição UMLI": "BOTINA SEG C/ BIQUEIRA DE PROLIPROPILENO Nº 38",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101001494",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101001496",
+          "Descrição UMLI": "BOTINA SEG C/BIQUEIRA DE PROLIPROPILENO Nº 40",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101001496",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101001497",
+          "Descrição UMLI": "BOTINA SEG C/BIQUEIRA DE PROLIPROPILENO Nº 41",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101001497",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101001498",
+          "Descrição UMLI": "BOTINA SEG C/BIQUEIRA DE PROLIPROPILENO Nº 42",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101001498",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101001499",
+          "Descrição UMLI": "BOTINA SEG C/BIQUEIRA DE PROLIPROPILENO Nº 43",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101001499",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101001500",
+          "Descrição UMLI": "BOTINA SEG C/BIQUEIRA DE PROLIPROPILENO Nº 44",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101001500",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101001501",
+          "Descrição UMLI": "BOTINA SEG C/BIQUEIRA DE PROLIPROPILENONº 45",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101001501",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101001516",
+          "Descrição UMLI": "MASCARA DE SOLDA",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101001516",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101001543",
+          "Descrição UMLI": "ABAFADOR DE RUIDO ACOPLAVEL",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101001543",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101001547",
+          "Descrição UMLI": "EXTINTOR ABC 06 KG",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101001547",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101001562",
+          "Descrição UMLI": "CINTA COM ANCORAGEM",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101001562",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101001564",
+          "Descrição UMLI": "PLACA DE ANCORAGEM",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101001564",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101001574",
+          "Descrição UMLI": "CAPACETE ALPINISTA",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101001574",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101001579",
+          "Descrição UMLI": "PROTETOR DE CORDA",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101001579",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101001602",
+          "Descrição UMLI": "OCULOS AMPLA VISAO INCOLOR",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101001602",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101001730",
+          "Descrição UMLI": "ESTRIBO 4 DEGRAUS",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101001730",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101001777",
+          "Descrição UMLI": "DESCENSOR AUTOBLOCANTE COM FUNÇÃO ANTIPÂNICO PETZEL",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101001777",
+          "Score/Similaridade": 0.6,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101001779",
+          "Descrição UMLI": "LUVA TRICOTADA DE NYLON POLIURETANO, ANTIDER  TAM. M FLEXITATIL",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101001779",
+          "Score/Similaridade": 0.71,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101001786",
+          "Descrição UMLI": "COLETE SALVA VIDAS CLASSE IV",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101001786",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101001795",
+          "Descrição UMLI": "MALHA DELTA RAPIDA 8 mm (mailon) AÇO GALVANIZADO",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101001795",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101001841",
+          "Descrição UMLI": "CAPUZ BALACLAVA ANTI RESPINGO",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101001841",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101001899",
+          "Descrição UMLI": "ASCENSOR DE PEITO CROLL",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101001899",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101001900",
+          "Descrição UMLI": "ASCENSOR MÃO DIREITA (JUMAR)",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101001900",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101001933",
+          "Descrição UMLI": "COLETE REFL ZIPER VERDE LIMAO XG",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101001933",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101002019",
+          "Descrição UMLI": "TRAVA QUEDAS.",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101002019",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101002020",
+          "Descrição UMLI": "DESCENSOR EVO",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101002020",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101002021",
+          "Descrição UMLI": "POLIA SIMPLES",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101002021",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101002023",
+          "Descrição UMLI": "MOSQUETÃO",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101002023",
+          "Descrição DATASUL": "MOSQUETâO MOSQUETâO",
+          "Score/Similaridade": 0,
+          "Confiança": "REVISAR",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101002056",
+          "Descrição UMLI": "MACACAO TYVEK",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101002056",
+          "Descrição DATASUL": "MACACâO TYVEK MACACâO TYVEK",
+          "Score/Similaridade": 0.5,
+          "Confiança": "REVISAR",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101002154",
+          "Descrição UMLI": "LUVA ANTI VIBRACAO",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101002154",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101002157",
+          "Descrição UMLI": "OCULOS DE MACARIQUEIRO",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101002157",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101002203",
+          "Descrição UMLI": "BOTA PVC PRETO CANO LONGO - N 45",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101002203",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101002239",
+          "Descrição UMLI": "COLETE REFLETIVO - OBSERVADOR DE TRABALHO A QUENTE. TAM GG.",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101002239",
+          "Descrição DATASUL": "COLETE REFLETIVO COR LARANJA  ALTA VIZIBILIDADE TAM GG COLETE REFLETIVO COR LARANJA  ALTA VIZIBILIDADE TAM GG.",
+          "Score/Similaridade": 0.4,
+          "Confiança": "REVISAR",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101002249",
+          "Descrição UMLI": "LUVA ANTI IMPACTO PARA AGENTES MECANICOS TAMANHO G",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101002249",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101002250",
+          "Descrição UMLI": "LUVA ANTI IMPACTO PARA AGENTES MECANICOS TAMANHO XG",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101002250",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101002251",
+          "Descrição UMLI": "LENTE INCOLOR PARA MASCARA DE ARCOFIL",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101002251",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101002312",
+          "Descrição UMLI": "BLUSÃO UAP PARA HIDROJATEAMENTO",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101002312",
+          "Descrição DATASUL": "BLUSAO IMPERMEAVEL PARA HIDROJATISTA BLUSAO IMPERMEAVEL PARA HIDROJATISTA",
+          "Score/Similaridade": 0,
+          "Confiança": "REVISAR",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101002313",
+          "Descrição UMLI": "CALÇA IMPERMEÁVEL PARA HIDROJATISTA",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101002313",
+          "Score/Similaridade": 0.67,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101002315",
+          "Descrição UMLI": "MANGUEIRA PARA ARCOFIL DE 3/8´´ COM ENGATE PUSH PULL (LC 15 MTS)",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101002315",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101002316",
+          "Descrição UMLI": "MASCARA DE ARCOFIL - CONJUNTO ACOPAM",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101002316",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101002322",
+          "Descrição UMLI": "SOBREBOTAS ARAMIDA PARA HIDROJATISTA",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101002322",
+          "Score/Similaridade": 0.67,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101002327",
+          "Descrição UMLI": "POLIA SIMPLES ACO INOX CORDA 13mm 36KN 3M ALTISEG UNO",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101002327",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101002336",
+          "Descrição UMLI": "LENTE FACIAL PLANO INCOLOR (SOLDA)",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101002336",
+          "Score/Similaridade": 0.8,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101002377",
+          "Descrição UMLI": "LUVA DE VAQUETA MISTA CANO LONGO",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101002377",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101002380",
+          "Descrição UMLI": "LENTE UVEX S700HS-BR INCOLOR P/OCULOS 3960C TRATAMENTO SUPRE",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101002380",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101002408",
+          "Descrição UMLI": "CINTO DE SEGURANÇA TIPO PARAQUEDISTA CG 795EP-CARBOGRAFITE",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101002408",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101002409",
+          "Descrição UMLI": "TALABARTE EM Y CG 390-CARBOGRAFITE",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101002409",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101002410",
+          "Descrição UMLI": "TRAVA QUEDAS PARA CABO DE AÇO 5/16\"(8MM)-CG535",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101002410",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101002423",
+          "Descrição UMLI": "MACACAO RF COM FAIXA REFLETIVA TAM. G ",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101002423",
+          "Score/Similaridade": 0.75,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101002424",
+          "Descrição UMLI": "MACACAO RF COM FAIXA REFLETIVA TAM. GG (56/58)",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101002424",
+          "Score/Similaridade": 0.75,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101002425",
+          "Descrição UMLI": "MACACAO RF COM FAIXA REFLETIVA TAM. XG (60/62)",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101002425",
+          "Score/Similaridade": 0.75,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101002427",
+          "Descrição UMLI": "MACACAO RF COM FAIXA REFLETIVA TAM. XXXG (68/70)",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101002427",
+          "Score/Similaridade": 0.8,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101002428",
+          "Descrição UMLI": "FITA ANEL 80 CM AZUL",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101002428",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101002430",
+          "Descrição UMLI": "CAPUZ UAP MAX PARA HIDROJATEAMENTO",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101002430",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101002431",
+          "Descrição UMLI": "LUVA UAP MAX ULTRA FLEX PARA HIDROJATEAMENTO",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101002431",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101002442",
+          "Descrição UMLI": "PROTEÇÃO PARA PÉS DO HIDROJATISTA (TIPO CASCO DE TATU)",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101002442",
+          "Score/Similaridade": 0.75,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101002444",
+          "Descrição UMLI": "SOBRE BOTAS UAP MAX PARA HIDROJATEAMENTO ULTRA FLEX",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101002444",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101002450",
+          "Descrição UMLI": "LENTE REDONDA ESCURA PARA ÓCULOS DE MAÇARIQUEIRO Nº 04",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101002450",
+          "Score/Similaridade": 0.8,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101002451",
+          "Descrição UMLI": "RESPIRADOR SEMIFACIAL HONEYWELL 5500 (MASCARA VAPORES ORGANICOS)",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101002451",
+          "Descrição DATASUL": "RESPIRADOR SEMIFACIAL HONEYWELL 5500 M550030M RESPIRADOR SEMIFACIAL HONEYWELL 5500 M550030M",
+          "Score/Similaridade": 0.5,
+          "Confiança": "REVISAR",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101002452",
+          "Descrição UMLI": "FILTRO DE VAPORES METALICOS HONEYWELL 7506N95 P2-BRANCO",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101002452",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101002453",
+          "Descrição UMLI": "RETENTOR N750036 HONEYWELL P/FILTRO P2",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101002453",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101002454",
+          "Descrição UMLI": "CARTUCHO P/VAPORES ORGANICOS N75001L HONEYWELL",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101002454",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101002458",
+          "Descrição UMLI": "CORDA SEMI ESTATICA 10,5 A 11MM - PRETO",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101002458",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101002459",
+          "Descrição UMLI": "CORDA SEMI ESTATICA 10,5 A 11MM - VERDE",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101002459",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101002460",
+          "Descrição UMLI": "CORDA SEMI ESTATICA 10,5 A 11MM - LARANJA",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101002460",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101002461",
+          "Descrição UMLI": "CORDA SEMI ESTATICA 10,5 A 11MM - VERMELHO",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101002461",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101002463",
+          "Descrição UMLI": "BOTA DE SEGURANÇA TIPO COTURNO ESCALADOR CANO LONGO Nº 39",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101002463",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101002464",
+          "Descrição UMLI": "BOTA DE SEGURANÇA TIPO COTURNO ESCALADOR CANO LONGO Nº 40",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101002464",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101002465",
+          "Descrição UMLI": "BOTA DE SEGURANÇA TIPO COTURNO ESCALADOR CANO LONGO Nº 41",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101002465",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101002467",
+          "Descrição UMLI": "BOTA DE SEGURANÇA TIPO COTURNO ESCALADOR CANO LONGO Nº 43",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101002467",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101002468",
+          "Descrição UMLI": "BOTA DE SEGURANÇA TIPO COTURNO ESCALADOR CANO LONGO Nº 44",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101002468",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101002469",
+          "Descrição UMLI": "BOTA DE SEGURANÇA TIPO COTURNO ESCALADOR CANO LONGO Nº 45",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101002469",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101002477",
+          "Descrição UMLI": "CAPACETE TIPO JOCKEY ABA FRONTAL COR AZUL ESCURO",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101002477",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101002480",
+          "Descrição UMLI": "CAPACETE TIPO JOCKEY ABA FRONTAL COR MARROM",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101002480",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101002483",
+          "Descrição UMLI": "CAPACETE TIPO JOCKEY ABA FRONTAL COR CINZA",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101002483",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101002484",
+          "Descrição UMLI": "CAPACETE TIPO JOCKEY ABA FRONTAL COR BEGE",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101002484",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101002485",
+          "Descrição UMLI": "PLACA DE PVC 22 X 11CM ANDAIME LIBERADO",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101002485",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101002487",
+          "Descrição UMLI": "FILTRO DE VAPORES METALICOS HONEYWELL 75FFP100 P3-ROSA",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101002487",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101002491",
+          "Descrição UMLI": "BASTÃO BALIZADOR - 1,80 m",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101002491",
+          "Descrição DATASUL": "BASTâO BALIZADOR - 1,80 m BASTâO BALIZADOR - 1,80 m",
+          "Score/Similaridade": 0.5,
+          "Confiança": "REVISAR",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101002543",
+          "Descrição UMLI": "TALABARTE EM 'I' CARBOGRAFITE CG-343AB, COM ABSORVEDOR DE ENERGIA ENGATE RÁPIDO",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101002543",
+          "Score/Similaridade": 0.86,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101002544",
+          "Descrição UMLI": "COLETE REFL ZIPER VERDE LIMAO- G",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101002544",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101002565",
+          "Descrição UMLI": "DISPOSITIVO ERGONOMICO-PEGA CILINDRO-ACESSORIO P/MOVIMENTAÇÃO ",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "101002565",
+          "Score/Similaridade": 0.75,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "101002568",
+          "Descrição UMLI": "RETENTOR ELÁSTICO 1200 MM C MOSQUETÃO E CORDÃO DE AJUSTE (FIEL)",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "101002568",
+          "Descrição DATASUL": "RETENTOR ELâ¡STICO 1200 MM C MOSQUETâO E CORDâO DE AJUSTE RETENTOR ELâ¡STICO 1200 MM C MOSQUETâO E CORDâO DE AJUSTE",
+          "Score/Similaridade": 0.33,
+          "Confiança": "REVISAR",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "102001344",
+          "Descrição UMLI": "ALCOOL ISOPROPILICO",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "102001344",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "102001975",
+          "Descrição UMLI": "MACA STR ENVELOPE PARA RESGATE",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "102001975",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "102001977",
+          "Descrição UMLI": "MOCHILA PARA CORDA DE RESGATE 50L",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "102001977",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "102002085",
+          "Descrição UMLI": "PROTETOR SOLAR FATOR 60",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "102002085",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "206195448",
+          "Descrição UMLI": "MANGUEIRA AR 1064572",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "206195448",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "211001013",
+          "Descrição UMLI": "ABRACADEIRA HELLERMANN 300MM",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "211001013",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "211026154",
+          "Descrição UMLI": "CABO ELÉTRICO 3 X 2,5 MM ( PARA EXTENSÃO )",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "211026154",
+          "Descrição DATASUL": "CABO ELETRICO RIGIDO 750V POT. REF-FICAP 3X2,5MM2 TIPOFRTST CABO ELETRICO RIGIDO 750V POT. REF-FICAP 3X2,5MM2 TIPOFRTST",
+          "Score/Similaridade": 0.33,
+          "Confiança": "REVISAR",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "211048070",
+          "Descrição UMLI": "CONECTOR P/ CABO DE SOLDA BORRACHA 2/0 01003510 500A (MACHO E FEMAEA)",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "211048070",
+          "Score/Similaridade": 0.67,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "211057025",
+          "Descrição UMLI": "DISJUNTOR 40A",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "211057025",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "211057062",
+          "Descrição UMLI": "DISJUNTOR TRIPOLAR 60AMP",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "211057062",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "211057076",
+          "Descrição UMLI": "DISJUNTOR DIFERENCIAL DR 63A",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "211057076",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "211057089",
+          "Descrição UMLI": "DISJUNTOR BIPOLAR 16A",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "211057089",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "212005024",
+          "Descrição UMLI": "AMPERIMETRO ALICATE 600V AC/DC ",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "212005024",
+          "Descrição DATASUL": "AMPERIMETRO AMPERIMETRO",
+          "Score/Similaridade": 0.33,
+          "Confiança": "REVISAR",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "212037013",
+          "Descrição UMLI": "CONECTORES CARBOGRAFITE BORRACHA 012271012 CG 500 BORRACHA",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "212037013",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "212076130",
+          "Descrição UMLI": "LANTERNA LED DE MÃO A PROVA DE EXPLOSÃO MARCA: NIGHTSTICK MOD:XPP-5418GX",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "212076130",
+          "Descrição DATASUL": "LANTERNA LED LANTERNA LED",
+          "Score/Similaridade": 0.17,
+          "Confiança": "REVISAR",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "214093012",
+          "Descrição UMLI": "PINO TENSOR DOLLY RANDON 20MM",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "214093012",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "215012012",
+          "Descrição UMLI": "CABO C/ GANCHO P/ TIRFOR - 1600KG 7/16 X 20M",
+          "Grupo UMLI": "EQUIPAMENTO",
+          "Código DATASUL": "215012012",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "219018006",
+          "Descrição UMLI": "DISCO PRATO 4.1/2\"  P/ LIXADEIRA PNEUM.",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "219018006",
+          "Descrição DATASUL": "PRATO P/ LIXADEIRA HOOKIT PRATO P/ LIXADEIRA HOOKIT",
+          "Score/Similaridade": 0.5,
+          "Confiança": "REVISAR",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "219020001",
+          "Descrição UMLI": "DESENGRAXANTE P/ PINTURA",
+          "Grupo UMLI": "TINTA",
+          "Código DATASUL": "219020001",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "224001027",
+          "Descrição UMLI": "ABRACADEIRA REGULAVEL 3/4\"",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "224001027",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "224027007",
+          "Descrição UMLI": "ENGATE RAPIDO ROSCA INTERNA 1",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "224027007",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "224027008",
+          "Descrição UMLI": "ENGATE RAPIDO ROSCA EXTERNA 1´´",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "224027008",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "224033004",
+          "Descrição UMLI": "FITA TEFLON 3/4´´X25MT",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "224033004",
+          "Score/Similaridade": 0.67,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "226057001",
+          "Descrição UMLI": "DISTRIBUIDOR DE AR 3101158601",
+          "Grupo UMLI": "EQUIPAMENTO",
+          "Código DATASUL": "226057001",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "226063002",
+          "Descrição UMLI": "ENGATE RAPIDO 3/4´´",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "226063002",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "228271002",
+          "Descrição UMLI": "TERMOMETRO INFRA VERMELHO AF-79209",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "228271002",
+          "Descrição DATASUL": "TERMOMETRO TERMOMETRO",
+          "Score/Similaridade": 0.33,
+          "Confiança": "REVISAR",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "229069003",
+          "Descrição UMLI": "POLIA DUPLA 5315",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "229069003",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "231015008",
+          "Descrição UMLI": "LAMINA DE SERRA STARRET 1/2\" X 12\" RS-1224",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "231015008",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "231016011",
+          "Descrição UMLI": "LIMA CHATA BASTARDA 12\"",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "231016011",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "231023001",
+          "Descrição UMLI": "PISTOLA PARA APLICA?ÇO DE SILICONE",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "231023001",
+          "Score/Similaridade": 0.67,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "231029002",
+          "Descrição UMLI": "DESENGRIPANTE WHITE LUB",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "231029002",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "238028007",
+          "Descrição UMLI": "CABO ELÉTRICO 4 X 10 MM² (PARA EXTENSÃO)",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "238028007",
+          "Descrição DATASUL": "CABO ELETRICO  DYNAPAC265344 CABO ELETRICO  DYNAPAC265344",
+          "Score/Similaridade": 0.33,
+          "Confiança": "REVISAR",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "240006027",
+          "Descrição UMLI": "CABO DE SOLDA EXTRA FLEXIVEL 95MM",
+          "Grupo UMLI": "EQUIPAMENTO",
+          "Código DATASUL": "240006027",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "240015002",
+          "Descrição UMLI": "AGULHEIRO PNEUMATICO",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "240015002",
+          "Descrição DATASUL": "AGULHEIRO AGULHEIRO",
+          "Score/Similaridade": 0.5,
+          "Confiança": "REVISAR",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "240015156",
+          "Descrição UMLI": "MACARICO DE CORTE 90 GRAUS C531 (CANETA)",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "240015156",
+          "Score/Similaridade": 0.75,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "240015158",
+          "Descrição UMLI": "MARCADOR INDUSTRIAL AMARELO 1200 0,3MM",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "240015158",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "240015162",
+          "Descrição UMLI": "MARCADOR INDUSTRIAL BRANCO",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "240015162",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "240015214",
+          "Descrição UMLI": "VALVULA CORTA CHAMA ACETILENO MACARICO",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "240015214",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "240015215",
+          "Descrição UMLI": "VALVULA CORTA CHAMA ACETILENO REGULADOR",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "240015215",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "240015216",
+          "Descrição UMLI": "VALVULA CORTA CHAMA OXIGENIO MACARICO",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "240015216",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "240015217",
+          "Descrição UMLI": "VALVULA CORTA CHAMA OXIGENIO REGULADOR",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "240015217",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "240015221",
+          "Descrição UMLI": "PORTA ELETRODO CARBOGRAFITE (ALICATE SOLDA)",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "240015221",
+          "Score/Similaridade": 0.6,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "401001056",
+          "Descrição UMLI": "FITA CREPE - 48 mm x 50 mt",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "401001056",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "401001062",
+          "Descrição UMLI": "GRAMPO PARA GRAMPEADOR GALVANIZADO",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "401001062",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "401001085",
+          "Descrição UMLI": "PASTA SUSPENSA COM VISOR",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "401001085",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "401001088",
+          "Descrição UMLI": "PERFURADOR DE PAPEL",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "401001088",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "401001093",
+          "Descrição UMLI": "PRANCHETA PARA FIXACAO PAPEIS",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "401001093",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "401001096",
+          "Descrição UMLI": "REGUA",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "401001096",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "401001110",
+          "Descrição UMLI": "PLÁSTICO PARA PLASTIFICAÇÃO A3 (Polaseal)",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "401001110",
+          "Descrição DATASUL": "PLASTICO POLASEAL A3 PLASTICO POLASEAL A3",
+          "Score/Similaridade": 0.33,
+          "Confiança": "REVISAR",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "401001113",
+          "Descrição UMLI": "PAPEL A4 75GR BRANCO 500FLS",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "401001113",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "401001123",
+          "Descrição UMLI": "CLIP 4 0 PARA PAPEL COM 500GR",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "401001123",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "401001157",
+          "Descrição UMLI": "ENVELOPE PLÁSTICO A4",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "401001157",
+          "Descrição DATASUL": "ENVELOPE PLASTICO A4 COM 4 FUROS ENVELOPE PLASTICO A4 COM 4 FUROS",
+          "Score/Similaridade": 0.5,
+          "Confiança": "REVISAR",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "401001191",
+          "Descrição UMLI": "PLASTIFICADORA A4 A3 GUILHOTINA CANTEADEIRA 3x1 OFF PAPER 110v",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "401001191",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "401001196",
+          "Descrição UMLI": "CANETA ESFEROGRAFICA AZUL",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "401001196",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "401001239",
+          "Descrição UMLI": "CANETA MARCA TEXTO AMARELO",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "401001239",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "403002049",
+          "Descrição UMLI": "GARRAFA TERMICA (10 LITROS)",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "403002049",
+          "Score/Similaridade": 0.67,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "404001075",
+          "Descrição UMLI": "VASSOURA",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "404001075",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "404001114",
+          "Descrição UMLI": "SACO PLASTICO PARA LIXO 240L PRETO",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "404001114",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "501315062",
+          "Descrição UMLI": "CHAVE DE PHILLIPS - 3/16pol x 6pol - HASTE ISOLADA",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "503135062",
+          "Descrição DATASUL": "CHAVE PHILLIPS - 3/16pol x 4pol - ISOLAMENTO 1000 V CHAVE PHILLIPS - 3/16pol x 4pol - ISOLAMENTO 1000 V",
+          "Score/Similaridade": 0.6,
+          "Confiança": "CODIGO_SIMILAR_ALTA",
+          "Observação": "Código com 2 digitos - possível erro de digitação"
+        },
+        {
+          "Código UMLI": "502002004",
+          "Descrição UMLI": "BATEDOR AGITADOR ROTATIVO.",
+          "Grupo UMLI": "EQUIPAMENTO",
+          "Código DATASUL": "502002004",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "502003015",
+          "Descrição UMLI": "ASPIRADOR PNEUMATICO COM TAMBOR ",
+          "Grupo UMLI": "EQUIPAMENTO",
+          "Código DATASUL": "502003015",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "502042033",
+          "Descrição UMLI": "COMPRESSOR ",
+          "Grupo UMLI": "EQUIPAMENTO",
+          "Código DATASUL": "502042033",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "502066032",
+          "Descrição UMLI": "ESMERILHADEIRA ELETRICA CAPACIDADE 5 GWS 15-125 ",
+          "Grupo UMLI": "EQUIPAMENTO",
+          "Código DATASUL": "502066032",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "502066033",
+          "Descrição UMLI": "ESMERILHADEIRA ELETRICA CAPACIDADE 7 GWS 22-180",
+          "Grupo UMLI": "EQUIPAMENTO",
+          "Código DATASUL": "502066033",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "502066042",
+          "Descrição UMLI": "ESMERILHADEIRA PNEUMATICA PUMA MOD AT_7037I",
+          "Grupo UMLI": "EQUIPAMENTO",
+          "Código DATASUL": "502066042",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "502066043",
+          "Descrição UMLI": "PROTETOR DE DISCO TP-7012C  _ ESMERILHADEIRA PNEUM. PUMA",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "502066043",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "502076044",
+          "Descrição UMLI": "FURADEIRA ELETRICA DE IMPACTO - BOSCH - CAP. 1/2 pol",
+          "Grupo UMLI": "EQUIPAMENTO",
+          "Código DATASUL": "502076044",
+          "Score/Similaridade": 0.8,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "502086045",
+          "Descrição UMLI": "LAVADORA  7000 PSI-440V 60 HZ TRIF PISTOLA AF: 46798 LAVA JATO",
+          "Grupo UMLI": "EQUIPAMENTO",
+          "Código DATASUL": "502086045",
+          "Score/Similaridade": 0.83,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "502086046",
+          "Descrição UMLI": "PISTOLA PARA LAVADORA DE ALTA PRESSÃO",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "502086046",
+          "Score/Similaridade": 0.75,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "502087001",
+          "Descrição UMLI": "LIXADEIRA PNEUMATICA ANGULAR 5, REF. GPW-211 - PUMA",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "502087001",
+          "Score/Similaridade": 0.83,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "502089004",
+          "Descrição UMLI": "MAQUINA MONTI INDUSTRIAL PNEUMATICA",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "502089004",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "502089016",
+          "Descrição UMLI": "EQUIPAMENTO P/ PINTURA BOMBA AIRLESS TAG AF 46248",
+          "Grupo UMLI": "EQUIPAMENTO",
+          "Código DATASUL": "502089016",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "502094013",
+          "Descrição UMLI": "CABO DE COMANDO XMT350 /SUITCASE 12RC COM 25 METROS",
+          "Grupo UMLI": "EQUIPAMENTO",
+          "Código DATASUL": "502094013",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "502101009",
+          "Descrição UMLI": "MAQUINA ROTULADORA BROTHER",
+          "Grupo UMLI": "EQUIPAMENTO",
+          "Código DATASUL": "502101009",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "502109010",
+          "Descrição UMLI": "MARTELETE PNEUMATICO DE BATER FERRUGEM COM 01 PISTAO (DESENCRUSTADOR)",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "502109010",
+          "Score/Similaridade": 0.83,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "502129018",
+          "Descrição UMLI": "APARAFUSADEIRA PERFURADEIRA A BATERIA SBT 6 22 HILTI",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "502129018",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "502129019",
+          "Descrição UMLI": "BATERIA B 22_85 LI_ION_HILTI",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "502129019",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "502129020",
+          "Descrição UMLI": "CARREGADOR BATERIA C 6_22 220V HILTI",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "502129020",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "502131008",
+          "Descrição UMLI": "PARAFUSADEIRA PNEUMÁTICA DE IMPACTO ALONGADA 1 POL",
+          "Grupo UMLI": "EQUIPAMENTO",
+          "Código DATASUL": "502131008",
+          "Score/Similaridade": 0.75,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "502131009",
+          "Descrição UMLI": "PARAFUSADEIRA PNEUMÁTICA DE IMPACTO CURTA 1 POL",
+          "Grupo UMLI": "EQUIPAMENTO",
+          "Código DATASUL": "502131009",
+          "Score/Similaridade": 0.75,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "502143001",
+          "Descrição UMLI": "PULVERIZADOR - MARCA JACTO CAPACIDADE 20 Lt",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "502143001",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "502143016",
+          "Descrição UMLI": "PULVERIZADOR MANUAL 2 LITROS POR PRESSAO PREVIA",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "502143016",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "502146012",
+          "Descrição UMLI": "MALETA ARCOFIL COM FILTRO",
+          "Grupo UMLI": "EQUIPAMENTO",
+          "Código DATASUL": "502146012",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "502153010",
+          "Descrição UMLI": "RETIFICA RETA ELETRICA BOSCH MOD.GGS 28",
+          "Grupo UMLI": "EQUIPAMENTO",
+          "Código DATASUL": "502153010",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "502163013",
+          "Descrição UMLI": "SERRA SABRE ELETRICA BOSCH MODELO GSA 1100 220V",
+          "Grupo UMLI": "EQUIPAMENTO",
+          "Código DATASUL": "502163013",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "502215001",
+          "Descrição UMLI": "MANIFOLD DE AÇO CARBONO C/ENTRADA 1´´ E 04 SAÍDAS DE 3/4´´ COM VALVULAS ESFERA DISTRIBUIDOR DE AR",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "502215001",
+          "Score/Similaridade": 0.86,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "503003003",
+          "Descrição UMLI": "ADAPTADOR PARA SOQUETE - 3/4pol - COM QUADRADO 1pol",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "503003003",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "503016006",
+          "Descrição UMLI": "ALAVANCA TELESCOPICA P/ TIRFOR",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "503016006",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "503019008",
+          "Descrição UMLI": "ALICATE DE CORTE DIAGONAL - 6pol",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "503019008",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "503020003",
+          "Descrição UMLI": "ALICATE DE PRESSAO CRIMPADOR PRENSA TERMINAL DE 0.5 A 4.0 MM",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "503020003",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "503021002",
+          "Descrição UMLI": "ALICATE DE BICO CHATO COMPRIDO - 6.1/4pol SEM ISOLACAO",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "503021002",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "503026017",
+          "Descrição UMLI": "ALICATE DE BICO MEIA CANA RETO - COM CORTE E ISOLACAO - 6pol",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "503026017",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "503029001",
+          "Descrição UMLI": "ALICATE DE BICO REDONDO RETO - 6pol COM ISOLACAO",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "503029001",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "503034001",
+          "Descrição UMLI": "ALICATE DE GRIMPAR CONECTOR",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "503034001",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "503037008",
+          "Descrição UMLI": "ALICATE DESCASCADOR DE FIOS - 7pol - COM ISOLACAO",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "503037008",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "503053062",
+          "Descrição UMLI": "ALICATE PRENSA TERMINAL - CRIMPER - CR-22",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "503053062",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "503060005",
+          "Descrição UMLI": "ALICATE UNIVERSAL - 8pol - COM ISOLACAO",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "503060005",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "503061015",
+          "Descrição UMLI": "ALICATE VOLT AMPERIMETRO ET 32002",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "503061015",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "503063002",
+          "Descrição UMLI": "ARCO DE SERRA ",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "503063002",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "503073001",
+          "Descrição UMLI": "BOLSA DE LONA PARA FERRAMENTAS",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "503073001",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "503088001",
+          "Descrição UMLI": "CAIXA DE FERRAMENTA SANFONADA 3 GAVETAS",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "503088001",
+          "Descrição DATASUL": "CAIXA DE FERRAMENTAS COM 3 DIVISOES CAIXA DE FERRAMENTAS COM 3 DIVISOES",
+          "Score/Similaridade": 0.5,
+          "Confiança": "REVISAR",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "503104001",
+          "Descrição UMLI": "CHAVE CATRACA PARA ANDAIME - 7/8pol",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "503104001",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "503105069",
+          "Descrição UMLI": "CHAVE COMBINADA - 12mm - ISOLAMENTO 1000 V",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "503105069",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "503105070",
+          "Descrição UMLI": "CHAVE COMBINADA - 13mm - ISOLAMENTO 1000 V",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "503105070",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "503105074",
+          "Descrição UMLI": "CHAVE COMBINADA - 17mm - ISOLAMENTO 1000 V",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "503105074",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "503105076",
+          "Descrição UMLI": "CHAVE COMBINADA - 19mm - ISOLAMENTO 1000 V",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "503105076",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "503106001",
+          "Descrição UMLI": "CHAVE COMBINADA - 1pol",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "503106001",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "503106004",
+          "Descrição UMLI": "CHAVE COMBINADA - 1.1/4",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "503106004",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "503106005",
+          "Descrição UMLI": "CHAVE COMBINADA - 1.1/8",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "503106005",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "503106006",
+          "Descrição UMLI": "CHAVE COMBINADA - 1.1/16",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "503106006",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "503106018",
+          "Descrição UMLI": "CHAVE COMBINADA - 1/2pol",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "503106018",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "503106019",
+          "Descrição UMLI": "CHAVE COMBINADA - 1/4pol",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "503106019",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "503106021",
+          "Descrição UMLI": "CHAVE COMBINADA - 11/16pol",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "503106021",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "503106022",
+          "Descrição UMLI": "CHAVE COMBINADA - 13/16pol",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "503106022",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "503106023",
+          "Descrição UMLI": "CHAVE COMBINADA - 15/16pol",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "503106023",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "503106042",
+          "Descrição UMLI": "CHAVE COMBINADA - 3/4pol",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "503106042",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "503106043",
+          "Descrição UMLI": "CHAVE COMBINADA - 3/8pol",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "503106043",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "503106046",
+          "Descrição UMLI": "CHAVE COMBINADA - 5/16pol",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "503106046",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "503106047",
+          "Descrição UMLI": "CHAVE COMBINADA - 5/8pol",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "503106047",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "503106048",
+          "Descrição UMLI": "CHAVE COMBINADA - 7/16pol",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "503106048",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "503106049",
+          "Descrição UMLI": "CHAVE COMBINADA - 7/8pol",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "503106049",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "503106050",
+          "Descrição UMLI": "CHAVE COMBINADA - 9/16pol",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "503106050",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "503106072",
+          "Descrição UMLI": "JOGO CHAVE COMBINADA - 1/4pol X 1pol COM 14 PCS",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "503106072",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "503108011",
+          "Descrição UMLI": "CHAVE AJUSTÁVEL (INGLESA) DE 10in ISOLADA",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "503108011",
+          "Score/Similaridade": 0.75,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "503109004",
+          "Descrição UMLI": "CHAVE DE BOCA AJUSTAVEL (INGLESA) - 12pol",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "503109004",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "503109005",
+          "Descrição UMLI": "CHAVE DE BOCA AJUSTAVEL (INGLESA) - 15pol",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "503109005",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "503112014",
+          "Descrição UMLI": "CHAVE DE FENDA - 1/4pol x 6pol - HASTE ISOLADA",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "503112014",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "503112016",
+          "Descrição UMLI": "CHAVE DE FENDA - 1/4pol x 8pol",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "503112016",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "503112024",
+          "Descrição UMLI": "CHAVE DE FENDA - 1/8pol x 6pol",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "503112024",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "503112034",
+          "Descrição UMLI": "CHAVE DE FENDA - 3/16pol x 4pol",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "503112034",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "503112045",
+          "Descrição UMLI": "CHAVE DE FENDA - 3/8pol x 10pol",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "503112045",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "503112080",
+          "Descrição UMLI": "CHAVE DE FENDA COM HASTE ISOLADA PARA 1000V 1/8pol x 3pol",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "503112080",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "503121051",
+          "Descrição UMLI": "CHAVE ESTRELA DE BATER - 1.1/16pol",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "503121051",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "503121053",
+          "Descrição UMLI": "CHAVE ESTRELA DE BATER - 1.1/4pol",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "503121053",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "503121054",
+          "Descrição UMLI": "CHAVE ESTRELA DE BATER - 1.1/8pol",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "503121054",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "503121058",
+          "Descrição UMLI": "CHAVE ESTRELA DE BATER - 1.3/16pol",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "503121058",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "503121062",
+          "Descrição UMLI": "CHAVE ESTRELA DE BATER - 1.5/8pol",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "503121062",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "503121068",
+          "Descrição UMLI": "CHAVE ESTRELA DE BATER - 2pol",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "503121068",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "503121076",
+          "Descrição UMLI": "CHAVE ESTRELA DE BATER - 2.3/16pol",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "503121076",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "503121077",
+          "Descrição UMLI": "CHAVE ESTRELA DE BATER - 2.3/4pol",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "503121077",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "503121078",
+          "Descrição UMLI": "CHAVE ESTRELA DE BATER - 2.3/8pol",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "503121078",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "503121083",
+          "Descrição UMLI": "CHAVE ESTRELA DE BATER - 2.9/16pol",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "503121083",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "503121084",
+          "Descrição UMLI": "CHAVE ESTRELA DE BATER - 3pol",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "503121084",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "503136003",
+          "Descrição UMLI": "CHAVE GRIFO 10\"",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "503136003",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "503152034",
+          "Descrição UMLI": "CINTA DE POLIESTER 25MM",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "503152034",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "503166007",
+          "Descrição UMLI": "COMPASSO PONTA RETA - COM MOLA - 12pol",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "503166007",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "503169002",
+          "Descrição UMLI": "CORTA TUBO SERVICO PESADO - REF.1-A MARCA RIDGID - 1/8pol A 1.1/4pol",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "503169002",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "503185009",
+          "Descrição UMLI": "CURVADOR DE TUBO TIPO ALAVANCA - REF.394 MARCA RIDGID - CAP. 1/4pol",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "503185009",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "503185011",
+          "Descrição UMLI": "CURVADOR DE TUBO TIPO ALAVANCA - REF.396 MARCA RIDGID - CAP. 3/8pol",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "503185011",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "503185013",
+          "Descrição UMLI": "CURVADOR DE TUBO TIPO ALAVANCA - REF.398 MARCA RIDGID - CAP. 1/2pol",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "503185013",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "503203049",
+          "Descrição UMLI": "ESTROPO DE CABO DE ACO - 1/2pol x 2 mt",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "503203049",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "503203101",
+          "Descrição UMLI": "ESTROPO DE CABO DE ACO - 5/8pol x 2 mt",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "503203101",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "503205001",
+          "Descrição UMLI": "ESTUFA TIPO COCHICHO - 02 KG",
+          "Grupo UMLI": "EQUIPAMENTO",
+          "Código DATASUL": "503205001",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "503221001",
+          "Descrição UMLI": "FACA DE ELETRICISTA (SEM PONTA) PADRÃO",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "503221001",
+          "Descrição DATASUL": "FACA DESENCAPADORA DE CABOS, REF. 091837 - GEDORE FACA DESENCAPADORA DE CABOS, REF. 091837 - GEDORE",
+          "Score/Similaridade": 0.25,
+          "Confiança": "REVISAR",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "503244004",
+          "Descrição UMLI": "LIMA MEIA CANA BASTARDA - 12pol",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "503244004",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "503253013",
+          "Descrição UMLI": "LIMA ROTATIVA CILINDRICA- 1/2pol",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "503253013",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "503253075",
+          "Descrição UMLI": "LIMA ROTATIVA CONICA PONTIAGUDA - 1/2pol COM HASTE 1/4pol",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "503253075",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "503253076",
+          "Descrição UMLI": "LIMA ROTATIVA CONICA PONTIAGUDA - 3/8pol COM HASTE 1/4pol",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "503253076",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "503253109",
+          "Descrição UMLI": "LIMA ROTATIVA (FREZA) FORMA CILINDRICA REDONDA 3/8''",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "503253109",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "503266008",
+          "Descrição UMLI": "MANILHA DE ACO FORJADO COM PINO ROSQUEAVEL - 1/2pol",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "503266008",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "503266021",
+          "Descrição UMLI": "MANILHA DE ACO FORJADO COM PINO ROSQUEAVEL - 5/8pol",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "503266021",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "503271009",
+          "Descrição UMLI": "MARTELO BOLA - 0,800 Kg",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "503271009",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "503271017",
+          "Descrição UMLI": "MARTELO BOLA - 1,000 KG COM CABO DE FIBRA",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "503271017",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "503304001",
+          "Descrição UMLI": "PICADOR PARA SOLDA",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "503304001",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "503324005",
+          "Descrição UMLI": "PUNCAO DE BICO PARA MARCAR - 1/4pol x 6pol",
+          "Grupo UMLI": "INSTRUMENTAÇÃO",
+          "Código DATASUL": "503324005",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "503324011",
+          "Descrição UMLI": "PUNCAO DE BICO PARA MARCAR - 3/8pol x 6pol",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "503324011",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "503326001",
+          "Descrição UMLI": "REBITADOR POP",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "503326001",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "503331005",
+          "Descrição UMLI": "RISCADOR TIPO polLpol - 8pol",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "503331005",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "503358017",
+          "Descrição UMLI": "TALHADEIRA PLANA 300MM C/ EMPUNHADORA PARA CONCRETO",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "503358017",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "503377004",
+          "Descrição UMLI": "TESOURA CORTE RETO - COM GANCHO - 12pol",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "503377004",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "503387006",
+          "Descrição UMLI": "TORNO DE BANCADA FIXO PARALELO - No. 06",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "503387006",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "503396050",
+          "Descrição UMLI": "VAZADOR DE BATER - 1/16pol A 1pol",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "503396050",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "504025008",
+          "Descrição UMLI": "ESQUADRO EM ACO INOX ò 12pol",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "504025008",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "504055002",
+          "Descrição UMLI": "MEDIDOR DE PELICULA SECA",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "504055002",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "504094002",
+          "Descrição UMLI": "PAQUIMETRO - 8 POLEGADA",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "504094002",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "504112018",
+          "Descrição UMLI": "REGULADOR DE PRESSÃO PARA ARGONIO",
+          "Grupo UMLI": "EQUIPAMENTO",
+          "Código DATASUL": "504112018",
+          "Score/Similaridade": 0.67,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "504113002",
+          "Descrição UMLI": "REGULADOR DE PRESSAO PARA GAS CARBONICO",
+          "Grupo UMLI": "EQUIPAMENTO",
+          "Código DATASUL": "504113002",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "504118014",
+          "Descrição UMLI": "REGULADOR DE PRESSÃO PARA ACETILENO",
+          "Grupo UMLI": "EQUIPAMENTO",
+          "Código DATASUL": "504118014",
+          "Score/Similaridade": 0.67,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "504118018",
+          "Descrição UMLI": "REGULADOR DE PRESSAO DE AR E FILTRO 1/4 Pol",
+          "Grupo UMLI": "EQUIPAMENTO",
+          "Código DATASUL": "504118018",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "504123005",
+          "Descrição UMLI": "REGULADOR DE PRESSAO PARA OXIGENIO - 6.A.8 MARCA AGA",
+          "Grupo UMLI": "EQUIPAMENTO",
+          "Código DATASUL": "504123005",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "504126006",
+          "Descrição UMLI": "RELOGIO TERMOHIGROMETRO DIGITAL",
+          "Grupo UMLI": "EQUIPAMENTO",
+          "Código DATASUL": "504126006",
+          "Score/Similaridade": 0.67,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "504147004",
+          "Descrição UMLI": "TRENA DE ACO - 5 mt",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "504147004",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "504155004",
+          "Descrição UMLI": "MANOMETRO E.S. - 0 A 20 Kgf/cm2",
+          "Grupo UMLI": "EQUIPAMENTO",
+          "Código DATASUL": "504155004",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "506052003",
+          "Descrição UMLI": "GRAVADOR ELETRICO -110/127V",
+          "Grupo UMLI": "EQUIPAMENTO",
+          "Código DATASUL": "506052003",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "506074084",
+          "Descrição UMLI": "MONITOR 24'' ",
+          "Grupo UMLI": "EQUIPAMENTO",
+          "Código DATASUL": "506074084",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "507003133",
+          "Descrição UMLI": "ARMARIO INCENDIO",
+          "Grupo UMLI": "EQUIPAMENTO",
+          "Código DATASUL": "507003133",
+          "Descrição DATASUL": "ARMARIO ARMARIO",
+          "Score/Similaridade": 0.5,
+          "Confiança": "REVISAR",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "507023008",
+          "Descrição UMLI": "ESTACAO DE LIMPEZA DE OCULOS DE SEGURANCA -MARCA: UVEX CLEAR PLUS - ( S485-BR )",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "507023008",
+          "Descrição DATASUL": "ESTACAO DE LIMPEZA DE OCULOS DE SEGURANCA ESTACAO DE LIMPEZA DE OCULOS DE SEGURANCA",
+          "Score/Similaridade": 0.44,
+          "Confiança": "REVISAR",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "609124122",
+          "Descrição UMLI": "ROLO DE LA DE CARNEIRO 15 CM",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "609124122",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "609124130",
+          "Descrição UMLI": "ROLO DE LA CARNEIRO P/ PINTURA 23 CM",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "609124130",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "701076069",
+          "Descrição UMLI": "FURADEIRA ELETRICA HP 1630 - 220V CAP. 5/8 Pol | TERCEIRO",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "502076069",
+          "Descrição DATASUL": "FURADEIRA ELETRICA HP 1630 - 220V CAP. 5/8 Pol FURADEIRA ELETRICA HP 1630 - 220V CAP. 5/8 Pol",
+          "Score/Similaridade": 0.75,
+          "Confiança": "CODIGO_SIMILAR_ALTA",
+          "Observação": "Código com 2 digitos - possível erro de digitação"
+        },
+        {
+          "Código UMLI": "701096027",
+          "Descrição UMLI": "CILINDRO HIDRAULICO DE SIMPLES ACAO, HASTE SOLIDA, RETORNO POR MOLA, COM CAPACIDADE PARA ATE 25 TON",
+          "Grupo UMLI": "EQUIPAMENTO",
+          "Código DATASUL": "502096027",
+          "Descrição DATASUL": "CILINDRO HIDRAULICO DE SIMPLES ACAO, HASTE SOLIDA, RETORNO P CILINDRO HIDRAULICO DE SIMPLES ACAO, HASTE SOLIDA, RETORNO POR MOLA, COM CAPACIDADE PARA ATE 25 TONELADAS.",
+          "Score/Similaridade": 1,
+          "Confiança": "CODIGO_SIMILAR_ALTA",
+          "Observação": "Código com 2 digitos - possível erro de digitação"
+        },
+        {
+          "Código UMLI": "701096028",
+          "Descrição UMLI": "CILINDRO HIDRAULICO DE SIMPLES ACAO, HASTE SOLIDA, RETORNO POR MOLA, COM CAPACIDADE PARA ATE 30 TONELADAS. | TERCEIRO",
+          "Grupo UMLI": "EQUIPAMENTO",
+          "Código DATASUL": "502096028",
+          "Descrição DATASUL": "CILINDRO HIDRAULICO DE SIMPLES ACAO, HASTE SOLIDA, RETORNO P CILINDRO HIDRAULICO DE SIMPLES ACAO, HASTE SOLIDA, RETORNO POR MOLA, COM CAPACIDADE PARA ATE 30 TONELADAS.",
+          "Score/Similaridade": 0.91,
+          "Confiança": "CODIGO_SIMILAR_ALTA",
+          "Observação": "Código com 2 digitos - possível erro de digitação"
+        },
+        {
+          "Código UMLI": "701101031",
+          "Descrição UMLI": "PLUG 480/500V  3P+T 7H 32A",
+          "Grupo UMLI": "EQUIPAMENTO",
+          "Código DATASUL": "211101031",
+          "Descrição DATASUL": "PLUG STECK 32AX220X240V REF54279 PLUG STECK 32AX220X240V REF54279",
+          "Score/Similaridade": 1,
+          "Confiança": "CODIGO_SIMILAR_ALTA",
+          "Observação": "Código com 2 digitos - possível erro de digitação"
+        },
+        {
+          "Código UMLI": "701171001",
+          "Descrição UMLI": "TERC - TALHA CATRACA, CAPACIDADE 1,5 TONELADAS (ATIVO)",
+          "Grupo UMLI": "EQUIPAMENTO",
+          "Código DATASUL": "502171001",
+          "Descrição DATASUL": "TALHA CATRACA, CAPACIDADE 1,5 TONELADAS (ATIVO) TALHA CATRACA, CAPACIDADE 1,5 TONELADAS (ATIVO)",
+          "Score/Similaridade": 0.83,
+          "Confiança": "CODIGO_SIMILAR_ALTA",
+          "Observação": "Código com 2 digitos - possível erro de digitação"
+        },
+        {
+          "Código UMLI": "701172002",
+          "Descrição UMLI": "TALHA DE ALAVANCA COM CORRENTE DE ELOS - CAPACIDADE 3,0 TONELADAS (ATIVO) | TERCEIRO",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "502172002",
+          "Descrição DATASUL": "TALHA DE ALAVANCA COM CORRENTE DE ELOS - CAPACIDADE 3,0 TONE TALHA DE ALAVANCA COM CORRENTE DE ELOS - CAPACIDADE 3,0 TONELADAS (ATIVO)",
+          "Score/Similaridade": 0.88,
+          "Confiança": "CODIGO_SIMILAR_ALTA",
+          "Observação": "Código com 2 digitos - possível erro de digitação"
+        },
+        {
+          "Código UMLI": "701172015",
+          "Descrição UMLI": "TALHA DE ALAVANCA COM CORRENTE DE ELOS - CAPACIDADE 2,0 TONELADAS | TERCEIRO",
+          "Grupo UMLI": "EQUIPAMENTO",
+          "Código DATASUL": "502172015",
+          "Descrição DATASUL": "TALHA DE ALAVANCA COM CORRENTE DE ELOS - CAPACIDADE 2,0 TONE TALHA DE ALAVANCA COM CORRENTE DE ELOS - CAPACIDADE 2,0 TONELADAS",
+          "Score/Similaridade": 0.86,
+          "Confiança": "CODIGO_SIMILAR_ALTA",
+          "Observação": "Código com 2 digitos - possível erro de digitação"
+        },
+        {
+          "Código UMLI": "701174001",
+          "Descrição UMLI": "TALHA CORRENTE 3 TON  ELEVAÇÃO DE 3 MTS",
+          "Grupo UMLI": "EQUIPAMENTO",
+          "Código DATASUL": "502174001",
+          "Descrição DATASUL": "TALHA MANUAL DE CORRENTE - CAPACIDADE 03 TONELADAS (ATIVO) TALHA MANUAL DE CORRENTE - CAPACIDADE 03 TONELADAS (ATIVO)",
+          "Score/Similaridade": 0.67,
+          "Confiança": "CODIGO_SIMILAR_ALTA",
+          "Observação": "Código com 2 digitos - possível erro de digitação"
+        },
+        {
+          "Código UMLI": "701174006",
+          "Descrição UMLI": "TALHA CORRENTE 2 TON  ELEVAÇÃO DE 3 MTS",
+          "Grupo UMLI": "EQUIPAMENTO",
+          "Código DATASUL": "502174006",
+          "Descrição DATASUL": "TALHA MANUAL DE CORRENTE - CAPACIDADE 02 TONELADAS (ATIVO) TALHA MANUAL DE CORRENTE - CAPACIDADE 02 TONELADAS (ATIVO)",
+          "Score/Similaridade": 0.67,
+          "Confiança": "CODIGO_SIMILAR_ALTA",
+          "Observação": "Código com 2 digitos - possível erro de digitação"
+        },
+        {
+          "Código UMLI": "701215064",
+          "Descrição UMLI": "TERC - BATERIA  DGP8050IS",
+          "Grupo UMLI": "EQUIPAMENTO",
+          "Código DATASUL": 206054054,
+          "Descrição DATASUL": "FIO PARA BATERIA CAT-D6D CAT-D6-D  CATERPILLAR5H7864 FIO PARA BATERIA CAT-D6D CAT-D6-D  CATERPILLAR5H7864",
+          "Score/Similaridade": "62%",
+          "Confiança": "IA_ALTA",
+          "Observação": "Encontrado por análise inteligente de IA"
+        },
+        {
+          "Código UMLI": "701216014",
+          "Descrição UMLI": "ITEM DE TERCEIROS - SOQUETE 3/4 X 1.1/8",
+          "Grupo UMLI": "EQUIPAMENTO",
+          "Código DATASUL": 503003002,
+          "Descrição DATASUL": "ADAPTADOR PARA SOQUETE - 1/4pol - COM QUADRADO 3/8pol ADAPTADOR PARA SOQUETE - 1/4pol - COM QUADRADO 3/8pol",
+          "Score/Similaridade": "82%",
+          "Confiança": "IA_ALTA",
+          "Observação": "Encontrado por análise inteligente de IA"
+        },
+        {
+          "Código UMLI": "701216018",
+          "Descrição UMLI": "ITEM DE TERCEIROS - SOQUETE 3/4 X 1.1/4",
+          "Grupo UMLI": "EQUIPAMENTO",
+          "Código DATASUL": 503003002,
+          "Descrição DATASUL": "ADAPTADOR PARA SOQUETE - 1/4pol - COM QUADRADO 3/8pol ADAPTADOR PARA SOQUETE - 1/4pol - COM QUADRADO 3/8pol",
+          "Score/Similaridade": "82%",
+          "Confiança": "IA_ALTA",
+          "Observação": "Encontrado por análise inteligente de IA"
+        },
+        {
+          "Código UMLI": "701216057",
+          "Descrição UMLI": "TERC - Mangueira de Alta Pressão - 5m",
+          "Grupo UMLI": "EQUIPAMENTO",
+          "Código DATASUL": 208004532,
+          "Descrição DATASUL": "MANGUEIRA ALTA PRESSAO AR COMPRIMIDO 300 PSI = 5/16\" MANGUEIRA ALTA PRESSAO AR COMPRIMIDO 300 PSI = 5/16\"",
+          "Score/Similaridade": "82%",
+          "Confiança": "IA_ALTA",
+          "Observação": "Encontrado por análise inteligente de IA"
+        },
+        {
+          "Código UMLI": "701216058",
+          "Descrição UMLI": "ITEM DE TERCEIROS - Soquete 1/2´´ x 28mm",
+          "Grupo UMLI": "EQUIPAMENTO",
+          "Código DATASUL": 503145045,
+          "Descrição DATASUL": "CHAVE SOQUETE HEXAGONAL DE IMPACTO LONGO - 28MM - COM ENCAIX CHAVE SOQUETE HEXAGONAL DE IMPACTO LONGO - 28MM - COM ENCAIXE DE 1",
+          "Score/Similaridade": "82%",
+          "Confiança": "IA_ALTA",
+          "Observação": "Encontrado por análise inteligente de IA"
+        },
+        {
+          "Código UMLI": "701216060",
+          "Descrição UMLI": "ITEM DE TERCEIROS - Chave catraca 1/2´",
+          "Grupo UMLI": "EQUIPAMENTO",
+          "Código DATASUL": 503104002,
+          "Descrição DATASUL": "CHAVE CATRACA ENCAIXE 1/2pol E COMPRIMENTO 10pol CHAVE CATRACA ENCAIXE 1/2pol E COMPRIMENTO 10pol",
+          "Score/Similaridade": "82%",
+          "Confiança": "IA_ALTA",
+          "Observação": "Encontrado por análise inteligente de IA"
+        },
+        {
+          "Código UMLI": "701216061",
+          "Descrição UMLI": "ITEM DE TERCEIROS - Alongador 1/2´",
+          "Grupo UMLI": "EQUIPAMENTO",
+          "Código DATASUL": 213062002,
+          "Descrição DATASUL": "ALONGADOR DE GARFO EMPILHADEIRA H150J 2,400 MM ALONGADOR DE GARFO EMPILHADEIRA H150J 2,400 MM",
+          "Score/Similaridade": "72%",
+          "Confiança": "IA_ALTA",
+          "Observação": "Encontrado por análise inteligente de IA"
+        },
+        {
+          "Código UMLI": "701216073",
+          "Descrição UMLI": "ITEM DE TERCEIROS - SOQUETE 1/2 X 19mm",
+          "Grupo UMLI": "EQUIPAMENTO",
+          "Código DATASUL": 503145040,
+          "Descrição DATASUL": "CHAVE SOQUETE HEXAGONAL 19mm COM ENCAIXE DE 1/2 CHAVE SOQUETE HEXAGONAL 19mm COM ENCAIXE DE 1/2",
+          "Score/Similaridade": "82%",
+          "Confiança": "IA_ALTA",
+          "Observação": "Encontrado por análise inteligente de IA"
+        },
+        {
+          "Código UMLI": "702019008",
+          "Descrição UMLI": "ALICATE DE CORTE DIAGONAL 6 POL",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "503019008",
+          "Descrição DATASUL": "ALICATE DE CORTE DIAGONAL - 6pol ALICATE DE CORTE DIAGONAL - 6pol",
+          "Score/Similaridade": 1,
+          "Confiança": "CODIGO_SIMILAR_ALTA",
+          "Observação": "Código com 2 digitos - possível erro de digitação"
+        },
+        {
+          "Código UMLI": "702331005",
+          "Descrição UMLI": "TERC - RISCADOR TIPO polLpol - 8pol",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "503331005",
+          "Descrição DATASUL": "RISCADOR TIPO polLpol - 8pol RISCADOR TIPO polLpol - 8pol",
+          "Score/Similaridade": 0.75,
+          "Confiança": "CODIGO_SIMILAR_ALTA",
+          "Observação": "Código com 2 digitos - possível erro de digitação"
+        },
+        {
+          "Código UMLI": "702347040",
+          "Descrição UMLI": "SOQUETE ESTRIADO - 32 mm COM QUADRADO 1/2pol | TERCEIRO",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "503347040",
+          "Descrição DATASUL": "SOQUETE ESTRIADO - 32 mm COM QUADRADO 1/2pol SOQUETE ESTRIADO - 32 mm COM QUADRADO 1/2pol",
+          "Score/Similaridade": 0.8,
+          "Confiança": "CODIGO_SIMILAR_ALTA",
+          "Observação": "Código com 2 digitos - possível erro de digitação"
+        },
+        {
+          "Código UMLI": "702351025",
+          "Descrição UMLI": "SOQUETE IMPACTO SEXTAVADO - 1.7/16pol COM QUADRADO 1pol | TERCEIRO",
+          "Grupo UMLI": "EQUIPAMENTO",
+          "Código DATASUL": "503351025",
+          "Descrição DATASUL": "SOQUETE IMPACTO SEXTAVADO - 1.7/16pol COM QUADRADO 1pol SOQUETE IMPACTO SEXTAVADO - 1.7/16pol COM QUADRADO 1pol",
+          "Score/Similaridade": 0.83,
+          "Confiança": "CODIGO_SIMILAR_ALTA",
+          "Observação": "Código com 2 digitos - possível erro de digitação"
+        },
+        {
+          "Código UMLI": "702351110",
+          "Descrição UMLI": "SOQUETE IMPACTO SEXTAVADO 22 MM C/ QUADRADO 1/2pol | TERCEIRO",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "503351110",
+          "Descrição DATASUL": "SOQUETE IMPACTO SEXTAVADO 22 MM C/ QUADRADO 1/2pol SOQUETE IMPACTO SEXTAVADO 22 MM C/ QUADRADO 1/2pol",
+          "Score/Similaridade": 0.83,
+          "Confiança": "CODIGO_SIMILAR_ALTA",
+          "Observação": "Código com 2 digitos - possível erro de digitação"
+        },
+        {
+          "Código UMLI": "703138009",
+          "Descrição UMLI": "TORQUIMETRO DE ESTALO, 720 A 2000 Nm, REF. 8564-01 GEDORE | TERCEIRO",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "504138009",
+          "Descrição DATASUL": "TORQUIMETRO DE ESTALO, 720 A 2000 Nm, REF. 8564-01 GEDORE TORQUIMETRO DE ESTALO, 720 A 2000 Nm, REF. 8564-01 GEDORE",
+          "Score/Similaridade": 0.8,
+          "Confiança": "CODIGO_SIMILAR_ALTA",
+          "Observação": "Código com 2 digitos - possível erro de digitação"
+        },
+        {
+          "Código UMLI": "902001002",
+          "Descrição UMLI": "BATERIA - 9 V",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "902001002",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "902001003",
+          "Descrição UMLI": "PILHAS ( C ) - MÉDIA",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "902001003",
+          "Descrição DATASUL": "PILHA MEDIA - 1,5 V PILHA MEDIA - 1,5 V",
+          "Score/Similaridade": 0.5,
+          "Confiança": "REVISAR",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "902001004",
+          "Descrição UMLI": "PILHA ALCALINA - AAA",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "902001004",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "902001005",
+          "Descrição UMLI": "PILHAS AA - ( COMUM )",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "902001005",
+          "Descrição DATASUL": "PILHA ALCALINA - AA PILHA ALCALINA - AA",
+          "Score/Similaridade": 0.5,
+          "Confiança": "REVISAR",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "902001006",
+          "Descrição UMLI": "PILHA ALCALINA - D",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "902001006",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "902002021",
+          "Descrição UMLI": "BOLSA DE FERRAMENTAS STANDARD 16 IRWIN - 1870406",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "902002021",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "902002040",
+          "Descrição UMLI": "TERMINAL OLHAL 95 MM",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "902002040",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "902003069",
+          "Descrição UMLI": "LAMINA PARA SERRA SABRE ELETRICA",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "902003069",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "902003073",
+          "Descrição UMLI": "CABO VERDE PARA ATERRAMENTO 10 MM²",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "902003073",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "902003087",
+          "Descrição UMLI": "JOGO DE CHAVES DE FENDA E PHILLIPS VDE ISOLADAS EN60900 COD. 091.813",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "902003087",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "902003294",
+          "Descrição UMLI": "DISJUNTOR TRIPOLAR 32A CURVA C",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "902003294",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "902004001",
+          "Descrição UMLI": "FITA ISOLANTE BAIXA TENSÃO 19MM X 20M",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "902004001",
+          "Score/Similaridade": 0.75,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "902004002",
+          "Descrição UMLI": "FITA ISOLANTE DE ALTA TENSÃO",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "902004002",
+          "Score/Similaridade": 0.75,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "903001009",
+          "Descrição UMLI": "PROTEÇÃO PARA ABRAÇADEIRAS DE ANDAIMES GIRATORIA",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "903001009",
+          "Score/Similaridade": 0.75,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "904001004",
+          "Descrição UMLI": "VERNIZ ANTIOXIDANTE 1L VP5000  BOCA LOCA",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "904001004",
+          "Descrição DATASUL": "VERNIZ ANTIOXIDANTE 1L VP500 VERNIZ ANTIOXIDANTE 1L VP500",
+          "Score/Similaridade": 0.5,
+          "Confiança": "REVISAR",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "904001005",
+          "Descrição UMLI": "LIMPA CONTATO SPRAY",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "904001005",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "905001001",
+          "Descrição UMLI": "ANTI RESPINGO PARA SOLDA COM SILICONE 350ml",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "905001001",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "906003004",
+          "Descrição UMLI": "BICO DE CORTE - REF. 1502 - Nº 10 MARCA SAWM",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "906003004",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "906003010",
+          "Descrição UMLI": "CARTUCHO PMX105 SMARTSYNC CORTE MANUAL (PONTEIRA BICO MAQUINA DE PLASMA)",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "906003010",
+          "Descrição DATASUL": "CARTUCHO PMX105 SMARTSYNC CORTE MANUAL CARTUCHO PMX105 SMARTSYNC CORTE MANUAL",
+          "Score/Similaridade": 0.5,
+          "Confiança": "REVISAR",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "906004001",
+          "Descrição UMLI": "BOCAL DE CERAMICA Nº 05 - PARA TOCHA TIG HW-26",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "906004001",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "906004002",
+          "Descrição UMLI": "BOCAL DE CERAMICA Nº 06 - PARA TOCHA TIG HW-26",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "906004002",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "906004003",
+          "Descrição UMLI": "BOCAL DE CERAMICA Nº 07 - PARA TOCHA TIG HW-26",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "906004003",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "906004004",
+          "Descrição UMLI": "BOCAL DE CERAMICA Nº  08 - PARA  TOCHA TIG HW-26",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "906004004",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "906004007",
+          "Descrição UMLI": "BOCAL DE CERAMICA NO. 10",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "906004007",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "906005002",
+          "Descrição UMLI": "BICO N-517 PARA PISTOLA AIR LESS",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "906005002",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "906005003",
+          "Descrição UMLI": "BICO N-519 PARA PISTOLA AIR LESS",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "906005003",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "906005005",
+          "Descrição UMLI": "BICO DE PISTOLA AIRLESS 535",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "906005005",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "906005012",
+          "Descrição UMLI": "EXTENSOR PARA PISTOLA AIRLESS 11/16\" ",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "906005012",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "907001003",
+          "Descrição UMLI": "BROCA DE ACO RAPIDO TIPO HELICOIDAL COM HASTE CILINDRICA 1/2POL",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "907001003",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "907001004",
+          "Descrição UMLI": "BROCA DE ACO RAPIDO TIPO HELICOIDAL COM HASTE CILINDRICA 1/4POL",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "907001004",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "907001005",
+          "Descrição UMLI": "BROCA DE ACO RAPIDO TIPO HELICOIDAL COM HASTE CILINDRICA 1/8 POL",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "907001005",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "907001008",
+          "Descrição UMLI": "BROCA DE ACO RAPIDO TIPO HELICOIDAL COM HASTE CILINDRICA 14mm",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "907001008",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "907001010",
+          "Descrição UMLI": "BROCA DE ACO RAPIDO TIPO HELICOIDAL COM HASTE CILINDRICA 3/16POL",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "907001010",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "907001012",
+          "Descrição UMLI": "BROCA DE ACO RAPIDO TIPO HELICOIDAL COM HASTE CILINDRICA 3/8 POL",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "907001012",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "907001013",
+          "Descrição UMLI": "BROCA DE ACO RAPIDO TIPO HELICOIDAL COM HASTE CILINDRICA 5/16 POL",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "907001013",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "907001014",
+          "Descrição UMLI": "BROCA DE ACO RAPIDO TIPO HELICOIDAL COM HASTE CILINDRICA 5/8POL",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "907001014",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "907001015",
+          "Descrição UMLI": "BROCA DE ACO RAPIDO TIPO HELICOIDAL COM HASTE CILINDRICA 7/16 POL",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "907001015",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "909002009",
+          "Descrição UMLI": "DISCO DE DESBASTE AC/INOX 4 1/2\" X 1/4\" X 7/8\"",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "909002009",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "909002010",
+          "Descrição UMLI": "DISCO DE DESBASTE AC/INOX 7\" X 1/4\" X 7/8\"",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "909002010",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "909003002",
+          "Descrição UMLI": "DISCO DE LIXA - GR 24 - 4.1/2POL",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "909003002",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "909003003",
+          "Descrição UMLI": "DISCO DE LIXA - GR. 36 - 4.1/2POL",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "909003003",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "909003004",
+          "Descrição UMLI": "DISCO DE LIXA - GR.60 - 4.1/2POL",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "909003004",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "909003005",
+          "Descrição UMLI": "DISCO DE LIXA - GR.80 - 4.1/2POL",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "909003005",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "909004001",
+          "Descrição UMLI": "DISCO DE LIXA TIPO FLAP DISC - A. 60 - 4.1/2POL",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "909004001",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "909004003",
+          "Descrição UMLI": "DISCO DE LIXA TIPO FLAP GR 120 4.1/2 POL",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "909004003",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "909004004",
+          "Descrição UMLI": "DISCO DE LIXA TIPO FLAP GR 120 7 POL",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "909004004",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "909004005",
+          "Descrição UMLI": "DISCO DE LIXA TIPO FLAP DISC - A. 40 - 4.1/2POL",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "909004005",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "909004006",
+          "Descrição UMLI": "DISCO DE LIXA TIPO FLAP DISC - A. 80 - 4.1/2POL",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "909004006",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "909006002",
+          "Descrição UMLI": "DISCO PARA GRADIL X-FCM-R 28/33-HILTI",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "909006002",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "910001001",
+          "Descrição UMLI": "CABO PARA ROLO 23 CM MARCA ATLAS",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "910001001",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "910002001",
+          "Descrição UMLI": "LINHA URSO Nº 00",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "910002001",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "910004001",
+          "Descrição UMLI": "PEDRA PARA ISQUEIRO",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "910004001",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "910005001",
+          "Descrição UMLI": "PONTA MONTADA - A- 5",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "910005001",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "910005002",
+          "Descrição UMLI": "PONTA MONTADA - A-11",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "910005002",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "910006001",
+          "Descrição UMLI": "REBITE POP - 1/8POL x 1POL",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "910006001",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "910007001",
+          "Descrição UMLI": "CAPA CURTA - PARA TOCHA TIG",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "910007001",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "910009001",
+          "Descrição UMLI": "CORRENTE PLASTICA DE SINALIZACAO, AMARELA E PRETA",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "910009001",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "910009003",
+          "Descrição UMLI": "Corrente de ferro para travamento dos cilindros",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "910009003",
+          "Descrição DATASUL": "CORRENTE METALICA C/ELO 6,5MM - 1/4 CORRENTE METALICA C/ELO 6,5MM - 1/4",
+          "Score/Similaridade": 0.25,
+          "Confiança": "REVISAR",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "910010002",
+          "Descrição UMLI": "BALDE DE LONA Nº 10 PARA TRANSPORTE DE ABRACADEIRAS",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "910010002",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "910011001",
+          "Descrição UMLI": "MANTA DE FIBRA DE ARAMIDA, TIPO KEVLAR, ESPESSURA 2mm (rolo)",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "910011001",
+          "Score/Similaridade": 0.83,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "910012001",
+          "Descrição UMLI": "FITA CREPE - 25 mm x 50 mt",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "910012001",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "910012007",
+          "Descrição UMLI": "FITA ISOLANTE 19MMX10M AMARELA",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "910012007",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "910012008",
+          "Descrição UMLI": "FITA ISOLANTE 19MMX10M AZUL",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "910012008",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "910012010",
+          "Descrição UMLI": "FITA ISOLANTE 19MMX10M VERDE",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "910012010",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "910012011",
+          "Descrição UMLI": "FITA ISOLANTE 19 mm x 20 m VERMELHA",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "910012011",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "910013002",
+          "Descrição UMLI": "CADEADO DE LATAO MACICO",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "910013002",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "910014001",
+          "Descrição UMLI": "ACENDEDOR TIPO ISQUEIRO PARA MACARICO",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "910014001",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "910015001",
+          "Descrição UMLI": "BICO DE CORTE - REF. 1502 - Nº 06 MARCA SAWM",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "910015001",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "910015002",
+          "Descrição UMLI": "BICO DE CORTE - REF. 1502 - Nº 08 MARCA SAWM",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "910015002",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "910015003",
+          "Descrição UMLI": "BICO DE CORTE - REF. 1502 Nº 4",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "910015003",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "910015013",
+          "Descrição UMLI": "BICO Nº 521 P/ PISTOLA AIR LESS",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "910015013",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "910016001",
+          "Descrição UMLI": "GIZ BRANCO ESCOLAR",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "910016001",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "910018002",
+          "Descrição UMLI": "CABO GUIA PARA LINHA DE VIDA 5/16 X 20 METROS, COM MOSQUETAO DE ACO",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "910018002",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "910018021",
+          "Descrição UMLI": "ESTROPO EM CABO DE ACO 16 mm x 1 m, AA POLIDO, 6 x 25, CAP. 3,2 TON. COM SAP x SAP NAS EXTREMIDADES, CONFORME NBR 13541-1",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "910018021",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "910020009",
+          "Descrição UMLI": "NIPLE COM PORCA PARA REGULADOR DE ACETILENO",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "910020009",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "910020010",
+          "Descrição UMLI": "NIPLE COM PORCA PARA REGULADOR DE OXIGENIO",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "910020010",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "910021006",
+          "Descrição UMLI": "ADESIVO BRESLE CAIXA C/25UNID PARA TESTE DE SALINIDADE",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "910021006",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "910022003",
+          "Descrição UMLI": "PINO TRAVA DE ENGATE RAPIDO",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "910022003",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "910023003",
+          "Descrição UMLI": "LAMINA P/CORTAR TUBO 1/2 a 2´´",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "910023003",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "910023005",
+          "Descrição UMLI": "LAMINA CORTA FRIO 1/8 A 1.1/8 ACO INOX",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "910023005",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "910028034",
+          "Descrição UMLI": "LACRE MANIVELA METALICO 25 cm",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "910028034",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "910028036",
+          "Descrição UMLI": "SACO DE LIXO 100 LITROS - PACOTE C/100L",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "910028036",
+          "Score/Similaridade": 0.75,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "910028107",
+          "Descrição UMLI": "CANETA MARCADOR PERMANENTE (PRETA)",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "910028107",
+          "Score/Similaridade": 0.75,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "910028168",
+          "Descrição UMLI": "FONTE ALIMENTAÇÃO DETECTOR GAS",
+          "Grupo UMLI": "EQUIPAMENTO",
+          "Código DATASUL": "910028168",
+          "Descrição DATASUL": "FONTE DE ALIMENTACAO ( REP IDCLASS ) FONTE DE ALIMENTACAO ( REP IDCLASS )",
+          "Score/Similaridade": 0.33,
+          "Confiança": "REVISAR",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "910029002",
+          "Descrição UMLI": "CARRINHO P/TRANSPORTE DE OX/ACETILENO",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "910029002",
+          "Descrição DATASUL": "CARRINHO P/ CILINDRO DE OXIGENIO/ACETILENO CARRINHO P/ CILINDRO DE OXIGENIO/ACETILENO",
+          "Score/Similaridade": 0.33,
+          "Confiança": "REVISAR",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "910029010",
+          "Descrição UMLI": "PLACA DE PVC MODULAR 10 MM - 625 X 1250 MM",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "910029010",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "910029012",
+          "Descrição UMLI": "ARAME RECOZIDO - BWG12",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "910029012",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "910029060",
+          "Descrição UMLI": "AGULHEIRO PARA LIMPEZA MACARICO",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "910029060",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "910029079",
+          "Descrição UMLI": "CORDA DE SEDA 4MM",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "910029079",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "910029082",
+          "Descrição UMLI": "TORQUEZA ARMADOR DE 12 POL",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "910029082",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "910029092",
+          "Descrição UMLI": "TELA MOSQUITEIRO EM NYLON DIM. 1,50m DE ALTURA x 50 METROS DE COMPRIMENTO",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "910029092",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "910029123",
+          "Descrição UMLI": "EXTENSOR FINGERSAVER STANDARD PARA PROTECAO DE MAOS E DEDOS, COMP. 375 mm",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "910029123",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "910029144",
+          "Descrição UMLI": "CARRINHO DE MAO EXTRAFORTE",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "910029144",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "910029202",
+          "Descrição UMLI": "COLA EPOX - ARALDITE PROF NORMAL 234 GR 24H",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "910029202",
+          "Score/Similaridade": 0.6,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "910029203",
+          "Descrição UMLI": "CINTO COM FIVELA PARA MASCARA DE AR MANDADO",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "910029203",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "910029204",
+          "Descrição UMLI": "REGISTRO DE AR COMPRIMIDO COM BICO E.R.S. ",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "910029204",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "910029205",
+          "Descrição UMLI": "TRANQUEIA COMPLETA PARA MASCARA DE AR MANDADO",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "910029205",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "910029214",
+          "Descrição UMLI": "BICO DE PISTOLA AIRLESS 531",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "910029214",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "910029372",
+          "Descrição UMLI": "CILINDO COM GÁS PARA CALIBRACAO 4 GASES – CO, O2, CH4, COM OS ACESSORIOS ",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "910029372",
+          "Descrição DATASUL": "KIT DE CALIBRACAO DETECTORES FIXO GP KIT DE CALIBRACAO DETECTORES FIXO GP Inclui maleta de transporte, vÃ¡lvula reguladora de pressâo standard, mangueira para calibraÃ§âo em borracha, adaptador de calibraÃ§âo FKM em viton e caneta magnÃ©tica",
+          "Score/Similaridade": 0.25,
+          "Confiança": "REVISAR",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "910029375",
+          "Descrição UMLI": "BROCA ESCALONADA TS-BT 5,5-74 S MARCA HILTI REF. 2143137",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "910029375",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "910029376",
+          "Descrição UMLI": "PINO S-BT-GR M8 PARA GRADE DE PISO MARCA HILTI REF. 2140529 CAIXA COM 100 UND.",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "910029376",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "910029377",
+          "Descrição UMLI": "PINO S-BT-MR M10 PARA SUPORTE MARCA HILTI REF. 2205156 CAIXA COM 100 UND.",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "910029377",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "910030001",
+          "Descrição UMLI": "LONA ANTI-CHAMA 6 X 4 MT",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "910030001",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "910030007",
+          "Descrição UMLI": "LONA PRETA EM PLASTICO LEVE 4 X 100M",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "910030007",
+          "Score/Similaridade": 0.75,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "910031001",
+          "Descrição UMLI": "CINTO CARTUCHEIRA PARA MONTADOR DE ANDAIME",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "910031001",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "910032001",
+          "Descrição UMLI": "ALICATE GARRA NEGATIVA 500A",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "910032001",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "910036028",
+          "Descrição UMLI": "BROCA DE ACO RAPIDO 1/4 POL",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "910036028",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "911001008",
+          "Descrição UMLI": "ELETRODO 7018.1 BR H4R - 2,50mm",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "911001008",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "911001009",
+          "Descrição UMLI": "ELETRODO 7018.1 BR H4R - 3,25mm",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "911001009",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "911001010",
+          "Descrição UMLI": "ELETRODO 7018.1 BR H4R - 4,00mm",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "911001010",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "911001011",
+          "Descrição UMLI": "ARAME TUBULAR E71T-1 Ø 1.2mm",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "911001011",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "911001021",
+          "Descrição UMLI": "ELETRODO TUNGSTÊNIO 1/8",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "911001021",
+          "Descrição DATASUL": "ELETRODO TUNGSTâ¥NIO 1/8 ELETRODO TUNGSTâ¥NIO 1/8",
+          "Score/Similaridade": 0.5,
+          "Confiança": "REVISAR",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "911001022",
+          "Descrição UMLI": "ELETRODO TUNGSTÊNIO 3/32",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "911001022",
+          "Descrição DATASUL": "ELETRODO TUNGSTâ¥NIO 3/32 ELETRODO TUNGSTâ¥NIO 3/32",
+          "Score/Similaridade": 0.5,
+          "Confiança": "REVISAR",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "911001036",
+          "Descrição UMLI": "ELETRODO P80 CUT 100",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "911001036",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "911003002",
+          "Descrição UMLI": "VARETA TIG ER 70S-3 2,50 MM - EMBALAGEM 5KG - 145 VARETAS",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "911003002",
+          "Score/Similaridade": 0.67,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "911003003",
+          "Descrição UMLI": "VARETA TIG ER 70S-3 3,25 MM - EMBALAGEM 5KG - 80 VARETAS",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "911003003",
+          "Score/Similaridade": 0.67,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "912001002",
+          "Descrição UMLI": "ENGATE RAPIDO ROSCA EXTERNA - 1/2 POL",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "912001002",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "913001001",
+          "Descrição UMLI": "ESCOVA MANUAL DE ACO CARBONO, REFERENCIA 1777/3",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "913001001",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "913001002",
+          "Descrição UMLI": "ESCOVA MANUAL DE ACO INOX REF. 1777/4.",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "913001002",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "913001004",
+          "Descrição UMLI": "ESCOVA ROTATIVA BRISTLE BLASTER (SSPC SP11)",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "913001004",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "913002001",
+          "Descrição UMLI": "ESCOVA ROTATIVA DE ACO CARBONO FIO TRANCADO - 4.1/2POL x 1/2POL x 7/8POL",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "913002001",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "913002002",
+          "Descrição UMLI": "ESCOVA ROTATIVA DE ACO CARBONO FIO TRANCADO - 7POL x 1/2POL x 7/8POL",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "913002002",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "913002006",
+          "Descrição UMLI": "ESCOVA DE ACO LATONADO ONDULADO TIPO PINCEL 25mm - HASTE 1/4\"\"",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "913002006",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "914001002",
+          "Descrição UMLI": "LIQUIDO PENETRANTE VP-30",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "914001002",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "914001003",
+          "Descrição UMLI": "LIQUIDO PENETRANTE VP-31",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "914001003",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "914001004",
+          "Descrição UMLI": "LIQUIDO REVELADOR D-70",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "914001004",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "914001007",
+          "Descrição UMLI": "TINTA CONTRASTE METAL CHEK 104",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "914001007",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "914001009",
+          "Descrição UMLI": "LIQUIDO REMOVEDOR E-59",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "914001009",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "914002001",
+          "Descrição UMLI": "PARTICULA  MAGNETICA  SRW222 1",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "914002001",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "915002006",
+          "Descrição UMLI": "LIXA PARA METAIS - GR. 60",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "915002006",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "915002007",
+          "Descrição UMLI": "LIXA PARA METAIS - GR. 80",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "915002007",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "915002008",
+          "Descrição UMLI": "LIXA PARA METAIS - GR.100",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "915002008",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "915002012",
+          "Descrição UMLI": "LIXA PARA METAIS - GR.40",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "915002012",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "916001001",
+          "Descrição UMLI": "MANGUEIRA DUPLA - OXIGENIO / ACETILENO - 5/16POL",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "916001001",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "916001002",
+          "Descrição UMLI": "MANGUEIRA PRETA PARA ARGONIO - 5/16POL",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "916001002",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "916001006",
+          "Descrição UMLI": "TUBO TERMOCONTRATIL TRANSPARENTE FAB. EM POLIOLEFINA DIM. 12 mm",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "916001006",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "916001010",
+          "Descrição UMLI": "DISPOSITIVO ANTI-CHICOTEAMENTO PARA MANGUEIRA E CABOS DE ACO",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "916001010",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "916001012",
+          "Descrição UMLI": "RABICHO DE MANGUEIRA 1/2 POL. COM 1 MT",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "916001012",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "916001013",
+          "Descrição UMLI": "RABICHO DE MANGUEIRA 1/4 POL. COM 1 MT",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "916001013",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "916001024",
+          "Descrição UMLI": "MANGUEIRA DE AR 3/4 X 20 MTS",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "916001024",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "916001046",
+          "Descrição UMLI": "MANGUEIRA DE ALTA PRESSAO 3/8 10500psi COM ROSCA JIC FEMEA GIRATORIA EM AMBAS EXTREMIDADES, LANCE COM 20 METROS",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "916001046",
+          "Score/Similaridade": 0.9,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "916002010",
+          "Descrição UMLI": "MANGUEIRA DE AR COMPRIMIDO 1/2\" x 20 METROS, 300 PSI, PRENSADA COM ENGATE RAPIDO UNIVERSAL",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "916002010",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "916002011",
+          "Descrição UMLI": "MANGUEIRA PARA AR COMPRIMIDO 3/4\" x 20 METROS,300 PSI-PRENSADA C/ENGATE RAPIDO UNIVERSAL",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "916002011",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "916002012",
+          "Descrição UMLI": "MANGUEIRA DE AR COMPRIMIDO 1´´ X 20 METROS,300 PSI-PRENSADA C/ENGATE RAPIDO UNIVERSAL",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "916002012",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "917002001",
+          "Descrição UMLI": "SOLVENTE P/LIMPEZA  TB 200 LITROS",
+          "Grupo UMLI": "TINTA",
+          "Código DATASUL": "917002001",
+          "Score/Similaridade": 0.67,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "917002008",
+          "Descrição UMLI": "DILUENTE JOTUN TRANSPARENTE",
+          "Grupo UMLI": "TINTA",
+          "Código DATASUL": "917002008",
+          "Descrição DATASUL": "DILUENTE EPOXI RAPIDO 3012 WEG DILUENTE EPOXI RAPIDO 3012 WEG",
+          "Score/Similaridade": 0.33,
+          "Confiança": "REVISAR",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "917003003",
+          "Descrição UMLI": "INIBIDOR DE CORROSÃO BOMBONA 20L",
+          "Grupo UMLI": "TINTA",
+          "Código DATASUL": "917003003",
+          "Descrição DATASUL": "INIBIDOR DE CORROSAO V-ACTIVE VCI MVSQ 1712 INIBIDOR DE CORROSAO V-ACTIVE VCI MVSQ 1712",
+          "Score/Similaridade": 0.33,
+          "Confiança": "REVISAR",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "917004002",
+          "Descrição UMLI": "TARUCEL 6MM",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "917004002",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "917004003",
+          "Descrição UMLI": "TARUCEL 8MM",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "917004003",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "917004004",
+          "Descrição UMLI": "TARUCEL 10MM",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "917004004",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "917004006",
+          "Descrição UMLI": "TARUCEL 20MM",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "917004006",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "917004008",
+          "Descrição UMLI": "TARUCEL 30MM",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "917004008",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "917005004",
+          "Descrição UMLI": "ROLO DE LA DE CARNEIRO COM CABO - 9cm",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "917005004",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "917006001",
+          "Descrição UMLI": "TRAPO DE MALHA COSTURADA BRANCO SACO 25KG",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "917006001",
+          "Score/Similaridade": 0.8,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "917006002",
+          "Descrição UMLI": "TRAPO DE MALHA COSTURADA COLORIDO 25KG",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "917006002",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "917007001",
+          "Descrição UMLI": "TRINCHA DE SEDA - 1POL",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "917007001",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "917007002",
+          "Descrição UMLI": "TRINCHA DE SEDA - 1.1/2POL",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "917007002",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "917007004",
+          "Descrição UMLI": "TRINCHA DE SEDA - 2POL",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "917007004",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "917008001",
+          "Descrição UMLI": "ESPATULA DE ACO 3 POL",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "917008001",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "917008002",
+          "Descrição UMLI": "ESPATULA DE ACO 2 POL",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "917008002",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "917010001",
+          "Descrição UMLI": "TINTA DE FUNDO EPOXI SEM SOLVENTE - COR VERMELHO ÓXIDO N-2680 (95750)",
+          "Grupo UMLI": "TINTA",
+          "Código DATASUL": "917010001",
+          "Score/Similaridade": 0.83,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "917010002",
+          "Descrição UMLI": "TINTA DE FUNDO EPOXI SEM SOLVENTE - COR CINZA CLARO N-2680 N6.5 (95750)",
+          "Grupo UMLI": "TINTA",
+          "Código DATASUL": "917010002",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "917010004",
+          "Descrição UMLI": "TINTA DE FUNDO EPOXI SEM SOLVENTE - COR VERDE PASTEL N-2680 - 5G 8/4 (95750)",
+          "Grupo UMLI": "TINTA",
+          "Código DATASUL": "917010004",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "917010008",
+          "Descrição UMLI": "TINTA DE FUNDO EPOXI SEM SOLVENTE - COR BRANCO N-2680 - N9.5 (95750)",
+          "Grupo UMLI": "TINTA",
+          "Código DATASUL": "917010008",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "917010015",
+          "Descrição UMLI": "COMPONENTE B PARA TINTA N-2680 (95750)",
+          "Grupo UMLI": "TINTA",
+          "Código DATASUL": "917010015",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "917010016",
+          "Descrição UMLI": "TINTA POLIURETANO ALIFÁTICO ACRÍLICO - COR CINZA CLARO N-2677 - (97050)",
+          "Grupo UMLI": "TINTA",
+          "Código DATASUL": "917010016",
+          "Score/Similaridade": 0.67,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "917010017",
+          "Descrição UMLI": "TINTA POLIURETANO ALIFÁTICO ACRÍLICO - COR AMARELO SEGURANCA N-2677 - (97050)",
+          "Grupo UMLI": "TINTA",
+          "Código DATASUL": "917010017",
+          "Score/Similaridade": 0.67,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "917010018",
+          "Descrição UMLI": "TINTA POLIURETANO ALIFÁTICO ACRÍLICO - COR VERDE PETROBRÁS N-2677 - (97050)",
+          "Grupo UMLI": "TINTA",
+          "Código DATASUL": "917010018",
+          "Descrição DATASUL": "TINTA POLIURETANO ALIFâ¡TICO ACRâLICO - COR VERDE PETROBRâ¡S N TINTA POLIURETANO ALIFâ¡TICO ACRâLICO - COR VERDE PETROBRâ¡S N-2677 - 2.5 G 5/10",
+          "Score/Similaridade": 0.5,
+          "Confiança": "REVISAR",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "917010023",
+          "Descrição UMLI": "TINTA POLIURETANO ALIFATICO ACRILICO - COR BRANCO N-2677 - (97050)",
+          "Grupo UMLI": "TINTA",
+          "Código DATASUL": "917010023",
+          "Score/Similaridade": 0.6,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "917010024",
+          "Descrição UMLI": "TINTA POLIURETANO ALIFÁTICO ACRÍLICO - COR PRETO N-2677 - (97050)",
+          "Grupo UMLI": "TINTA",
+          "Código DATASUL": "917010024",
+          "Score/Similaridade": 0.6,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "917010025",
+          "Descrição UMLI": "TINTA POLIURETANO ALIFÁTICO ACRÍLICO - COR AZUL SEGURANCA N-2677 - (97050)",
+          "Grupo UMLI": "TINTA",
+          "Código DATASUL": "917010025",
+          "Score/Similaridade": 0.67,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "917010026",
+          "Descrição UMLI": "TINTA POLIURETANO ALIFÁTICO ACRÍLICO - COR ALUMÍNIO N-2677 - (97050)",
+          "Grupo UMLI": "TINTA",
+          "Código DATASUL": "917010026",
+          "Descrição DATASUL": "TINTA POLIURETANO ALIFâ¡TICO ACRâLICO - COR ALUMâNIO N-2677 TINTA POLIURETANO ALIFâ¡TICO ACRâLICO - COR ALUMâNIO N-2677",
+          "Score/Similaridade": 0.4,
+          "Confiança": "REVISAR",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "917010027",
+          "Descrição UMLI": "TINTA POLIURETANO ALIFÁTICO ACRÍLICO - COR LARANJA SEGURANCA N-2677 - (97050)",
+          "Grupo UMLI": "TINTA",
+          "Código DATASUL": "917010027",
+          "Score/Similaridade": 0.67,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "917010028",
+          "Descrição UMLI": "TINTA POLIURETANO ALIFÁTICO ACRÍLICO - COR VERMELHO SEGURANCA N-2677 - (97050)",
+          "Grupo UMLI": "TINTA",
+          "Código DATASUL": "917010028",
+          "Score/Similaridade": 0.67,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "917010029",
+          "Descrição UMLI": "TINTA POLIURETANO ALIFÁTICO ACRÍLICO - COR MARRON CANALIZACAO N-2677 - (97050)",
+          "Grupo UMLI": "TINTA",
+          "Código DATASUL": "917010029",
+          "Score/Similaridade": 0.67,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "917010031",
+          "Descrição UMLI": "COMPONENTE B PARA TINTA N-2677 - (97050)",
+          "Grupo UMLI": "TINTA",
+          "Código DATASUL": "917010031",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "917010032",
+          "Descrição UMLI": "COMPONENTE C PARA TINTA N-2677 - (97050)",
+          "Grupo UMLI": "TINTA",
+          "Código DATASUL": "917010032",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "917010033",
+          "Descrição UMLI": "TINTA EPOXI ANTIDERRAPANTE - COR VERDE PETROBRÁS 2,5 G 5/10.",
+          "Grupo UMLI": "TINTA",
+          "Código DATASUL": "917010033",
+          "Score/Similaridade": 0.8,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "917010035",
+          "Descrição UMLI": "COMPONENTE B PARA TINTA ANTIDERRAPANTE",
+          "Grupo UMLI": "TINTA",
+          "Código DATASUL": "917010035",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "917010041",
+          "Descrição UMLI": "TINTA JOTATEMP 1000 CERAMIC ALUMÍNIO COMP. A",
+          "Grupo UMLI": "TINTA",
+          "Código DATASUL": "917010041",
+          "Score/Similaridade": 0.6,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "917010042",
+          "Descrição UMLI": "COMPONENTE B PARA TINTA JOTATEMP 1000 CERAMIC ALUMÍNIO",
+          "Grupo UMLI": "TINTA",
+          "Código DATASUL": "917010042",
+          "Score/Similaridade": 0.8,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "917010044",
+          "Descrição UMLI": "ELASTOMERO PRIMER PRETO - SECURIT 2  ANTICORROSIVO A BASE DE AGUA COM PROPRIEDADE ASFALTICA.",
+          "Grupo UMLI": "TINTA",
+          "Código DATASUL": "917010044",
+          "Score/Similaridade": 0.89,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "917010045",
+          "Descrição UMLI": "ELASTOMERO  ACABAMENTO AMARELO SEGURANÇA - SECURIT 2 A BASE DE AGUA COM ACRILATOS",
+          "Grupo UMLI": "TINTA",
+          "Código DATASUL": "917010045",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "917010046",
+          "Descrição UMLI": "ELASTOMERO  ACABAMENTO CINZA CLARO 6.5 - SECURIT 2 A BASE DE AGUA COM ACRILATOS",
+          "Grupo UMLI": "TINTA",
+          "Código DATASUL": "917010046",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "917010047",
+          "Descrição UMLI": "ELASTOMERO  ACABAMENTO VERDE PETROBRAS - SECURIT 2 A BASE DE AGUA COM ACRILATOS",
+          "Grupo UMLI": "TINTA",
+          "Código DATASUL": "917010047",
+          "Score/Similaridade": 0.88,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "917010052",
+          "Descrição UMLI": "ELASTOMERO  ACABAMENTO ALUMINIO COMP A+B - SECURIT 2 A BASE DE AGUA COM ACRILATOS",
+          "Grupo UMLI": "TINTA",
+          "Código DATASUL": "917010052",
+          "Score/Similaridade": 0.88,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "917010053",
+          "Descrição UMLI": "ELASTOMERO  ACABAMENTO AZUL SEGURANÇA - SECURIT 2 A BASE DE AGUA COM ACRILATOS",
+          "Grupo UMLI": "TINTA",
+          "Código DATASUL": "917010053",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "917010054",
+          "Descrição UMLI": "ELASTOMERO  ACABAMENTO VERMELHO SEGURANÇA - SECURIT 2 A BASE DE AGUA COM ACRILATOS",
+          "Grupo UMLI": "TINTA",
+          "Código DATASUL": "917010054",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "917010056",
+          "Descrição UMLI": "COMPONETE A - PENGUARD  VERMELHO - TINTA PRIMER EPOXI PROMOVEDORA DE ADERENCIA P/ SUP. NÃO METALICAS",
+          "Grupo UMLI": "TINTA",
+          "Código DATASUL": "917010056",
+          "Score/Similaridade": 0.6,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "917010057",
+          "Descrição UMLI": "COMPONENTE B PENGUARDE - TINTA PRIMER EPOXI PROMOVEDORA DE ADERENCIA PARA SUPERFICIES NÃO METALICAS.",
+          "Grupo UMLI": "TINTA",
+          "Código DATASUL": "917010057",
+          "Score/Similaridade": 0.89,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "917010058",
+          "Descrição UMLI": "MARATHON 550 COMPONENTE A - BRANCO - TINTA REVESTIMENTO EPOXI DE ALTO DESEMPENHO DEMAO ÚNICA ",
+          "Grupo UMLI": "TINTA",
+          "Código DATASUL": "917010058",
+          "Score/Similaridade": 0.7,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "917010061",
+          "Descrição UMLI": "MARATHON 550 COMPONENTE B  - PARA TINTA REVESTIMENTO EPOXI DE ALTO DESEMPENHO EM DEMAO UNICA.",
+          "Grupo UMLI": "TINTA",
+          "Código DATASUL": "917010061",
+          "Score/Similaridade": 0.89,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "917010078",
+          "Descrição UMLI": "COMPONENTE C PARA TINTA JOTATEMP 1000 CERAMIC ALUMINIO",
+          "Grupo UMLI": "TINTA",
+          "Código DATASUL": "917010078",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "917012001",
+          "Descrição UMLI": "MASSA EPÓXI TUBOLIT 301",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "917012001",
+          "Score/Similaridade": 0.67,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "917013003",
+          "Descrição UMLI": "QUARTZO MOÍDO (ANTI SKID / AGREGADO)",
+          "Grupo UMLI": "TINTA",
+          "Código DATASUL": "917013003",
+          "Score/Similaridade": 0.6,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "917014014",
+          "Descrição UMLI": "EMBOLO - PARA AGULHEIRO 3P",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "917014014",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "917014016",
+          "Descrição UMLI": "MARTELO - PARA AGULHEIRO 3P",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "917014016",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "917014017",
+          "Descrição UMLI": "PORTA AGULHAS 3MM - PARA AGULHEIRO 3P",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "917014017",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "917014018",
+          "Descrição UMLI": "AGULHAS DE ACO 3MM - PARA AGULHEIRO 3P",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "917014018",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "917014019",
+          "Descrição UMLI": "MOLA DE PRESSAO - PARA AGULHEIRO 3P",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "917014019",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "917014020",
+          "Descrição UMLI": "TUBO INTERMEDIARIO - PARA AGULHEIRO 3P",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "917014020",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "917014021",
+          "Descrição UMLI": "PARAFUSO DOS TUBOS - PARA AGULHEIRO 3P",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "917014021",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "917015022",
+          "Descrição UMLI": "ALTA TEMPERATURA VERSILINE CUI  MONOCOMPONENTE ",
+          "Grupo UMLI": "TINTA",
+          "Código DATASUL": "917015022",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "917018017",
+          "Descrição UMLI": "EMBOLO ESTRELA PARA BATEDOR DE FERRUGEM-MOD.600-03",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "917018017",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "918001001",
+          "Descrição UMLI": "CORPO FIXADOR DE ELETRODO - 3/32POL PARA TOCHA TIG HW-26",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "918001001",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "918001002",
+          "Descrição UMLI": "CORPO FIXADOR DE ELETRODO - 1/8POL PARA TOCHA TIG HW-26",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "918001002",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "918001004",
+          "Descrição UMLI": "PINCA 3,2 MM TIG SU 26",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "918001004",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "918001005",
+          "Descrição UMLI": "PINCA 2,4 MM TIG SU 9",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "918001005",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "918003001",
+          "Descrição UMLI": "BOCAL DE CERAMICA Nº 04 - PARA TOCHA TIG HW-26",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "918003001",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "918003024",
+          "Descrição UMLI": "BOCAL ME512 RETO 19MM P/TOCHA MIG",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "918003024",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "918003025",
+          "Descrição UMLI": "BOCAL CONICO 5/8\" PARA TOCHA MIG MB36KD- ( 5/8\" ou 16 MM )",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "918003025",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "918004001",
+          "Descrição UMLI": "BICO DE CONTATO M8 CUCRZR DE 1,2MM - 140.0445",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "918004001",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "918004007",
+          "Descrição UMLI": "BICO DE CONTATO M8.1,6 MM PARA TOCHA MIG MB36KD",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "918004007",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "918010004",
+          "Descrição UMLI": "CAPA LONGA P/ TOCHA TIG MODELO SR26/HW26/SU26 REF G6",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "918010004",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "918011009",
+          "Descrição UMLI": "DIFUSOR PARA TOCHA MIG MB36KD",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "918011009",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "918013001",
+          "Descrição UMLI": "TOCHA MIG KHBR 400 3M ERGO ARCOBINZEL",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "918013001",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "918013005",
+          "Descrição UMLI": "TOCHA MIG/MAG MB EVO 36 3M",
+          "Grupo UMLI": "EQUIPAMENTO",
+          "Código DATASUL": "918013005",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "919001004",
+          "Descrição UMLI": "CINTA NYLON CAP. 2,00 TON C/ 2,00 METROS",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "919001004",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "919001005",
+          "Descrição UMLI": "CINTA NYLON CAP. 3,00 TON C/ 2,00 METROS",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "919001005",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "919001006",
+          "Descrição UMLI": "CINTA NYLON CAP. 3,00 TON C/3,00 METROS",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "919001006",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "919001009",
+          "Descrição UMLI": "CINTA NYLON CAP. 1,00 TON C/ 2,00 METROS",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "919001009",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "919001020",
+          "Descrição UMLI": "DISCO DE CORTE AC/ INOX 115 X 1,0 X 22,2MM - 4 1/2´´ X 3/64´´ X 7/8´´",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "919001020",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "919001021",
+          "Descrição UMLI": "DISCO DE CORTE AC/ INOX 180 X 1,6 X 22,23MM -7´´ X 1/6´´ X 7/8´´",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "919001021",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "923001006",
+          "Descrição UMLI": "CAPA DE COURO PARA PROTECAO DE MANGUEIRA DE OXICORTE",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "923001006",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "929003007",
+          "Descrição UMLI": "TRENA DE AÇO 10MT",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "929003007",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "929003042",
+          "Descrição UMLI": "TOCHA TIG HW - 26",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "929003042",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "929003048",
+          "Descrição UMLI": "PICADEIRA SOLDA COM MOLA",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "929003048",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "932001007",
+          "Descrição UMLI": "VOLANTE PARA TAMBOR METALICO DE 200L",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "932001007",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "932001011",
+          "Descrição UMLI": "ALÇA SIMPLES DE MOVIMENTAÇÃO MANUAL",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "932001011",
+          "Score/Similaridade": 0.75,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "937001010",
+          "Descrição UMLI": "FILTRO DE LINHA 4 TOMADAS",
+          "Grupo UMLI": "EQUIPAMENTO",
+          "Código DATASUL": "937001010",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "940001067",
+          "Descrição UMLI": "VALVULA ESFERA DE PASSAGEM PLENA 3/4",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "940001067",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "941001023",
+          "Descrição UMLI": "PLACA DE PVC 22 X 11CM – ANDAIME NÃO LIBERADO",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "941001023",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "941001024",
+          "Descrição UMLI": "PLACA  PVC 22 X 11CM – BANCADA LIBERADA",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "941001024",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "941001030",
+          "Descrição UMLI": "PLACA DE PVC 22 X 11CM-PAU DE CARGA LIBERADA",
+          "Grupo UMLI": "EPI / EPC",
+          "Código DATASUL": "941001030",
+          "Score/Similaridade": 0.75,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "941001048",
+          "Descrição UMLI": "PORTA PT - PLACA DE PVC 28 X 50CM - COM IMPRESSAO EM TINTA E PROCESSO DE SECAGEM - COM BOLSA TRANSPARENTE - E DOIS OLHAIS",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "941001048",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "943001018",
+          "Descrição UMLI": "SUPORTE DE PINO (STUD HOLDER) S-SH BT M8-HILTI",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "943001018",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "943001019",
+          "Descrição UMLI": "SUPORTE DE PINO (STUD HOLDER) S-SH BT M10/W10-HILTI",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "943001019",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "943001032",
+          "Descrição UMLI": "ABRACADEIRA REGULAVEL 5/16”",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "943001032",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "950001003",
+          "Descrição UMLI": "MANTA DE FIBRA DE ARAMIDA, TIPO KEVLAR, ESPESSURA 2mm (painel)",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "950001003",
+          "Score/Similaridade": 0.67,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "954001001",
+          "Descrição UMLI": "LAMPADA LED 9 W BOCAL E-27",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "954001001",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "1820001001",
+          "Descrição UMLI": "PLUG PARA TOMADA 2P+T 16A, 200-250V",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "1820001001",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "1820002002",
+          "Descrição UMLI": "PLUG P/TOMADA 3P+TERRA 32A,  480-500V",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "1820002002",
+          "Score/Similaridade": 0.67,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "1825002006",
+          "Descrição UMLI": "TERMINAL PRE-ISOLADO TIPO OLHAL, EM COBRE ELETROLITICO COM ACABAMENTO ESTANHADO E ISOLACAO EM PVC RIGIDO, CONDUTORES 25mm2 (FURO M10)",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "1825002006",
+          "Descrição DATASUL": "TERMINAL PRE-ISOLADO TIPO OLHAL  CONDUTORES 25mm2 (FURO M10)",
+          "Score/Similaridade": 0.45,
+          "Confiança": "REVISAR",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "1829001003",
+          "Descrição UMLI": "ACOPLAMENTO P/TOMADA, 3P+T  32A,  480/500V",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "1829001003",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "1829001004",
+          "Descrição UMLI": "ACOPLAMENTO P/TOMADA 16A 2P + T 220V",
+          "Grupo UMLI": "EQUIPAMENTO",
+          "Código DATASUL": "1829001004",
+          "Score/Similaridade": 1,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "1905003008",
+          "Descrição UMLI": "CABO DE POTENCIA 0.6/1KV, (TETRAPOLAR),  (4 x 10mm2)",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "1905003008",
+          "Descrição DATASUL": "CABO POTENCIA  CLASSE 5",
+          "Score/Similaridade": 0.5,
+          "Confiança": "REVISAR",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "1905018025",
+          "Descrição UMLI": "CABO ELETRICO PARA EXTENSÃO 4 X 6MM     30METROS",
+          "Grupo UMLI": "CONSUMO",
+          "Código DATASUL": "1905018025",
+          "Descrição DATASUL": "CABO NAVAL  CLASSE 5",
+          "Score/Similaridade": 0.25,
+          "Confiança": "REVISAR",
+          "Observação": ""
+        },
+        {
+          "Código UMLI": "1911001006",
+          "Descrição UMLI": "CABO DE ATERRAMENTO VERDE, 25MM²)",
+          "Grupo UMLI": "FERRAMENTA",
+          "Código DATASUL": "1911001006",
+          "Score/Similaridade": 0.67,
+          "Confiança": "AUTOMATICO",
+          "Observação": ""
+        }
+      ],
+      "rowCount": 566,
+      "columnCount": 8,
+      "size": 51789,
+      "sizeKB": "50.58",
+      "sizeMB": "0.05",
+      "index": 0
+    }
+  ],
+  "errors": []
+}
