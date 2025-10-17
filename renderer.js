@@ -1234,55 +1234,22 @@ document.getElementById('excel-batch-convert-btn').addEventListener('click', asy
     try {
         progressContainer.style.display = 'block';
         progressFill.style.width = '0%';
-        progressText.textContent = 'Starting conversion...';
+        progressText.textContent = 'Starting batch conversion...';
         
-        const results = [];
-        const total = selectedExcelFiles.length;
-        let completed = 0;
-        
-        for (const filePath of selectedExcelFiles) {
-            const fileInfo = await window.electronAPI.getFileInfo(filePath);
-            const result = await window.electronAPI.excelToJson(filePath, null);
-            
-            if (result.success) {
-                results.push({
-                    filename: fileInfo.name,
-                    originalPath: filePath,
-                    sheetName: result.sheetName,
-                    availableSheets: result.availableSheets,
-                    data: result.data,
-                    rowCount: result.rowCount,
-                    columnCount: result.columnCount,
-                    size: result.size,
-                    sizeKB: result.sizeKB,
-                    sizeMB: result.sizeMB,
-                    index: completed
-                });
-            }
-            
-            completed++;
-            const percent = Math.round((completed / total) * 100);
-            progressFill.style.width = percent + '%';
-            progressText.textContent = `Processing ${completed}/${total} (${percent}%)`;
-        }
-        
-        // Save results to JSON
+        // Generate output path
         const timestamp = new Date().toISOString().replace(/[:.]/g, '-').substring(0, 19);
-        const jsonData = {
-            type: 'excel-json-batch',
-            created: new Date().toISOString(),
-            totalFiles: selectedExcelFiles.length,
-            successful: results.length,
-            failed: selectedExcelFiles.length - results.length,
-            files: results,
-            errors: []
-        };
-        
         const outputPath = `${excelOutputDirectory}\\excel_batch_${timestamp}.json`;
-        await window.electronAPI.writeTextFile(outputPath, JSON.stringify(jsonData, null, 2));
         
-        progressText.textContent = `✅ Completed! ${completed} file(s) converted to JSON`;
-        showInfo('excel-batch-info', `✅ Successfully converted ${completed} file(s) to JSON!`, 'success');
+        // Call backend batch function which processes all sheets from all files
+        const result = await window.electronAPI.batchExcelToJson(selectedExcelFiles, outputPath);
+        
+        if (result.success) {
+            progressFill.style.width = '100%';
+            progressText.textContent = `✅ Completed! ${result.successful} file(s) converted with all sheets`;
+            showInfo('excel-batch-info', `✅ Successfully converted ${result.successful} file(s) to JSON with all sheets!`, 'success');
+        } else {
+            showInfo('excel-batch-info', 'Error: ' + result.error, 'error');
+        }
         
     } catch (error) {
         showInfo('excel-batch-info', 'Error: ' + error.message, 'error');
